@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+$font-title-color: #19243c;
+$font-color-inactive: #9b9b9b;
+
+.title {
+  width: 379px;
+  height: 73px;
+  font-size: 52px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $font-title-color;
+}
+
+.sub-title {
+  width: 778px;
+  height: 64px;
+  font-size: 46px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $font-title-color;
+}
+
+
