@@ -1,35 +1,57 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="footer-wrapper">
+  <div class="row-footer">
+    <div class="rect-footer-title">
+      <div class="footer-title">Lets work together! <span class="text-style-1"> Contact Us</span></div>
+    </div> 
 
-  <div class="wrapper">
+    <div class="rect-footer-full">      
+      <div class="footer-elements">
+        <div class="logo-footer">
+          <img class="img-footer" src="assets/logo/logo-1_2@3x.png" />
+        </div>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <div class="name-footer">Crafter Digital</div>
+        <div class="footer-subtitle fs-1">CONTACT</div>
+        <div class="footer-subtitle fs-2">ABOUT US</div>
+        <div class="footer-subtitle fs-3">FOLLOW US</div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
+        <div class="footer-desc desc-column-contact">
+          <div class="cb-1">
+            <img class="icon-contact" src="assets/logo/icon-location.png" />
+            <span class="text-footer-desc">467 Boehm Well Apt. 122</span>
+          </div>
+          <div class="cb-2">
+            <img class="icon-contact" src="assets/logo/icon-phone.png" />
+            <span class="text-footer-desc">088-183-9011</span>
+          </div>
+          <div class="cb-3">
+            <img class="icon-contact" src="assets/logo/icon-envelope.png" />
+            <span class="text-footer-desc">morgan.roob@gmail.com</span>
+          </div>
+        </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
+        <div class="footer-desc desc-column-about">
+          <div class="contact-1">
+            <a href="#" class="text-footer-desc">Our Team</a>
+          </div>
+          <div class="contact-2">
+            <a href="#" class="text-footer-desc">Our Services</a>
+          </div>
+          <div class="contact-3">
+            <a href="#" class="text-footer-desc">Project</a>
+          </div>
+        </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <div class="follow-us">
+          <a href="#"><img class="icon-socmed" src="assets/logo/icon-upwork.png" /></a>
+          <a href="#"><img class="icon-socmed" src="assets/logo/icon-behance.png" /></a>
+          <a href="#"><img class="icon-socmed" src="assets/logo/icon-github-logo.png" /></a>
+          <a href="#"><img class="icon-socmed" src="assets/logo/icon-dribbble.png" /></a>
+        </div>
+
+        <div class="box-copyright copyright">2019 ⓒ Crafter Digital. All rights reserved </div>
       </div>
     </div>
-
   </div>
-
-</footer>
+  </div>
+  
