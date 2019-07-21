@@ -30,4 +30,22 @@ $font-color-inactive: #9b9b9b;
   color: $font-title-color;
 }
 
+.sub-title2 {
+  font:  18px  'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.78;
+  letter-spacing: 0.1px;
+  color: rgba(25, 36, 60, 0.68);
+  text-align: center;
+}
 
+.title-2 {
+  font: bold 46px 'Poppins';
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #19243c;
+}

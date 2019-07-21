@@ -1,0 +1,90 @@
+.header-wrapper {
+  display: grid;
+  height: 91px;
+  @media (min-width: 40rem) {
+    grid-template: 5rem repeat(5, 1fr) 40rem / 1fr repeat(6, minmax(auto, 10rem)) 1fr;
+  }
+  background-color: white;
+
+  .header-nav{
+    background-color: white;
+    grid-column: span 8;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .header-logo {
+      background-color: white;
+      grid-column: span 4;
+      padding-top: 1rem;
+      grid-column: 1/2;
+      padding-left: 150px;
+      padding-top: 19px;
+
+      .img-logo{
+        width: 50px;
+      }
+    }  
+  }
+
+  .header-menu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr) 150px;
+    
+    a {
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      margin-top: auto;
+      margin-bottom: auto;
+      font-weight: bold;
+      font-size: 14px;
+      color: #19243c;
+      text-align: center;
+      align-self: center;
+    }
+  
+    .menu-1{
+      grid-column: 3/4;
+      margin: auto auto auto auto;
+    }
+    
+    .menu-2{
+      grid-column: 4/5;
+      margin: auto auto auto auto;
+    }
+    
+    .menu-3{
+      grid-column: 5/6;
+      margin: auto auto auto auto;
+    }
+    
+    .menu-4{
+      grid-column: 6/7;
+      margin: auto auto auto auto;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    //button contact nav menu
+    .rectangle {
+      width: 92px;
+      height: 34px;
+      border-radius: 2px;
+      background-color: $pale-red;
+      color: white;
+      box-shadow: 0 5px 20px 0 rgba(229,75,73,0.54);
+      a {
+        color: white;
+        padding-top: 7px;
+        display: block;    
+      }
+    }
+  }
+}
