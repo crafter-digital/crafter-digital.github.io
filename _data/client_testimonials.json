@@ -1,0 +1,32 @@
+[
+  {
+    "image_url": "assets/clients/profile1.jpeg", 
+    "name": "James Hoffman", 
+    "company_name": "Airbnb", 
+    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+  },
+  {
+    "image_url": "assets/clients/profile2.jpeg", 
+    "name": "Paul C Allen", 
+    "company_name": "Twitter", 
+    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+  },
+  {
+    "image_url": "assets/clients/profile3.jpeg", 
+    "name": "Sean L Bowlby", 
+    "company_name": "Intel", 
+    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+  },
+  {
+    "image_url": "assets/clients/profile4.jpeg", 
+    "name": "John C Warfield", 
+    "company_name": "LinkedIn", 
+    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+  },
+  {
+    "image_url": "assets/clients/profile5.png", 
+    "name": "Karl R Platt", 
+    "company_name": "Facebook", 
+    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+  }
+]
