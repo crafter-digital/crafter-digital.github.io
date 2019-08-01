@@ -43,15 +43,3 @@ function showTestimony(index) {
   hideTestimony(cards);
   cards[index].style.display = "block";
 }
-
-
-for(var i = 0; i < cards.length; i++) {
-  if (cards[i].style.display == 'block') {
-    var card = cards[i];
-  };
-}
-// var id = parseInt(card.id.split("testimony-")[1]);
-// var dot = document.getElementById('dot-' + (id + 1));
-// dot.click();
-// removeDotFocus(id - 1);
-// dot.classList.add('dot-focus');
