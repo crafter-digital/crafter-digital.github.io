@@ -135,11 +135,9 @@
 
     <div class="dots-slider">
       <ul>
-        <li><button class="dot" id= "dot-1" onclick="showTestimony(0)"></button></li>
-        <li><button class="dot" id= "dot-2" onclick="showTestimony(1)"></button></li>
-        <li><button class="dot" id= "dot-3" onclick="showTestimony(2)"></button></li>
-        <li><button class="dot" id= "dot-4" onclick="showTestimony(3)"></button></li>
-        <li><button class="dot" id= "dot-5" onclick="showTestimony(4)"></button></li>
+        {% for client in site.data.client_testimonials %}
+          <li><button class="dot" id= "dot-{{ forloop.index }}" onclick="showTestimony('{{ forloop.index | minus: 1 }}')"></button></li>
+        {% endfor %}
       </ul>
     </div>
   </div>
