@@ -5,11 +5,22 @@ document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     hideTestimony(cards);
     cards[0].style.display = "block";
-    setInterval(function() { dots[1].click() }, 7000);
-    setInterval(function() { dots[2].click() }, 14000);
-    setInterval(function() { dots[3].click() }, 21000);
-    setInterval(function() { dots[4].click() }, 28000);
-    setInterval(function() { dots[0].click() }, 35000);
+    dots[0].classList.add('dot-focus');
+    // setInterval(function() {
+    //   var dot = ''
+    //   for(var i = 0; i < dots.length; i++) {
+    //     if (dots[i].classList.contains('dot-focus')) {
+    //       dot = dots[i + 1]
+    //     }
+    //   }
+    //   dot.click();
+    // }, 2000);
+
+    for (var x = 0; x < dots.length; x++) {
+      setInterval(function(y) {
+        dots[y].click();
+      }, 7000 * (x + 1), x);
+    }
   }
 }
 
@@ -36,10 +47,12 @@ function showTestimony(index) {
   card.classList.add('fadeOut');
   setTimeout(function(){ card.style.display = 'none'; }, 500);
   setTimeout(function(){ cards[index].style.display = "block"; }, 500);
-  cards[index].classList.add('fadeOut')
+  cards[index].classList.add('fadeOut');
+  removeDotFocus();
   cards[index].classList.add('fadeIn');
-  setTimeout(function(){ cards[index].classList.remove('fadeOut'); }, 700);
+  setTimeout(function(){ cards[index].classList.remove('fadeOut'); }, 500);
   var i = parseInt(cards[index].id.split("testimony-")[1]);
   hideTestimony(cards);
   cards[index].style.display = "block";
+  dots[index].classList.add('dot-focus');
 }
