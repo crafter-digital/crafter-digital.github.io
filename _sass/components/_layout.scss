@@ -1,81 +1,23 @@
-/* content */
-.grey {
-  color: #9b9b9b;
-}
-
 .body-wrapper {
-  display: grid;
-  background-color: white;
-
-  //row 1
-
-  .row-1 {
-    width: 1440px;
-    background-color: white;
-    grid-column: span 8;
+  // Intro
+  .intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 655px;
 
-    .left {
-      margin-top: 138px;
-      margin-left: 215px;
+    .home {
+      grid-column: 2/5;
+      margin-top: 150px;
 
-      .title-row-1 {
-        grid-column: 1/2;
-        align-items: center;
-      }
-
-      .main-title{
-        font-family: 'Poppins' bold;
-        font: bold 52px 'Poppins' ;
-        color: $text-blue-color ;
-        margin-bottom: 15px;
-      }
-
-      .main-desc{
+      .description {
         width: 445px;
         height: 128px;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.78;
-        letter-spacing: 0.11px;
-        color: rgba(25, 36, 60, 0.68);
         margin-bottom: 50px;
-      }
-
-      .button-work {
-        width: 190px;
-        height: 62px;
-        border-radius: 4px;
-        background-color: $pale-red;
-        text-align: center;
-        vertical-align: middle;
-        box-shadow: 0 5px 20px 0 rgba(229,75,73,0.54);
-    
-        .text {
-          text-align: center;
-          font: bold 18px 'Montserrat';
-          margin-bottom: auto;
-          color: white;
-          padding-top: 19px;
-          text-decoration: none;
-          display: block;
-        }
-      }
-    
-      .outer-button {
-        grid-column: 1/2;
       }
     }
 
-    .right {
-      .main-illustration {
-        img {
-          width: 100%;
-        }
-      }
+    .illustration {
+      grid-column: 5/9;
     }
   }
 

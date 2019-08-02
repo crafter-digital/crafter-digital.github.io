@@ -8,11 +8,12 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 $text-blue-color: #19243c;
+$text-blue-light-color: rgba(25, 36, 60, 0.68);
 
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: #ffffff !default;
 $brand-color:      #2a7ae2 !default;
 $pale-red:         #e54b49 !default;
 
@@ -48,11 +49,11 @@ $on-laptop:        800px !default;
 // Import partials.
 @import
   "components/base",
+  "components/layout",
   "components/button",
   "components/fonts",
   "components/footer",
   "components/header",
-  "components/layout",
   "components/layout_page",
   "components/syntax-highlighting"
 ;

@@ -3,5 +3,25 @@
   border-radius: 2px;
   box-shadow: 0 5px 20px 0 rgba(229,75,73,0.54);
   color: white !important;
+  font-weight: bold;
   padding: 5px 15px;
+  text-decoration: none;
+
+  &__large {
+    height: 62px;
+    width: 190px;
+    a {
+      padding: 20px 30px;
+      position: absolute;
+    }
+  }
+
+  &__small {
+    width: 92px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

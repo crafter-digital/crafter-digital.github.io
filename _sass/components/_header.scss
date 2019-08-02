@@ -1,84 +1,51 @@
 .header-wrapper {
   display: grid;
   height: 92px;
-  @media (min-width: 40rem) {
-    grid-template: 5rem repeat(5, 1fr) 40rem / 1fr repeat(6, minmax(auto, 10rem)) 1fr;
-  }
-  background-color: white;
 
   .header-nav{
-    background-color: white;
-    grid-column: span 8;
-    margin-left: auto;
-    margin-right: auto;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
 
     .header-logo {
-      background-color: white;
-      grid-column: span 4;
-      padding-top: 1rem;
-      grid-column: 1/2;
-      padding-left: 150px;
-      padding-top: 19px;
+      grid-column: 2/2;
+      padding-top: 20px;
 
       .img-logo{
         width: 50px;
       }
     }
-  }
 
-  .header-menu {
-    display: grid;
-    grid-column-gap: 30px;
-    grid-template-columns: auto repeat(5, 1fr) 150px;
+    .header-menu {
+      display: grid;
+      grid-column: 5/8;
+      grid-gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
 
-    a {
-      text-decoration: none;
-    }
-
-    .nav-menu {
-      align-self: center;
-      color: #19243c;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: auto;
-      margin-top: auto;
-      text-align: center;
-
-      &__home {
-        margin: auto;
-      }
-
-      &__about{
-        margin: auto;
-      }
-
-      &__services {
-        margin: auto;
-      }
-    }
-
-
-    .menu-4{
-      margin: auto auto auto auto;
-      justify-items: center;
-      justify-content: center;
-      align-items: center;
-    }
-
-    //button contact nav menu
-    .rectangle {
-      width: 92px;
-      height: 34px;
-      border-radius: 2px;
-      background-color: $pale-red;
-      color: white;
-      box-shadow: 0 5px 20px 0 rgba(229,75,73,0.54);
       a {
-        color: white;
-        padding-top: 7px;
-        display: block;
+        text-decoration: none;
+      }
+    
+      .nav-menu {
+        align-self: center;
+        color: #19243c;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: auto;
+        margin-top: auto;
+        text-align: center;
+    
+        &__about{
+          margin: auto;
+        }
+
+        &__home {
+          margin: auto;
+        }
+
+        &__services {
+          margin: auto;
+        }
       }
     }
   }
