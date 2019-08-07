@@ -49,11 +49,12 @@ $on-laptop:        800px !default;
 // Import partials.
 @import
   "components/base",
-  "components/layout",
   "components/button",
+  "components/coming_soon",
   "components/fonts",
   "components/footer",
   "components/header",
+  "components/layout",
   "components/layout_page",
   "components/syntax-highlighting"
 ;
