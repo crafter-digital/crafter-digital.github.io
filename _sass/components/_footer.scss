@@ -12,6 +12,7 @@
       grid-column: 2/8;
       grid-template-columns: repeat(8, 1fr);
       height: auto;
+      padding: 0 20px;
       padding-bottom: 50px;
       position: relative;
       top: 112px;
@@ -27,60 +28,80 @@
   }
   .footer {
     background: $text-blue-color;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     padding-top: 200px;
-    .about {
-      grid-column: 8/10;
-    }
-    .contact {
-      grid-column: 5/8;
-    }
-    .logo {
+    .top {
       display: grid;
-      grid-auto-rows: 95px;
-      grid-column: 2/5;
-      grid-template-columns: repeat(3, 1fr);
-      img {
-        grid-column: 1/2;
-        margin: auto;
-        width: 95px;
+      grid-template-columns: repeat(12, 1fr);
+      .about {
+        grid-column: 8/10;
       }
-      p {
-        color: white;
-        font-family: 'Montserrat';
-        font-size: 25px;
-        font-weight: bold;
-        grid-column: 2/4;
-        letter-spacing: 0.65px;
-        margin: auto;
-        text-align: center;
-      }
-    }
-    .social-media {
-      grid-column: 10/12;
-      li {
-        a {
-          margin-right: 15px;
+      .contact {
+        grid-column: 5/8;
+        li {
+          display: grid;
+          grid-template-columns: 20px auto;
           img {
-            margin-bottom: 15px;
+            margin: auto;
+          }
+          span {
+            padding-left: 10px;
+            padding-right: 40px;
+          }
+        }
+      }
+      .logo {
+        display: grid;
+        grid-auto-rows: 95px;
+        grid-column: 2/5;
+        grid-template-columns: repeat(3, 1fr);
+        img {
+          grid-column: 1/2;
+          margin: auto;
+          width: 95px;
+        }
+        p {
+          color: white;
+          font-family: 'Montserrat';
+          font-size: 25px;
+          font-weight: bold;
+          grid-column: 2/4;
+          letter-spacing: 0.65px;
+          margin: auto;
+          text-align: center;
+        }
+      }
+      .social-media {
+        grid-column: 10/12;
+        li {
+          a {
+            margin-right: 15px;
+            img {
+              margin-bottom: 15px;
+            }
           }
         }
       }
     }
 
-    .copyright {
-      color: rgba(255, 255, 255, 0.53);
-      font-family: Montserrat;
-      font-size: 13px;
-      font-weight: 300;
-      grid-column: 9/5;
-      height: 18px;
-      letter-spacing: 0.3px;
-      margin-top: 82px;
-      margin-bottom: 52px;
-      text-align: center;
+    .bottom {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+
+      .copyright {
+        color: rgba(255, 255, 255, 0.53);
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-weight: 300;
+        grid-column: 3/7;
+        height: 18px;
+        letter-spacing: 0.3px;
+        margin-top: 82px;
+        margin-bottom: 52px;
+        text-align: center;
+      }
     }
+    
+
 
     ul {
       list-style-type: none;
