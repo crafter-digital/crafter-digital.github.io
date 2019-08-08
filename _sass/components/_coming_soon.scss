@@ -35,6 +35,9 @@
     input {
       border-radius: 2px;
       border: solid 1px #e7ecf2;
+      border-right: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       background-color: white;
       color: rgba(25, 36, 60, 0.68);
       font-family: 'Montserrat';
@@ -45,6 +48,27 @@
       opacity: 0.48;
       padding: 0 24px;
       grid-column: 3/10;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .coming-soon-wrapper {
+    .text {
+      .title.title__main, .description.description__light {
+        grid-template-columns: none !important;
+      }
+    }
+    .form {
+      input {
+        grid-column: 1/12;
+        font-size: 12px;
+        height: 36px;
+        padding: 0 10px;
+      }
+      button {
+        font-size: 14px;
+      }
     }
   }
 }
