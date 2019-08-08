@@ -30,15 +30,15 @@
     background: $text-blue-color;
     color: white;
     padding-top: 200px;
-    a {
-      text-decoration: none;
-      color: white;
-    }
     .top {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       .about {
         grid-column: 8/10;
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
       .contact {
         grid-column: 5/8;
@@ -123,6 +123,28 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer-wrapper {
+    .logo {
+      grid-column: 2/12 !important;
+      grid-template-columns: repeat(8, 1fr) !important;
+      img {
+        grid-column: 1/3 !important;
+        width: 55px !important;
+      }
+      p {
+        grid-column: 3/8 !important;
+      }
+    }
+    .contact, .about, .social-media {
+      grid-column: 2/12 !important;
+    }
+    .copyright {
+      grid-column: 2/8 !important;
     }
   }
 }
