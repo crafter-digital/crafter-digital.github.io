@@ -3,24 +3,40 @@ var dots = document.getElementsByClassName('dot');
 
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
-    hideTestimony(cards);
-    cards[0].style.display = "block";
-    dots[0].classList.add('dot-focus');
-    // setInterval(function() {
-    //   var dot = ''
-    //   for(var i = 0; i < dots.length; i++) {
-    //     if (dots[i].classList.contains('dot-focus')) {
-    //       dot = dots[i + 1]
-    //     }
-    //   }
-    //   dot.click();
-    // }, 2000);
+    displayTestimony();
+    hamburgerMenu();
+  }
+}
 
-    for (var x = 0; x < dots.length; x++) {
-      setInterval(function(y) {
-        dots[y].click();
-      }, 7000 * (x + 1), x);
-    }
+function displayTestimony() {
+  hideTestimony(cards);
+  cards[0].style.display = "block";
+  dots[0].classList.add('dot-focus');
+
+  for (var x = 0; x < dots.length; x++) {
+    setInterval(function(y) {
+      dots[y].click();
+    }, 7000 * (x + 1), x);
+  }
+}
+
+function hamburgerMenu() {
+  var menuIcon = document.getElementById("menu-icon");
+  var closeIcon = document.getElementById("close-icon");
+  var menu = document.getElementById("icon"); 
+  if (menu) {
+    menu.addEventListener("click", function() {
+      var subMenu = document.getElementsByClassName('sub-menu')[0];
+      if (subMenu.style.display == 'none' || subMenu.style.display == '') {
+        subMenu.style.display = 'block';
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+      } else {
+        subMenu.style.display = 'none';
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      }
+    });
   }
 }
 

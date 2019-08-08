@@ -36,7 +36,7 @@ $font-color-inactive: #9b9b9b;
   font-family: 'Montserrat';
 
   &__light {
-    font-weight: 300;;
+    font-weight: 300;
     color: $text-blue-light-color;
     font-size: 18px;
     line-height: 1.78;
@@ -49,5 +49,23 @@ $font-color-inactive: #9b9b9b;
     line-height: 1.63;
     letter-spacing: 0.1px;
     color: $text-blue-color;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .title {
+    &__main {
+      font-size: 30px;
+    }
+
+    &__sub {
+      font-size: 16px;
+    }
+  }
+
+  .description {
+    &__light {
+      font-size: 12px;
+    }
   }
 }
