@@ -1,0 +1,20 @@
+.input {
+  border-radius: 2px;
+  border: solid 1px #e7ecf2;
+  background-color: white;
+  color: rgba(25, 36, 60, 0.68);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  outline: none;
+  opacity: 0.48;
+  padding: 0 24px;
+
+  &__text {
+    height: 54px;
+  }
+
+  &__textarea {
+    padding: 24px;
+  }
+}

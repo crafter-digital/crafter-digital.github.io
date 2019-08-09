@@ -1,4 +1,4 @@
-.coming-soon-wrapper {
+.coming_soon_wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   .illustration {
@@ -32,41 +32,30 @@
     margin: auto;
     margin-bottom: 125px;
     margin-top: 38px;
-    input {
-      border-radius: 2px;
-      border: solid 1px #e7ecf2;
+    .input.input__text {
       border-right: none;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      background-color: white;
-      color: rgba(25, 36, 60, 0.68);
-      font-family: 'Montserrat';
-      font-size: 16px;
-      height: 54px;
-      letter-spacing: 0.1px;
-      outline: none;
-      opacity: 0.48;
-      padding: 0 24px;
       grid-column: 3/10;
     }
   }
 }
 
 @media screen and (max-width: 640px) {
-  .coming-soon-wrapper {
+  .coming_soon_wrapper {
     .text {
       .title.title__main, .description.description__light {
         grid-template-columns: none !important;
       }
     }
     .form {
-      input {
+      input[type=text] {
         grid-column: 1/12;
         font-size: 12px;
         height: 36px;
         padding: 0 10px;
       }
-      button {
+      button[type=submit] {
         font-size: 14px;
       }
     }
