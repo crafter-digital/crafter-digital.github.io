@@ -25,7 +25,7 @@
   &__submit {
     width: 100px;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 4px !important;
   }
 
   a {
@@ -43,5 +43,6 @@ a.button.button__submit {
 @media screen and (max-width: 640px){
   .button {
     padding: 0 !important;
+    font-size: 14px;
   }
 }

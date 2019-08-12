@@ -24,33 +24,15 @@
           </p>
         </div>
       </div>
-      <div class="form">
-        <input type="text" name="email" placeholder="Your Email" id="contact_email" class="input input__text" />
-        <a href="#form-popup" class="button button__submit">Send</a>
-      </div>
+      <form class="form" id="form_email" onsubmit="showPopup(); return false;">
+        <input type="text" name="email" placeholder="Your Email" id="contact_email" class="input input__text" required="true" />
+        <input type="submit" href="#" class="button button__submit" id="send_contact_form" value="Send" />
+      </form>
     </div>
 
-    <div id="form-popup" class="overlay">
-      <div class="popup">
-        <div class="header">
-          <h2 class="title title__sub">Tell us more to help us get started.</h2>
-          <a class="close" href="#">&times;</a>
-        </div>
-        <form class="contact_form">
-          <div class="left">
-            <input type="text" name="name" class="input input__text" id="contact_name" placeholder="Name" />
-            <input type="text" name="company_name" class="input input__text" id="contact_company_name" placeholder="Business Name" />
-            <input type="text" name="phone_number" class="input input__text" id="contact_phone_number" placeholder="Phone Number" />
-          </div>
-          <div class="right">
-            <textarea name="message" class="input input__textarea" id="contact_message" rows="5" placeholder="Message"></textarea>
-            <input type="radio" id="f-option" name="selector">
-          </div>
-        </form>
-      </div>
-    </div>
+    {%- include form_contact_popup.html -%}
 
-    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
     <script src="assets/javascripts/contact_us.js"></script>
     <script src="assets/javascripts/firebase_app.js"></script>
   </body>

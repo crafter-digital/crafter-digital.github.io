@@ -9,25 +9,27 @@ var config = {
 firebase.initializeApp(config);
 
 // Get a reference to the database service
-var rootRef = firebase.database().ref().child('visitors');
+var rootRef = firebase.database().ref().child('contacts');
 
-function writeVisitors(uid, name, email, phone_number, message, service) {
-  var database_ref = firebase.database().ref('visitors/' + uid);
+function writeContacts(uid, name, email, phone_number, company_name, message, service) {
+  var database_ref = firebase.database().ref('contacts/' + uid);
 
   database_ref.set({
     uid: uid,
     name: name,
     email: email,
     phone_number: phone_number,
+    company_name: company_name,
     message: message,
     service: service
   });
 
   database_ref.once('value', function(snapshot) {
     if (snapshot.val() != null) {
-      clearForm();
+      document.getElementById('close_button').click();
+      document.getElementById('success_popup').style.display = "block";
     }
   });
 
-  firebase.database().ref().child('visitors').push().key;
+  firebase.database().ref().child('contacts').push().key;
 }

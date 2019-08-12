@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 640px) {
+  .button {
+    padding: 6px 15px !important;
+  }
+
   .coming_soon_wrapper {
     .text {
       .title.title__main, .description.description__light {

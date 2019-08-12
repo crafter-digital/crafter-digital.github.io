@@ -1,47 +1,191 @@
-.popup {
-  background: #fff;
-  border-radius: 5px;
-  display: grid;
-  margin: 70px auto;
-  padding: 20px;
-  position: relative;
-  width: 55%;
-  transition: all 5s ease-in-out;
+.overlay, .success_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 600ms cubic-bezier(0.335, 0.010, 0.030, 1.360);
+  display: none;
+  min-height: 100vh;
 
-  .header {
+  .popup {
+    background: #fff;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    h2 {
-      grid-column: 1/8;
-      margin: auto;
-      margin-left: 0;
-    }
-    .close {
-      transition: all 200ms;
-      font-size: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #9b9b9b;
-      grid-column: 8/9;
-      text-align: right;
+    margin: 70px auto;
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    transition: all 5s ease-in-out;
+  }
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 20px;
+  .left, .right {
+    display: grid;
+    padding: 10px;
+  }
+
+  #close_button {
+    grid-column: 8/8;
+    text-align: right;
+    img {
+      width: 28px;
     }
   }
 
-  .contact_form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .left, .right {
+  .left {
+    grid-column: 1/5;
+    .services {
       display: grid;
-      padding: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      p {
+        grid-column: 1/4;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        color: #B8BECC;
+      }
+      .radio_input {
+        grid-column: 4/1;
+        display: inline;
+        input[type=radio] {
+          width: 10px;
+          &:after {
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            top: 0px;
+            left: 0px;
+            position: relative;
+            background-color: #e7ecf2;
+            ;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #b5bcca;
+          }
+
+          &:checked:after {
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            top: 0px;
+            left: 0px;
+            position: relative;
+            background-color: $pale-red;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #b5bcca;
+          }
+        }
+      }
     }
     .input {
-      margin: 10px 0;
+      margin: 20px 0;
       font-size: 15px;
     }
   }
 
-  .content {
-    max-height: 30%;
-    overflow: auto;
+  .right {
+    grid-column: 6/9;
+    .header {
+      .title.title__main {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        font-size: 42px;
+        letter-spacing: 0.37px;
+        p {
+          grid-column: 1/9;
+        }
+      }
+      .description.description__light {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        p {
+          grid-column: 1/9;
+        }
+      }
+    }
+  }
+
+  .submit {
+    grid-column: 7/9;
+    text-align: right;
+    .button.button__submit {
+      border-radius: 2px;
+      box-shadow: none;
+      padding: 20px 15px !important;
+      border: none;
+    }
+  }
+}
+
+#success_popup {
+  display: none;
+  grid-template-columns: repeat(8, 1fr);
+  .popup {
+    #close_button {
+      grid-column: 8/8;
+      text-align: right;
+      img {
+        text-align: right;
+        width: 28px;
+      }
+    }
+    .content {
+      display: grid;
+      grid-column: 2/8;
+      grid-template-columns: repeat(8, 1fr);
+      .logo {
+        grid-column: 4/6;
+        text-align: center;
+        img {
+          width: 75px;
+        }
+      }
+      .title.title__main {
+        font-size: 32px;
+        grid-column: 9/1;
+        margin: 25px;
+        text-align: center;
+      }
+      .link_home {
+        grid-column: 3/7;
+        text-align: center;
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact_form {
+    .left {
+      grid-column: 1/10;
+      grid-row: 3/3;
+    }
+    .right {
+      grid-column: 1/9;
+    }
+    .submit {
+      grid-column: 5/9;
+    }
+  }
+
+  #success_popup {
+    .popup {
+      .content {
+        grid-column: 1/9;
+        .link_home {
+          grid-column: 2/8;
+        }
+      }
+    }
   }
 }
