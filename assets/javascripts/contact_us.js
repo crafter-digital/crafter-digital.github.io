@@ -1,4 +1,5 @@
 var form_popup = document.getElementById('form_popup');
+var form_popup_overlay = document.getElementsByClassName('overlay')[0];
 var email_input = document.getElementById('contact_email_input');
 
 function getEmail() {
@@ -18,6 +19,7 @@ function clearForm() {
 function closePopup() {
   clearForm();
   form_popup.style.display = 'none';
+  form_popup_overlay.style.display = 'none';
 }
 
 function closeSuccessPopup() {
@@ -25,7 +27,8 @@ function closeSuccessPopup() {
 }
 
 function showPopup() {
-  form_popup.style.display = 'block';
+  form_popup.style.display = 'grid';
+  form_popup_overlay.style.display = 'block';
   if (getEmail().id == 'contact_email') {
     email_input.required = false;
     email_input.style.display = 'none';
