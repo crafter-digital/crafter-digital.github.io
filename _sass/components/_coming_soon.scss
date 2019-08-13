@@ -53,8 +53,9 @@
       }
     }
     .form {
+      grid-column: 12/2;
       input[type=text] {
-        grid-column: 1/12;
+        grid-column: 1/12 !important;
         font-size: 12px;
         height: 36px;
         padding: 0 10px;

@@ -1,12 +1,14 @@
 #form_popup {
   display: none;
+  grid-template-columns: repeat(12, 1fr);
   position: absolute;
   top: 10%;
+  width: 100%;
   .contact_form {
     background: white;
     display: grid;
+    grid-column: 2/12;
     grid-template-columns: repeat(8, 1fr);
-    padding: 20px;
     margin: auto;
     padding: 20px;
     width: 70%;
@@ -36,8 +38,9 @@
           color: #B8BECC;
         }
         .radio_input {
+          display: grid;
           grid-column: 4/1;
-          display: inline;
+          grid-template-columns: repeat(3, 1fr);
           input[type=radio] {
             width: 10px;
             &:after {
@@ -48,7 +51,6 @@
               left: 0px;
               position: relative;
               background-color: #e7ecf2;
-              ;
               content: '';
               display: inline-block;
               visibility: visible;
@@ -81,7 +83,7 @@
     }
   
     .right {
-      grid-column: 6/9;
+      grid-column: 5/9;
       .header {
         .title.title__main {
           display: grid;
@@ -192,17 +194,17 @@
   }
   #form_popup {
     background: white;
+    display: none;
+    left: 0;
+    grid-template-columns: repeat(12, minmax(40px, 1fr));
     position: absolute;
     top: 0;
-    display: none;
     width: 100%;
-    grid-template-columns: repeat(12, minmax(40px, 1fr));
     .contact_form {
       background: #fff;
       box-shadow: 0 8px 20px rgba(0,0,0,.2);
       display: grid;
       grid-column: 1/13;
-      grid-template-columns: repeat(8, minmax(42px, 1fr)) !important;
       min-height: 400px;
       overflow-y: auto;
       position: absolute;
@@ -215,6 +217,11 @@
         .text_input {
           display: grid;
         }
+        .radio_input {
+          .service {
+            grid-column: 1/4;
+          }
+        }
       }
       .right {
         grid-column: 1/9;
@@ -224,8 +231,6 @@
       }
     }
   }
-  // .contact_form {
-  // }
 
   #success_popup {
     .popup {
