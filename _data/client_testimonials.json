@@ -1,32 +1,20 @@
 [
   {
-    "image_url": "assets/clients/profile1.jpeg", 
-    "name": "James Hoffman", 
-    "company_name": "Airbnb", 
-    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+    "image_url": "assets/clients/andrew-gazdecki.png", 
+    "name": "Andrew Gazdecki", 
+    "company_name": "Biznessapps", 
+    "testimony": "Jajang is an extraordinary mobile and web designer! He is focused on every corner of UI experience, thinking out of the box and challenging every idea and concept in order to bring the best design! We have worked on a few projects together and every time he was on the top of the task! I was surprised how easily he could make extraordinary UI experience from the scratch! Open minded, polite, communicative and always ready to go step ahead to satisfy customer’s needs."
   },
   {
-    "image_url": "assets/clients/profile2.jpeg", 
-    "name": "Paul C Allen", 
-    "company_name": "Twitter", 
-    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+    "image_url": "assets/clients/hendri-augustine.png", 
+    "name": "Hendri Augustine", 
+    "company_name": "Rock Paper Scissors", 
+    "testimony": "Tsara is what we call a rockstar developer. She's one of the core developer in our previous startup and we wouldn't made it without her. She got the perfect combinations of skill, attitude, and great mindset. will definitely work with her again in the near future!"
   },
   {
-    "image_url": "assets/clients/profile3.jpeg", 
-    "name": "Sean L Bowlby", 
-    "company_name": "Intel", 
-    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
-  },
-  {
-    "image_url": "assets/clients/profile4.jpeg", 
-    "name": "John C Warfield", 
-    "company_name": "LinkedIn", 
-    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
-  },
-  {
-    "image_url": "assets/clients/profile5.png", 
-    "name": "Karl R Platt", 
-    "company_name": "Facebook", 
-    "testimony": "Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum."
+    "image_url": "assets/clients/stephen-bilston.png", 
+    "name": " Stephen Bilston", 
+    "company_name": "Petroniche", 
+    "testimony": "Tsara did a great job in completing our Ruby project. She communicated with us at every step in the process and delivered quality code. I would definitely hire Tsara again for future Ruby work."
   }
 ]
