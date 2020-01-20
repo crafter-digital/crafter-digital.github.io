@@ -23,9 +23,8 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 
@@ -228,11 +227,5 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
-  }
-}
-
-@media screen and (min-width: 1000px){
-  body {
-    min-width: 1275px;
   }
 }

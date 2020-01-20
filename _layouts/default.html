@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <title>Crafter Digital</title>
+
 <head>
   <script src="assets/javascripts/landing_page.js"></script>
 </head>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body>
-    <div class="header-wrapper">
-      {%- include header.html -%}
-    </div>
+<body>
+  {% include header.html %}
 
-    {%- include body.html -%}
+  {% include body.html %}
 
-    <div class="footer-wrapper">
-      <div class="contact-us">
-        <div class="text">
-          <p class="title title__main">Lets work together! <a onclick="showPopup();">Contact Us</a></p>
-        </div>
+  <div class="footer-wrapper">
+    <div class="contact-us">
+      <div class="text">
+        <p class="title title__main">Lets work together! <a onclick="showPopup();">Contact Us</a></p>
       </div>
-      {%- include footer.html -%}
     </div>
+    {% include footer.html %}
+  </div>
 
-    {%- include form_contact_popup.html -%}
+  {% include form_contact_popup.html %}
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
-    <script src="assets/javascripts/contact_us.js"></script>
-    <script src="assets/javascripts/firebase_app.js"></script>
-  </body>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+  <script src="assets/javascripts/contact_us.js"></script>
+  <script src="assets/javascripts/firebase_app.js"></script>
+</body>
+
 </html>

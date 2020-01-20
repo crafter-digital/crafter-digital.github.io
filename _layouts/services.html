@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <title>Crafter Digital</title>
+
 <head></head>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body id="services">
-    <div class="header-wrapper header-wrapper__shadow-grey">
-      {%- include header.html -%}
-    </div>
+<body id="services">
+  {% include header.html %}
 
-    {%- include service_body.html -%}
+  {% include service_body.html %}
 
-    <div class="footer-wrapper footer-wrapper__service">
-      {%- include footer.html -%}
-    </div>
-  </body>
+  <div class="footer-wrapper footer-wrapper__service">
+    {% include footer.html %}
+  </div>
+</body>
+
 </html>
