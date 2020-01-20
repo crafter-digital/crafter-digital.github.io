@@ -8,9 +8,20 @@
   {%- include head.html -%}
 
   <body>
-    {%- include header.html -%}
+    <div class="header-wrapper">
+      {%- include header.html -%}
+    </div>
+
     {%- include body.html -%}
-    {%- include footer.html -%}
+
+    <div class="footer-wrapper">
+      <div class="contact-us">
+        <div class="text">
+          <p class="title title__main">Lets work together! <a onclick="showPopup();">Contact Us</a></p>
+        </div>
+      </div>
+      {%- include footer.html -%}
+    </div>
 
     {%- include form_contact_popup.html -%}
 

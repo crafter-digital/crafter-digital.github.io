@@ -3,21 +3,21 @@
 <div id="form_popup" class="popup">
   <form class="contact_form" onsubmit="submitFormContact(); return false;">
     <div id="close_button" onclick="closePopup();">
-      <img src="/assets/images/cancel.png">
+      <img src="/assets/images/icon-cross@2x.png">
     </div>
     <div class="left">
       <div class="service_inputs">
         <p>Service</p>
         <div class="radio_input">
-          <div class="service">
+          <div class="service service__first">
             <input type="radio" name="service" value="UI/UX" required="true">
             <label for="service">UI/UX</label>
           </div>
-          <div class="service">
+          <div class="service service__second">
             <input type="radio" name="service" value="Web Development">
             <label for="service">Web Development</label>
           </div>
-          <div class="service">
+          <div class="service service__third">
             <input type="radio" name="service" value="Others">
             <label for="service">Others</label>
           </div>
@@ -33,16 +33,16 @@
     </div>
     <div class="right">
       <div class="header">
-        <div class="title title__main">
+        <div class="title title__semi-bold title__main">
           <p>A project with Crafter Digital?</p>
         </div>
         <div class="description description__light">
           <p>Hi, fill this form and tell us more to help us get started!</p>
         </div>
       </div>
-    </div>
-    <div class="submit">
-      <input type="submit" class="button button__submit" id="submit-contact-form" value="Send">
+      <div class="submit">
+        <input type="submit" class="button button__submit" id="submit-contact-form" value="Send">
+      </div>
     </div>
   </form>
 </div>
@@ -50,7 +50,7 @@
 <div id="success_popup" class="success_overlay">
   <div class="popup">
     <div id="close_button" onclick="closeSuccessPopup();">
-      <img src="/assets/images/cancel.png">
+      <img src="/assets/images/icon-cross@2x.png">
     </div>
     <div class="content">
       <div class="logo">

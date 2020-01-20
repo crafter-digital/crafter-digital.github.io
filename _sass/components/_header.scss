@@ -6,6 +6,11 @@
   display: grid;
   height: 92px;
 
+  &__shadow-grey{
+    box-shadow: 0 20px 40px 0 rgba(34, 28, 28, 0.05);
+    z-index: 1;
+  }
+
   .header-nav{
 
     display: grid;
@@ -28,7 +33,7 @@
     
       .nav-menu {
         align-self: center;
-        color: #19243c;
+        color: $text-blue-color;
         font-size: 14px;
         font-weight: bold;
         margin-bottom: auto;

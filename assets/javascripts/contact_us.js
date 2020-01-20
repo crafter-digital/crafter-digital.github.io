@@ -20,6 +20,11 @@ function closePopup() {
   clearForm();
   form_popup.style.display = 'none';
   form_popup_overlay.style.display = 'none';
+  document.getElementsByClassName('services')[0].style.display = "grid";
+  document.getElementsByClassName('why_choose_us')[0].style.display = "block";
+  document.getElementsByClassName('clients')[0].style.display = "grid";
+  document.getElementsByClassName('testimonial')[0].style.display = "grid";
+  document.getElementsByClassName('footer-wrapper')[0].style.display = "block";
 }
 
 function closeSuccessPopup() {
@@ -33,6 +38,11 @@ function showPopup() {
     email_input.required = false;
     email_input.style.display = 'none';
   }
+  document.getElementsByClassName('services')[0].style.display = "none";
+  document.getElementsByClassName('why_choose_us')[0].style.display = "none";
+  document.getElementsByClassName('clients')[0].style.display = "none";
+  document.getElementsByClassName('testimonial')[0].style.display = "none";
+  document.getElementsByClassName('footer-wrapper')[0].style.display = "none";
 }
 
 function submitFormContact() {

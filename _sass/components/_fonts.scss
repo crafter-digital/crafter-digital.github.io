@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
-$font-title-color: #19243c;
 $font-color-inactive: #9b9b9b;
 
 .title {
   font-weight: bold;
-  color: $font-title-color;
+  color: $text-blue-color;
   font-family: 'Poppins';
+
+  &__semi-bold {
+    font-weight: 600;
+  }
 
   &__main {
     font-size: 52px;

@@ -1,32 +1,35 @@
 #form_popup {
   display: none;
   grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 50px;
   position: absolute;
   top: 10%;
   width: 100%;
   .contact_form {
     background: white;
+    border-radius: 8px;
     display: grid;
-    grid-column: 2/12;
-    grid-template-columns: repeat(8, 1fr);
+    grid-column: 1/13;
+    grid-template-columns: repeat(12, 1fr);
     margin: auto;
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     width: 70%;
     .left, .right {
       display: grid;
-      padding: 10px;
+      padding: 0 25px 0 25px;
     }
   
     #close_button {
-      grid-column: 8/8;
+      grid-column: 12/13;
       text-align: right;
+      padding: 15px 15px 0 15px;
       img {
         width: 28px;
       }
     }
   
     .left {
-      grid-column: 1/5;
+      grid-column: 1/7;
       .service_inputs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -40,7 +43,7 @@
         .radio_input {
           display: grid;
           grid-column: 4/1;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(8, 1fr);
           input[type=radio] {
             width: 10px;
             &:after {
@@ -71,6 +74,19 @@
               border: 2px solid #b5bcca;
             }
           }
+          .service {
+            &__first {
+              grid-column: 1/3;
+            }
+
+            &__second {
+              grid-column: 3/7;
+            }
+
+            &__third {
+              grid-column: 7/9;
+            }
+          }
         }
       }
       .text_input {
@@ -79,11 +95,14 @@
           margin: 20px 0;
           font-size: 15px;
         }
+        textarea {
+          resize: none;
+        }
       }
     }
   
     .right {
-      grid-column: 5/9;
+      grid-column: 7/13;
       .header {
         .title.title__main {
           display: grid;
@@ -98,20 +117,21 @@
           display: grid;
           grid-template-columns: repeat(8, 1fr);
           p {
-            grid-column: 1/9;
+            grid-column: 1/8;
           }
         }
       }
-    }
-  
-    .submit {
-      grid-column: 7/9;
-      text-align: right;
-      .button.button__submit {
-        border-radius: 2px;
-        box-shadow: none;
-        padding: 20px 15px !important;
-        border: none;
+      .submit {
+        grid-column: 5/8;
+        position: relative;
+        .button.button__submit {
+          border-radius: 2px;
+          border: none;
+          bottom: 25px;
+          padding: 20px 15px !important;
+          position: absolute;
+          right: 40px;
+        }
       }
     }
   }
@@ -120,7 +140,7 @@
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   display: none;
-  grid-template-columns: repeat(12, minmax(30px, 1fr));
+  grid-template-columns: repeat(8, minmax(30px, 1fr));
   left: 0;
   min-height: 100vh;
   position: fixed;
@@ -132,12 +152,13 @@
     background: #fff;
     border-radius: 5px;
     display: grid;
-    grid-column: 2/12;
+    grid-column: 3/7;
+    height: 300px;
     margin: 70px auto;
     padding: 20px;
     position: relative;
-    width: 70%;
     transition: all 5s ease-in-out;
+    width: 100%;
   }
 }
 
@@ -216,11 +237,6 @@
         grid-row: 3/3;
         .text_input {
           display: grid;
-        }
-        .radio_input {
-          .service {
-            grid-column: 1/4;
-          }
         }
       }
       .right {
