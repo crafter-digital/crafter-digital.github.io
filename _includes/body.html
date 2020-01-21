@@ -157,15 +157,14 @@
           {% endfor %}
         </div>
       </div>
-
-      <div class="dots-slider">
-        <ul>
-          {% for client in site.data.client_testimonials %}
-          <li class="dot" id="dot-{{ forloop.index }}" onclick="showTestimony('{{ forloop.index | minus: 1 }}')">&nbsp;
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+    </div>
+    <div class="dots-slider">
+      <ul>
+        {% for client in site.data.client_testimonials %}
+        <li class="dot" id="dot-{{ forloop.index }}" onclick="showTestimony('{{ forloop.index | minus: 1 }}')">&nbsp;
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 </main>
