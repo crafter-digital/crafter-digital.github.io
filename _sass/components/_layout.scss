@@ -92,7 +92,7 @@
       grid-template-columns: 50%;
       grid-auto-flow: column;
       margin: auto;
-      max-width: 1440px;
+      max-width: 1200px;
 
       .advantage {
         align-items: center;
@@ -130,23 +130,15 @@
     border-bottom-right-radius: 100px;
     margin: auto;
     margin-bottom: 200px;
+    max-width: 1200px;
     padding: 100px;
-    width: 60%;
 
     .box {
-      .header {
-        display: grid;
-        margin-top: 100px;
-      }
-
       .contents {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
         margin-top: 60px;
 
         .clients-image {
           display: grid;
-          grid-column: 2/8;
           grid-gap: 95px;
           grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
           img {

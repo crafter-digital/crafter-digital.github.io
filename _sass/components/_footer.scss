@@ -28,16 +28,19 @@
     padding-top: 200px;
     .top {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-auto-flow: column dense;
+      grid-template-columns: auto;
+      margin: auto;
+      max-width: 1440px;
+
       .about {
-        grid-column: 8/10;
         a {
           text-decoration: none;
           color: white;
         }
       }
+
       .contact {
-        grid-column: 5/8;
         li {
           display: grid;
           grid-template-columns: 20px auto;
@@ -50,31 +53,35 @@
           }
         }
       }
+
       .logo {
-        display: grid;
-        grid-auto-rows: 95px;
-        grid-column: 2/5;
-        grid-template-columns: repeat(3, 1fr);
+        height: 95px;
+        margin-left: 30px;
+
         img {
-          grid-column: 1/2;
+          display: inline-block;
           margin: auto;
           width: 95px;
         }
+
         p {
+          display: inline-block;
           font-family: 'Montserrat';
           font-size: 25px;
           font-weight: bold;
-          grid-column: 2/4;
           letter-spacing: 0.65px;
           margin: auto;
-          text-align: center;
+          text-align: justify;
         }
       }
+
       .social-media {
-        grid-column: 10/12;
+        margin-right: 30px;
+
         li {
           a {
             margin-right: 15px;
+
             img {
               margin-bottom: 15px;
             }
@@ -85,14 +92,12 @@
 
     .bottom {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
 
       .copyright {
         color: rgba(255, 255, 255, 0.53);
         font-family: 'Montserrat';
         font-size: 13px;
         font-weight: 300;
-        grid-column: 3/7;
         height: 18px;
         letter-spacing: 0.3px;
         margin-top: 82px;
@@ -103,11 +108,12 @@
 
     ul {
       list-style-type: none;
-      margin-top: 35px;
+      margin-top: 30px;
+
       li {
         margin-bottom: 25px;
         span {
-          font-family: Montserrat;
+          font-family: 'Montserrat';
           font-size: 16px;
           font-weight: 300;
           letter-spacing: 0.02px;
