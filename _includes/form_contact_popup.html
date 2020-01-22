@@ -1,50 +1,52 @@
 <div  class="overlay"></div>
 
 <div id="form_popup" class="popup">
-  <form class="contact_form" onsubmit="submitFormContact(); return false;">
+  <div class="form-wrapper">
     <div id="close_button" onclick="closePopup();">
       <img src="/assets/images/icon-cross@2x.png">
     </div>
-    <div class="left">
-      <div class="service_inputs">
-        <p>Service</p>
-        <div class="radio_input">
-          <div class="service service__first">
-            <input type="radio" name="service" value="UI/UX" required="true">
-            <label for="service">UI/UX</label>
-          </div>
-          <div class="service service__second">
-            <input type="radio" name="service" value="Web Development">
-            <label for="service">Web Development</label>
-          </div>
-          <div class="service service__third">
-            <input type="radio" name="service" value="Others">
-            <label for="service">Others</label>
+    <form class="contact_form" onsubmit="submitFormContact(); return false;">
+      <div class="left">
+        <div class="service_inputs">
+          <p>Service</p>
+          <div class="radio_input">
+            <div class="service service__first">
+              <input type="radio" name="service" value="UI/UX" required="true">
+              <label for="service">UI/UX</label>
+            </div>
+            <div class="service service__second">
+              <input type="radio" name="service" value="Web Development">
+              <label for="service">Web Development</label>
+            </div>
+            <div class="service service__third">
+              <input type="radio" name="service" value="Others">
+              <label for="service">Others</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text_input">
-        <input type="text" name="name" class="input input__text" id="contact_name" placeholder="Name" required="true" />
-        <input type="text" name="company_name" class="input input__text" id="contact_email_input" placeholder="Email" required="true" />
-        <input type="text" name="company_name" class="input input__text" id="contact_company_name" placeholder="Business Name" required="true" />
-        <input type="text" name="phone_number" class="input input__text" id="contact_phone_number" placeholder="Phone Number" required="true" />
-        <textarea name="message" class="input input__textarea" id="contact_message" rows="5" placeholder="Message"></textarea>
-      </div>
-    </div>
-    <div class="right">
-      <div class="header">
-        <div class="title title__semi-bold title__main">
-          <p>A project with Crafter Digital?</p>
-        </div>
-        <div class="description description__light">
-          <p>Hi, fill this form and tell us more to help us get started!</p>
+        <div class="text_input">
+          <input type="text" name="name" class="input input__text" id="contact_name" placeholder="Name" required="true" />
+          <input type="text" name="company_name" class="input input__text" id="contact_email_input" placeholder="Email" required="true" />
+          <input type="text" name="company_name" class="input input__text" id="contact_company_name" placeholder="Business Name" required="true" />
+          <input type="text" name="phone_number" class="input input__text" id="contact_phone_number" placeholder="Phone Number" required="true" />
+          <textarea name="message" class="input input__textarea" id="contact_message" rows="5" placeholder="Message"></textarea>
         </div>
       </div>
-      <div class="submit">
-        <input type="submit" class="button button__submit" id="submit-contact-form" value="Send">
+      <div class="right">
+        <div class="header">
+          <div class="title title__semi-bold title__main">
+            <p>A project with Crafter Digital?</p>
+          </div>
+          <div class="description description__light">
+            <p>Hi, fill this form and tell us more to help us get started!</p>
+          </div>
+        </div>
+        <div class="submit">
+          <input type="submit" class="button button__submit" id="submit-contact-form" value="Send">
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </div>
 
 <div id="success_popup" class="success_overlay">

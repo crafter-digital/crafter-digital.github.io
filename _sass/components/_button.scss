@@ -9,12 +9,7 @@
   cursor: pointer;
 
   &__large {
-    height: 62px;
-    width: 190px;
-    a {
-      padding: 20px 30px;
-      position: absolute;
-    }
+    padding: 20px 30px;
   }
 
   &__small {
@@ -39,9 +34,3 @@ a.button.button__submit {
   text-align: center;
 }
 
-@media screen and (max-width: 640px){
-  .button {
-    padding: 0 !important;
-    font-size: 14px;
-  }
-}
