@@ -62,7 +62,7 @@ function showTestimony(index) {
   card.classList.remove('fadeIn');
   card.classList.add('fadeOut');
   setTimeout(function(){ card.style.display = 'none'; }, 500);
-  setTimeout(function(){ cards[index].style.display = "block"; }, 500);
+  setTimeout(function(){ cards[index].style.display = "grid"; }, 500);
   cards[index].classList.add('fadeOut');
   removeDotFocus();
   cards[index].classList.add('fadeIn');

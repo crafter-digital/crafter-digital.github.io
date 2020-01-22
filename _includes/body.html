@@ -136,26 +136,24 @@
     </div>
     <div class="content">
       <div class="background-card">
-        <div class="cards">
-          {% for client in site.data.client_testimonials %}
-          <div class="card" id="testimony-{{ forloop.index }}">
-            <div class="client-image">
-              <img src="{{ client.image_url }}">
+        {% for client in site.data.client_testimonials %}
+        <div class="card" id="testimony-{{ forloop.index }}">
+          <div class="client-image">
+            <img src="{{ client.image_url }}">
+          </div>
+          <div class="text">
+            <div class="company_name">
+              <p>{{ client.company_name }}</p>
             </div>
-            <div class="text">
-              <div class="company_name">
-                <p>{{ client.company_name }}</p>
-              </div>
-              <div class="client_name">
-                <p>{{ client.name }}</p>
-              </div>
-              <div class="testimony">
-                <p>{{ client.testimony }}</p>
-              </div>
+            <div class="client_name">
+              <p>{{ client.name }}</p>
+            </div>
+            <div class="testimony">
+              <p>{{ client.testimony }}</p>
             </div>
           </div>
-          {% endfor %}
         </div>
+        {% endfor %}
       </div>
     </div>
     <div class="dots-slider">
