@@ -46,15 +46,16 @@
   display: none;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 680px){
   .header-wrapper {
     display: none;
   }
 
   .hamburger-menu {
     display: grid;
-    margin-bottom: 20px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 
     .nav {
       padding: 10px 20px;

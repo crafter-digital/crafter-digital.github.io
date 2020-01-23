@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <title>Crafter Digital</title>
 
-<head></head>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
 
 <body id="services">
-  {% include header.html %}
+  <div class="background-white">
+    {% include header.html %}
+  </div>
 
   {% include service_body.html %}
 
-  <div class="footer-wrapper footer-wrapper__service">
-    {% include footer.html %}
-  </div>
+  {% include footer.html %}
+
+  <script src="assets/javascripts/hamburger_menu.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        hamburgerMenu();
+      }
+    }
+  </script>
 </body>
 
 </html>
