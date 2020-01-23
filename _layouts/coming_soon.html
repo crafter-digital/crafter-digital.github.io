@@ -24,10 +24,12 @@
           </p>
         </div>
       </div>
-      <form class="form" id="form_email" onsubmit="showPopup(); return false;">
-        <input type="text" name="email" placeholder="Your Email" id="contact_email" class="input input__text" required="true" />
-        <input type="submit" href="#" class="button button__submit" id="send_contact_form" value="Send" />
-      </form>
+      <div class="form-wrapper">
+        <form class="form" id="form_email">
+          <input type="text" name="email" placeholder="Your Email" id="contact_email" class="input input__text" required="true" />
+          <a href="#" class="button button__submit" id="send_contact_form" onclick="showPopup()">Send</a>
+        </form>
+      </div>
     </div>
 
     {%- include form_contact_popup.html -%}

@@ -1,63 +1,56 @@
 .coming_soon_wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   .illustration {
-    grid-column: 3/11;
+    display: grid;
     margin: auto;
     margin-top: 104px;
+
+    img {
+      margin: auto;
+    }
   }
+
   .logo {
-    grid-column: 8/6;
-    margin: auto;
+    display: grid;
+    margin-bottom: 26px;
+
     img {
       width: 92px;
+      margin: auto;
     }
   }
-  .text {
-    grid-column: 12/2;
-    margin-top: 26px;
-    text-align: center;
-    .title.title__main, .description.description__light {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      p {
-        grid-column: 2/8;
-      }
-    }
-  }
-  .form {
-    display: grid;
-    grid-column: 11/3;
-    grid-template-columns: repeat(12, 1fr);
-    margin: auto;
-    margin-bottom: 125px;
-    margin-top: 38px;
-    .input.input__text {
-      border-right: none;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      grid-column: 3/10;
-    }
-  }
-}
 
-@media screen and (max-width: 640px) {
-  .coming_soon_wrapper {
-    .text {
-      .title.title__main, .description.description__light {
-        grid-template-columns: none !important;
-      }
-    }
+  .text {
+    display: grid;
+    margin: auto;
+    max-width: 960px;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin: 38px auto 125px auto;
+    max-width: 700px;
+    padding: 0 20px;
+
     .form {
-      grid-column: 12/2;
-      input[type=text] {
-        grid-column: 1/12 !important;
-        font-size: 12px;
-        height: 36px;
-        padding: 0 10px;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      margin: auto;
+
+      .input.input__text {
+        border-right: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 54px;
+        width: 100%;
       }
-      button[type=submit] {
-        font-size: 14px;
+
+      .button {
+        &__submit {
+          border-radius: 4px !important;
+          font-size: 18px;
+          position: relative;
+          left: 0;
+        }
       }
     }
   }
