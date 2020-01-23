@@ -1,49 +1,43 @@
 #form_popup {
   display: none;
-  grid-template-columns: repeat(12, 1fr);
   margin-bottom: 50px;
   position: absolute;
   top: 10%;
   width: 100%;
-  .contact_form {
+
+  .form-wrapper {
     background: white;
     border-radius: 8px;
     display: grid;
-    grid-column: 1/13;
-    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: row dense;
     margin: auto;
-    padding: 20px 20px 50px 20px;
-    width: 70%;
-    .left, .right {
-      display: grid;
-      padding: 0 25px 0 25px;
-    }
-  
+    max-width: 960px;
+    width: 100%;
+
     #close_button {
-      grid-column: 12/13;
-      text-align: right;
-      padding: 15px 15px 0 15px;
+      justify-self: right;
+      padding: 30px;
       img {
         width: 28px;
       }
     }
-  
+  }
+
+  .contact_form {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 75px;
+    margin-bottom: 75px;
+
     .left {
-      grid-column: 1/7;
       .service_inputs {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
         p {
-          grid-column: 1/4;
           font-family: 'Montserrat';
           font-size: 16px;
           color: #B8BECC;
         }
         .radio_input {
-          display: grid;
-          grid-column: 4/1;
-          grid-template-columns: repeat(8, 1fr);
           input[type=radio] {
             width: 10px;
             &:after {
@@ -74,27 +68,22 @@
               border: 2px solid #b5bcca;
             }
           }
+
           .service {
-            &__first {
-              grid-column: 1/3;
-            }
-
-            &__second {
-              grid-column: 3/7;
-            }
-
-            &__third {
-              grid-column: 7/9;
-            }
+            display: inline-block;
+            margin-right: 20px;
           }
         }
       }
+
       .text_input {
         display: grid;
+
         .input {
           margin: 20px 0;
           font-size: 15px;
         }
+
         textarea {
           resize: none;
         }
@@ -102,45 +91,39 @@
     }
   
     .right {
-      grid-column: 7/13;
+      display: grid;
+      grid-template-rows: 85% 15%;
+
       .header {
         .title.title__main {
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
           font-size: 42px;
           letter-spacing: 0.37px;
+
           p {
             grid-column: 1/9;
           }
         }
-        .description.description__light {
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          p {
-            grid-column: 1/8;
-          }
-        }
       }
+
       .submit {
-        grid-column: 5/8;
         position: relative;
+
         .button.button__submit {
           border-radius: 2px;
           border: none;
           bottom: 25px;
-          padding: 20px 15px !important;
-          position: absolute;
-          right: 40px;
+          padding: 15px !important;
+          float: right;
         }
       }
     }
   }
 }
+
 .overlay, .success_overlay {
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   display: none;
-  grid-template-columns: repeat(8, minmax(30px, 1fr));
   left: 0;
   min-height: 100vh;
   position: fixed;
@@ -195,66 +178,6 @@
         grid-column: 3/7;
         text-align: center;
         margin: 30px 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .overlay, .success_overlay {
-    background: rgba(0, 0, 0, 0.7);
-    bottom: 0;
-    display: none;
-    grid-template-columns: repeat(12, minmax(30px, 1fr));
-    left: 0;
-    min-height: 100vh;
-    position: fixed;
-    right: 0;
-    transition: all 600ms cubic-bezier(0.335, 0.010, 0.030, 1.360);
-    top: 0;
-  }
-  #form_popup {
-    background: white;
-    display: none;
-    left: 0;
-    grid-template-columns: repeat(12, minmax(40px, 1fr));
-    position: absolute;
-    top: 0;
-    width: 100%;
-    .contact_form {
-      background: #fff;
-      box-shadow: 0 8px 20px rgba(0,0,0,.2);
-      display: grid;
-      grid-column: 1/13;
-      min-height: 400px;
-      overflow-y: auto;
-      position: absolute;
-      padding: 20px;
-      z-index: 10001;
-
-      .left {
-        grid-column: 1/10;
-        grid-row: 3/3;
-        .text_input {
-          display: grid;
-        }
-      }
-      .right {
-        grid-column: 1/9;
-      }
-      .submit {
-        grid-column: 5/9;
-      }
-    }
-  }
-
-  #success_popup {
-    .popup {
-      .content {
-        grid-column: 1/9;
-        .link_home {
-          grid-column: 2/8;
-        }
       }
     }
   }
