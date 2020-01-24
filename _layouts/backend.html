@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<title>Crafter Digital</title>
+<head></head>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body id="backend">
+  {% include header.html %}
+
+  {% include backend_body.html %}
+
+  {% include footer.html %}
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+  <script src="assets/javascripts/contact_us.js"></script>
+  <script src="assets/javascripts/firebase_app.js"></script>
+  <script src="assets/javascripts/hamburger_menu.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        hamburgerMenu();
+      }
+    }
+  </script>
+</body>
+
+</html>
