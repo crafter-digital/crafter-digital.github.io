@@ -4,6 +4,7 @@
 
 .header-wrapper {
   align-items: center;
+  background-color: white;
   display: grid;
   height: 92px;
   grid-template-columns: 50%;
@@ -55,7 +56,6 @@
     display: grid;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 
     .nav {
       padding: 10px 20px;
