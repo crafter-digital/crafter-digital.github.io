@@ -1,32 +1,39 @@
-.body-wrapper, .service-wrapper {
+.body-wrapper, .service-wrapper, .backend-wrapper {
   // Intro
   .intro {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-auto-flow: dense;
-    margin: 50px auto;
     max-width: 1400px;
-    padding: 0 45px;
-    grid-gap: 30px;
 
-    .intro-text {
-      margin-top: 150px;
+    .title.title__main {
+      display: grid;
+    }
 
-      .title.title__main {
-        display: grid;
-      }
-
-      .description {
-        display: grid;
-        margin-bottom: 50px;
-      }
+    .description {
+      display: grid;
+      margin-bottom: 50px;
     }
   }
 }
 
 .body-wrapper {
-  .illustration {
-    z-index: -1;
+  margin: 50px auto;
+  grid-gap: 30px;
+  padding: 0 45px;
+
+  .intro {
+    grid-gap: 50px;
+    margin: auto;
+    margin-bottom: 150px;
+
+    .intro-text {
+      margin-top: 150px;
+    }
+
+    .illustration {
+      z-index: -1;
+    }
   }
 
   .services {

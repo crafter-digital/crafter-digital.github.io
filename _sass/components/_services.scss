@@ -1,11 +1,10 @@
 body#services {
   background-color: #fafafa;
 
-  .background-white {
+  .box-shadowed-header {
     box-shadow: 0 20px 40px 0 rgba(34, 28, 28, 0.05);
-    background-color: var(--white);
   }
-  
+
   .footer {
     padding-top: 76px;
     margin-top: -60px;
@@ -14,12 +13,11 @@ body#services {
 
 .service-wrapper {
   margin: auto;
-  max-width: 1440px;
+  margin: 50px auto;
 
   .intro {
     grid-gap: 50px;
-    margin-bottom: 100px;
-    margin-top: 135px;
+    margin: 135px auto 100px auto;
     padding: 0 25px;
 
     .intro-text {
@@ -28,7 +26,6 @@ body#services {
   }
 
   .services-container {
-    display: grid;
     margin: auto;
     max-width: 960px;
 
@@ -42,7 +39,7 @@ body#services {
       z-index: -1;
       padding-bottom: 60px;
 
-      .service {
+      a.service {
         font-family: 'Poppins';
         font-size: 42px;
         font-weight: 500;
@@ -50,6 +47,7 @@ body#services {
         padding: 20px 0px;
         text-align: center;
         width: 100%;
+        text-decoration: none;
 
         &__border-right-grey {
           border-right: 1px solid #d8d8d8;
@@ -60,14 +58,13 @@ body#services {
           margin-right: 30px;
         }
 
-        a {
+        span {
           margin: auto;
-          text-decoration: none;
           color: $text-blue-color;
+        }
 
-          &:hover {
-            text-decoration: none;
-          }
+        &:hover {
+          text-decoration: none;
         }
       }
     }
