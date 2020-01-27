@@ -37,7 +37,6 @@ body#services {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       z-index: -1;
-      padding-bottom: 60px;
 
       a.service {
         font-family: 'Poppins';

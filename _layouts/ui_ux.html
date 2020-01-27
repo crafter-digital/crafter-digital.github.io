@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title>Crafter Digital</title>
+<head></head>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body id="ui_ux">
+  {% include header.html %}
+
+  {% include ui_ux_body.html %}
+
+  {% include footer.html %}
+
+  <script src="assets/javascripts/hamburger_menu.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        hamburgerMenu();
+      }
+    }
+  </script>
+</body>
+
+</html>

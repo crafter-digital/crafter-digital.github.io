@@ -1,0 +1,156 @@
+.backend-wrapper, .ui-ux-wrapper {
+  .intro {
+    display: block !important;
+    max-width: 100% !important;
+
+    .content {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      margin: auto;
+      max-width: 1440px;
+      padding: 85px 25px;
+
+      .intro-text {
+        margin: auto;
+  
+        p {
+          color: white;
+        }
+      }
+  
+      .illustration {
+        margin: auto;
+  
+        img {
+          width: 450px;
+        }
+      }
+    }
+  }
+
+  .services-wrapper {
+    margin: auto;
+    max-width: 1440px;
+    padding: 220px 0;
+
+    .services {
+      max-width: 960px;
+      margin: auto;
+      padding: 0 2%;
+
+      .cards {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+        .service_card {
+          background-color: white;
+          border-radius: 4px;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+          padding: 30px 50px;
+
+          img.icon {
+            margin-top: 36px;
+          }
+
+          .description {
+            &__bold {
+              margin-top: 22px;
+            }
+
+            &__light {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .working-process {
+    .description__light {
+      max-width: 960px;
+      margin: auto;
+      text-transform: uppercase;
+    }
+  }
+
+  .working-process, .development-tools, .clients {
+    padding: 0 20px;
+    max-width: 100%;
+
+    .content {
+      display: grid;
+      margin: auto;
+      max-width: 960px;
+    }
+  }
+
+  .clients-image {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .tools-image {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .clients {
+    background-color: #fcfcfe;
+    padding: 130px 20px 200px 20px;
+  }
+
+  .development-tools {
+    margin-bottom: 145px;
+
+    .tools-image img {
+      width: 80px;
+    }
+  }
+
+  .clients-image, .tools-image {
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 58px;
+
+    img {
+      margin: auto 0;
+    }
+  }
+}
+
+#backend, #ui_ux {
+  .footer {
+    padding-top: 76px;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .working-process {
+    .step_by_step {
+      display: grid !important;
+    }
+
+    .illustration {
+      display: none !important;
+    }
+
+    .step_by_step {
+      .step {
+        .number {
+          font-size: 50px !important;
+        }
+  
+        .card {
+          margin-bottom: 50px !important;
+          padding: 20px !important;
+          .description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

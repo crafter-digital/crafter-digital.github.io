@@ -1,6 +1,5 @@
 .working-process {
   .step_by_step {
-    display: none;
     margin: 68px auto 215px auto;
 
     .step {
@@ -21,6 +20,10 @@
 
       &__4 {
         .card { border-left: 3px solid #01cac2; }
+      }
+
+      &__5 {
+        .card { border-left: 3px solid #06c3ff; }
       }
 
       .number {
