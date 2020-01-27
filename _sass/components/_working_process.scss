@@ -1,0 +1,55 @@
+.working-process {
+  .step_by_step {
+    display: none;
+    margin: 68px auto 215px auto;
+
+    .step {
+      display: grid;
+      grid-template-columns: 25% 75%;
+
+      &__1 {
+        .card { border-left: 3px solid #ffc858; }
+      }
+
+      &__2 {
+        .card { border-left: 3px solid #e55452; }
+      }
+
+      &__3 {
+        .card { border-left: 3px solid #473f88; }
+      }
+
+      &__4 {
+        .card { border-left: 3px solid #01cac2; }
+      }
+
+      .number {
+        color: #9b9b9b;
+        font-family: Montserrat;
+        font-stretch: normal;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 6.75px;
+        line-height: normal;
+        margin: 0 auto;
+        opacity: 0.08;
+      }
+
+      .card {
+        border-radius: 3px;
+        background-color: white;
+        border-bottom-right-radius: 50px;
+        box-shadow: 15px 15px 40px 0 #ebebef;
+
+        .title {
+          color: black;
+        }
+
+        .description {
+          color: rgba(26, 40, 70, 0.68);
+          letter-spacing: 0.36px;
+        }
+      }
+    }
+  }
+}
