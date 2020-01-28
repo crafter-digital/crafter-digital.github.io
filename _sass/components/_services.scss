@@ -2,6 +2,7 @@ body#services {
   background-color: #fafafa;
 
   .box-shadowed-header {
+    background-color: white;
     box-shadow: 0 20px 40px 0 rgba(34, 28, 28, 0.05);
   }
 
@@ -66,6 +67,41 @@ body#services {
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  #services {
+    .footer {
+      margin-top: -100px !important;
+    }
+  }
+
+  .services {
+    padding-bottom: 50px;
+  }
+
+  a.service {
+    font-size: 20pt !important;
+    margin: 10px 0px !important;
+    padding: 20px 0px !important;
+    text-align: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: none;
+
+    img {
+      margin: auto 0;
+      margin-right: 50px;
+      justify-self: right;
+    }
+
+    span {
+      color: #19243c;
+      text-align: left !important;
+      margin: auto 0 !important;
     }
   }
 }

@@ -5,8 +5,18 @@
     <div id="close_button" onclick="closePopup();">
       <img src="/assets/images/icon-cross@2x.png">
     </div>
+
     <form class="contact_form" onsubmit="submitFormContact(); return false;">
       <div class="left">
+        <div class="header">
+          <div class="title title__semi-bold title__main">
+            <p>A project with Crafter Digital?</p>
+          </div>
+          <div class="description description__light">
+            <p>Hi, fill this form and tell us more to help us get started!</p>
+          </div>
+        </div>
+
         <div class="service_inputs">
           <p>Service</p>
           <div class="radio_input">
@@ -24,6 +34,7 @@
             </div>
           </div>
         </div>
+
         <div class="text_input">
           <input type="text" name="name" class="input input__text" id="contact_name" placeholder="Name" required="true" />
           <input type="text" name="company_name" class="input input__text" id="contact_email_input" placeholder="Email" required="true" />
@@ -32,6 +43,7 @@
           <textarea name="message" class="input input__textarea" id="contact_message" rows="5" placeholder="Message"></textarea>
         </div>
       </div>
+
       <div class="right">
         <div class="header">
           <div class="title title__semi-bold title__main">
@@ -41,6 +53,7 @@
             <p>Hi, fill this form and tell us more to help us get started!</p>
           </div>
         </div>
+
         <div class="submit">
           <input type="submit" class="button button__submit" id="submit-contact-form" value="Send">
         </div>

@@ -1,3 +1,9 @@
+$yellow: #ffc858;
+$red: #e55452;
+$purple: #473f88;
+$tosca: #01cac2;
+$blue: #06c3ff;
+
 .working-process {
   .step_by_step {
     margin: 68px auto 215px auto;
@@ -7,23 +13,52 @@
       grid-template-columns: 25% 75%;
 
       &__1 {
-        .card { border-left: 3px solid #ffc858; }
+        .bullet {
+          background-color: $yellow;
+          box-shadow: 0 15px 40px 0 rgba(254, 200, 92, 0.5);
+        }
+
+        .card { border-left: 3px solid $yellow; }
       }
 
       &__2 {
-        .card { border-left: 3px solid #e55452; }
+        .bullet {
+          background-color: $red;
+          box-shadow: 0 15px 40px 0 rgba(229, 84, 82, 0.5);
+        }
+
+        .card { border-left: 3px solid $red; }
       }
 
       &__3 {
-        .card { border-left: 3px solid #473f88; }
+        .bullet {
+          background-color: $purple;
+          box-shadow: 0 15px 40px 0 rgba(71, 63, 136, 0.49);
+        }
+
+        .card { border-left: 3px solid $purple; }
       }
 
       &__4 {
-        .card { border-left: 3px solid #01cac2; }
+        .bullet {
+          background-color: $tosca;
+          box-shadow: 0 15px 40px 0 rgba(1, 202, 194, 0.5);
+        }
+
+        .card { border-left: 3px solid $tosca; }
       }
 
       &__5 {
-        .card { border-left: 3px solid #06c3ff; }
+        .bullet {
+          background-color: $blue;
+          box-shadow: 0 15px 40px 0 rgba(1, 202, 194, 0.5);
+        }
+
+        .line {
+          height: 0 !important;
+        }
+
+        .card { border-left: 3px solid $blue; }
       }
 
       .number {

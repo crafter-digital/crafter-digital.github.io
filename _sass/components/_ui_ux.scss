@@ -10,15 +10,34 @@
     .step_by_step {
       display: grid;
 
-      .number {
-        border-right: 1px solid #ebebeb;
-        margin-right: 28%;
-        font-size: 90px;
-      }
+      .step {
+        grid-template-columns: 20% 10% 70%;
 
-      .card {
-        margin-bottom: 130px;
-        padding: 50px;
+        .card {
+          margin-bottom: 130px;
+          padding: 50px;
+        }
+
+        .line {
+          background-color: #ebebeb;
+          height: 100%;
+          width: 1px;
+          margin-left: 14px;
+        }
+
+        .bullet {
+          border-radius: 50%;
+          height: 28px;
+          margin-top: 100%;
+          width: 28px;
+        }
+
+        .number {
+          border-right: 1px solid #ebebeb;
+          margin-right: 28%;
+          margin-top: 25%;
+          font-size: 90px;
+        }
       }
     }
   }
