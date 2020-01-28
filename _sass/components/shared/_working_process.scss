@@ -91,3 +91,18 @@ $blue: #06c3ff;
     }
   }
 }
+
+@media screen and (max-width: 680px){
+  .bullet {
+    height: 20px !important;
+    width: 20px !important;
+  }
+
+  .line {
+    margin-left: 10px !important;
+  }
+
+  .number {
+    font-size: 26pt !important;
+  }
+}
