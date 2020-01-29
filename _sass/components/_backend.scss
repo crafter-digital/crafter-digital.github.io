@@ -4,6 +4,10 @@
 .backend_wrapper {
   .intro {
     background-color: #f38750;
+
+    img.illustration {
+      width: 90%;
+    }
   }
 
   .services_wrapper {
@@ -24,12 +28,8 @@
 
 @media screen and (max-width: 680px) {
   .working-process {
-    .step_by_step {
+    .step_by_step, .illustration {
       display: grid !important;
-    }
-
-    .illustration {
-      display: none !important;
     }
   }
 }
