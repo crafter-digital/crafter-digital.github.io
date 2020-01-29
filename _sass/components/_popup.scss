@@ -39,6 +39,7 @@
 
       .title {
         font-size: 28pt;
+        text-align: center;
       }
 
       .title, .link_home {
@@ -161,6 +162,16 @@
 }
 
 @media screen and (max-width: 680px){
+  body {
+    overflow: unset !important;
+  }
+
+  #form_popup {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
   .contact_form {
     .left {
       .header {
