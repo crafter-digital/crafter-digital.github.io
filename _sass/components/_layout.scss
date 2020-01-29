@@ -1,4 +1,4 @@
-.body-wrapper, .service-wrapper, .backend-wrapper {
+.body_wrapper, .service_wrapper, .backend_wrapper {
   // Intro
   .intro {
     display: grid;
@@ -18,7 +18,7 @@
   }
 }
 
-.body-wrapper {
+.body_wrapper {
   margin: 50px auto;
   grid-gap: 30px;
 
@@ -27,7 +27,7 @@
     margin: auto;
     margin-bottom: 150px;
 
-    .intro-text {
+    .intro_text {
       margin-top: 150px;
     }
 
@@ -36,7 +36,7 @@
     }
   }
 
-  .services-wrapper {
+  .services_wrapper {
     background: url(/assets/images/bg.svg) center no-repeat;
     margin: auto;
     max-width: 1440px;
@@ -229,7 +229,7 @@
       }
     }
 
-    .dots-slider {
+    .dots_slider {
       text-align: center;
 
       ul {

@@ -5,7 +5,7 @@ var services = document.getElementsByClassName('services')[0];
 var why_choose_us = document.getElementsByClassName('why_choose_us')[0];
 var clients = document.getElementsByClassName('clients')[0];
 var testimonial = document.getElementsByClassName('testimonial')[0];
-var footerWrapper = document.getElementsByClassName('footer-wrapper')[0];
+var footerWrapper = document.getElementsByClassName('footer_wrapper')[0];
 
 function getEmail() {
   var email = document.getElementById('contact_email');

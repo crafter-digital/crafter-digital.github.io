@@ -1,7 +1,7 @@
 body#services {
   background-color: #fafafa;
 
-  .box-shadowed-header {
+  .box_shadowed_header {
     background-color: white;
     box-shadow: 0 20px 40px 0 rgba(34, 28, 28, 0.05);
   }
@@ -12,7 +12,7 @@ body#services {
   }
 }
 
-.service-wrapper {
+.service_wrapper {
   margin: auto;
   margin: 50px auto;
 
@@ -21,12 +21,12 @@ body#services {
     margin: 135px auto 100px auto;
     padding: 0 25px;
 
-    .intro-text {
+    .intro_text {
       margin: auto;
     }
   }
 
-  .services-container {
+  .services_container {
     margin: auto;
     max-width: 960px;
 

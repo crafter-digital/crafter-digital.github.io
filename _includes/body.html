@@ -1,6 +1,6 @@
-<main class="body-wrapper">
+<main class="body_wrapper">
   <section class="intro">
-    <div class="intro-text">
+    <div class="intro_text">
       <div class="title title__main">
         <p>Crafter Digital</p>
       </div>
@@ -16,7 +16,7 @@
     </div>
   </section>
 
-  <section class="services-wrapper">
+  <section class="services_wrapper">
     <div class="services">
       <div class="header">
         <p class="title title__sub">WHAT WE DO</p>
@@ -132,7 +132,7 @@
     <div class="content">
       <div class="background-card">
         {% for client in site.data.client_testimonials %}
-        <div class="card" id="testimony-{{ forloop.index }}">
+        <div class="card" id="testimony_{{ forloop.index }}">
           <div class="client-image">
             <img src="{{ client.image_url }}">
           </div>
@@ -151,7 +151,7 @@
         {% endfor %}
       </div>
     </div>
-    <div class="dots-slider">
+    <div class="dots_slider">
       <ul>
         {% for client in site.data.client_testimonials %}
         <li class="dot" id="dot-{{ forloop.index }}" onclick="showTestimony('{{ forloop.index | minus: 1 }}')">&nbsp;

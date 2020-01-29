@@ -47,7 +47,7 @@ function showTestimony(index) {
   removeDotFocus();
   cards[index].classList.add('fadeIn');
   setTimeout(function(){ cards[index].classList.remove('fadeOut'); }, 500);
-  var i = parseInt(cards[index].id.split("testimony-")[1]);
+  var i = parseInt(cards[index].id.split("testimony_")[1]);
   hideTestimony(cards);
   cards[index].style.display = "block";
   dots[index].classList.add('dot-focus');
