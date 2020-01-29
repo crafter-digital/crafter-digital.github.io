@@ -19,6 +19,12 @@
 
   .header_logo {
     font-weight: bold;
+
+    a {
+      text-decoration: none;
+      color: $text-blue-color;
+      user-select: none;
+    }
   }
 
   .header_menu {
@@ -31,7 +37,7 @@
 
   .header_menu .nav_menu {
     align-self: center;
-    color: $text-blue-color;
+    color: $font-color-inactive;
     font-size: 14px;
     font-weight: bold;
     margin: auto 10px;
@@ -39,6 +45,10 @@
 
     &__contact {
       display: inline;
+    }
+
+    &__active {
+      color: $text-blue-color !important;
     }
   }
 }

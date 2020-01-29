@@ -4,7 +4,6 @@ var dots = document.getElementsByClassName('dot');
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     displayTestimony();
-    hamburgerMenu();
   }
 }
 
