@@ -1,11 +1,11 @@
-#form_popup {
+#form_popup, #success_popup {
   display: none;
   margin-bottom: 50px;
   position: absolute;
   top: 10%;
   width: 100%;
 
-  .form-wrapper {
+  .popup_wrapper {
     background: white;
     border-radius: 8px;
     display: grid;
@@ -15,6 +15,7 @@
     width: 100%;
 
     #close_button {
+      cursor: pointer;
       justify-self: right;
       padding: 30px;
       img {
@@ -22,111 +23,121 @@
       }
     }
   }
+}
 
-  .contact_form {
-    display: grid;
-    grid-gap: 5%;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    margin: 0 75px;
-    margin-bottom: 75px;
+#success_popup {
+  .popup_wrapper {
+    padding-bottom: 40px;
 
-    .left {
-      .header {
-        display: none;
-      }
-
-      .service_inputs {
-        p {
-          font-family: 'Montserrat';
-          font-size: 16px;
-          color: #B8BECC;
-        }
-        .radio_input {
-          input[type=radio] {
-            width: 10px;
-            &:after {
-              width: 6px;
-              height: 6px;
-              border-radius: 100%;
-              top: 0px;
-              left: 0px;
-              position: relative;
-              background-color: #e7ecf2;
-              content: '';
-              display: inline-block;
-              visibility: visible;
-              border: 2px solid #b5bcca;
-            }
-  
-            &:checked:after {
-              width: 6px;
-              height: 6px;
-              border-radius: 100%;
-              top: 0px;
-              left: 0px;
-              position: relative;
-              background-color: $pale-red;
-              content: '';
-              display: inline-block;
-              visibility: visible;
-              border: 2px solid #b5bcca;
-            }
-          }
-
-          .service {
-            display: inline-block;
-            margin-right: 20px;
-          }
-        }
-      }
-
-      .text_input {
-        display: grid;
-
-        .input {
-          margin: 20px 0;
-          font-size: 15px;
-        }
-
-        textarea {
-          resize: none;
-        }
-      }
-    }
-  
-    .right {
+    .content {
       display: grid;
-      grid-template-rows: 85% 15%;
 
-      .header {
-        .title.title__main {
-          font-size: 42px;
-          letter-spacing: 0.37px;
-
-          p {
-            grid-column: 1/9;
-          }
-        }
+      img.logo {
+        margin: auto;
+        width: 95px;
       }
 
-      .submit {
-        position: relative;
+      .title {
+        font-size: 28pt;
+      }
 
-        .button.button__submit {
-          border-radius: 2px;
-          border: none;
-          bottom: 25px;
-          padding: 15px !important;
-          float: right;
-        }
+      .title, .link_home {
+        margin: 30px auto;
       }
     }
   }
 }
 
-.overlay, .success_overlay {
+.contact_form {
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 0 75px;
+  margin-bottom: 75px;
+
+  .left {
+    .header {
+      display: none;
+    }
+
+    .service_inputs {
+      p {
+        color: #B8BECC;
+        font-family: 'Montserrat';
+        font-size: 16px;
+      }
+
+      .radio_input {
+        input[type=radio] {
+          width: 10px;
+
+          &:after {
+            background-color: #e7ecf2;
+            border-radius: 100%;
+            border: 2px solid #b5bcca;
+            content: '';
+            display: inline-block;
+            height: 6px;
+            visibility: visible;
+            width: 6px;
+          }
+
+          &:checked:after {
+            background-color: $pale-red;
+          }
+        }
+
+        .service {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .text_input {
+      display: grid;
+
+      .input {
+        font-size: 15px;
+        margin: 20px 0;
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+  }
+
+  .right {
+    display: grid;
+    grid-template-rows: 85% 15%;
+
+    .header {
+      .title.title__main {
+        font-size: 42px;
+        letter-spacing: 0.37px;
+
+        p {
+          grid-column: 1/9;
+        }
+      }
+    }
+
+    .submit {
+      position: relative;
+
+      .button.button__submit {
+        border: none;
+        float: right;
+        margin-top: 20px;
+        padding: 15px !important;
+      }
+    }
+  }
+}
+
+.overlay {
   background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
   display: none;
   left: 0;
   min-height: 100vh;
@@ -146,44 +157,6 @@
     position: relative;
     transition: all 5s ease-in-out;
     width: 100%;
-  }
-}
-
-#success_popup {
-  display: none;
-  grid-template-columns: repeat(8, 1fr);
-  .popup {
-    #close_button {
-      grid-column: 8/8;
-      text-align: right;
-      img {
-        text-align: right;
-        width: 28px;
-      }
-    }
-    .content {
-      display: grid;
-      grid-column: 2/8;
-      grid-template-columns: repeat(8, 1fr);
-      .logo {
-        grid-column: 4/6;
-        text-align: center;
-        img {
-          width: 75px;
-        }
-      }
-      .title.title__main {
-        font-size: 32px;
-        grid-column: 9/1;
-        margin: 25px;
-        text-align: center;
-      }
-      .link_home {
-        grid-column: 3/7;
-        text-align: center;
-        margin: 30px 0;
-      }
-    }
   }
 }
 

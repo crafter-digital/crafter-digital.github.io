@@ -27,7 +27,10 @@ function writeContacts(uid, name, email, phone_number, company_name, message, se
   database_ref.once('value', function(snapshot) {
     if (snapshot.val() != null) {
       document.getElementById('close_button').click();
+      document.getElementsByClassName('overlay')[0].style.display = 'block';
       document.getElementById('success_popup').style.display = "grid";
+      window.scrollTo(0, 0);
+      document.body.style.overflow = 'hidden';
     }
   });
 
