@@ -12,6 +12,10 @@ document.onreadystatechange = function () {
   }
 }
 
+document.addEventListener('readystatechange', (event) => {
+  lazyLoadImage();
+})
+
 function hamburgerMenu() {
   var menuIcon = document.getElementById("menu_icon");
   var closeIcon = document.getElementById("close_icon");
@@ -29,5 +33,21 @@ function hamburgerMenu() {
         closeIcon.style.display = 'none';
       }
     });
+  }
+}
+
+function lazyLoadImage() {
+  let wrappers = document.getElementsByClassName('illustration');
+
+  for (var i = 0; i < wrappers.length; i++) {
+    let wrapper = wrappers[i]
+    let img     = wrapper.lastElementChild;
+    img.src     = wrapper.dataset.src;
+
+    img.onload = function() {
+      img.style.display             = 'block';
+      wrapper.style.backgroundColor = 'unset'
+      wrapper.style.filter          = 'none';
+    }
   }
 }

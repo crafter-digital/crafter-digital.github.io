@@ -32,7 +32,8 @@
     }
 
     .illustration {
-      z-index: -1;
+      background-color: #f8f9fd;
+      filter: blur(2vw);
     }
   }
 
