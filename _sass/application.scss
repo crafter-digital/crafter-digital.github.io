@@ -48,6 +48,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "components/shared/animation",
   "components/backend",
   "components/base",
   "components/button",

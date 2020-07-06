@@ -3,7 +3,6 @@ var dots = document.getElementsByClassName('dot');
 
 document.addEventListener('readystatechange', (event) => {
   displayTestimony();
-  // lazyLoadImage();
 });
 
 function displayTestimony() {
@@ -50,15 +49,3 @@ function showTestimony(index) {
   cards[index].style.display = "block";
   dots[index].classList.add('dot-focus');
 }
-
-// function lazyLoadImage() {
-//   let wrapper = document.getElementsByClassName('illustration')[0];
-//   let img     = wrapper.lastElementChild;
-//   img.src     = wrapper.dataset.src;
-
-//   img.onload = function() {
-//     img.style.display             = 'block';
-//     wrapper.style.backgroundColor = 'unset'
-//     wrapper.style.filter          = 'none';
-//   }
-// }
