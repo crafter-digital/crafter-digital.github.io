@@ -1,19 +1,26 @@
-var cards = document.getElementsByClassName('card');
-var dots = document.getElementsByClassName('dot');
+var cards    = document.getElementsByClassName('card');
+var dots     = document.getElementsByClassName('dot');
+var interval = null;
 
 document.addEventListener('readystatechange', (event) => {
-  displayTestimony();
+  displayTestimony(0);
 });
 
-function displayTestimony() {
+function displayTestimony(index) {
+  var i = index;
+
   hideTestimony(cards);
+  removeDotFocus();
   cards[0].style.display = "block";
   dots[0].classList.add('dot-focus');
 
-  for (var x = 0; x < dots.length; x++) {
-    setInterval(function(y) {
-      dots[y].click();
-    }, 7000 * (x + 1), x);
+  if (!interval) {
+    interval = setInterval(
+      function() {
+        showTestimony(i+1);
+        i >= (dots.length - 1) ? i = i - (dots.length - 1) : i++;
+      }, 5000
+    );
   }
 }
 
@@ -29,22 +36,27 @@ function removeDotFocus() {
   }
 }
 
+function pauseInterval(index) {
+  clearInterval(interval);
+  interval = null;
+  showTestimony(index);
+}
+
 function showTestimony(index) {
-  var card = '';
+  var currentCard = '';
   for(var i = 0; i < cards.length; i++) {
     if (cards[i].style.display != 'none') {
-      card = cards[i]
+      currentCard = cards[i]
     }
   }
-  card.classList.remove('fadeIn');
-  card.classList.add('fadeOut');
-  setTimeout(function(){ card.style.display = 'none'; }, 500);
-  setTimeout(function(){ cards[index].style.display = "grid"; }, 500);
-  cards[index].classList.add('fadeOut');
+
+  index = index == 3 ? 0 : index;
+
+  currentCard.classList.remove('fadeIn');
+  currentCard.classList.add('fadeOut');
+  setTimeout(function(){ currentCard.style.display = 'none'; }, 500);
   removeDotFocus();
-  cards[index].classList.add('fadeIn');
   setTimeout(function(){ cards[index].classList.remove('fadeOut'); }, 500);
-  var i = parseInt(cards[index].id.split("testimony_")[1]);
   hideTestimony(cards);
   cards[index].style.display = "block";
   dots[index].classList.add('dot-focus');
