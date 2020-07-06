@@ -3,7 +3,10 @@
 <div id="form_popup" class="popup">
   <div class="popup_wrapper">
     <div id="close_button" onclick="closePopup();">
-      <img src="/assets/images/icon-cross@2x.png">
+      <picture>
+        <source srcset="/assets/images/icon-cross@2x.png.webp" type="image/webp">
+        <img src="/assets/images/icon-cross@2x.png">
+      </picture>
     </div>
 
     <form class="contact_form" onsubmit="submitFormContact(); return false;">
@@ -65,11 +68,17 @@
 <div id="success_popup" class="popup">
   <div class="popup_wrapper">
     <div id="close_button" onclick="closeSuccessPopup();">
-      <img src="/assets/images/icon-cross@2x.png">
+      <picture>
+        <source srcset="/assets/images/icon-cross@2x.png.webp" type="image/webp">
+        <img src="/assets/images/icon-cross@2x.png" alt="logo.png">
+      </picture>
     </div>
 
     <div class="content">
-      <img class="logo" src="/assets/images/logo.png">
+      <picture>
+        <source srcset="/assets/images/logo.png.webp" type="image/webp">
+        <img src="/assets/images/logo.png" alt="logo.png">
+      </picture>
       <p class="title title__main">Thanks for the interest!</p>
       <div class="link_home">
         <a href="/" class="button button__submit">Back to homepage</a>

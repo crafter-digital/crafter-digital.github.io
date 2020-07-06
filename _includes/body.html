@@ -27,37 +27,55 @@
       <div class="content">
         <div class="cards">
           <div class="service_card animate">
-            <img class="icon" src="assets/images/icon-ui.png">
+            <picture>
+              <source srcset="assets/images/icon-ui.png.webp" type="image/webp">
+              <img class="icon" src="assets/images/icon-ui.png">
+            </picture>
             <div class="description description__bold">
               Craft UI/UX
             </div>
           </div>
           <div class="service_card animate">
-            <img class="icon" src="assets/images/icon-ui-extent.png">
+            <picture>
+              <source srcset="assets/images/icon-ui-extent.png.webp" type="image/webp">
+              <img class="icon" src="assets/images/icon-ui-extent.png">
+            </picture>
             <div class="description description__bold">
               Extend your UI / UX Designer Team
             </div>
           </div>
           <div class="service_card animate">
-            <img class="icon icon-landscape" src="assets/images/icon-web-mantain.png">
+            <picture>
+              <source srcset="assets/images/icon-web-mantain.png.webp" type="image/webp">
+              <img class="icon icon-landscape" src="assets/images/icon-web-mantain.png">
+            </picture>
             <div class="description description__bold">
               Maintain Existing Ruby on Rails
             </div>
           </div>
           <div class="service_card animate">
-            <img class="icon icon-landscape" src="assets/images/icon-web-extent.png">
+            <picture>
+              <source srcset="assets/images/icon-web-extent.png.webp" type="image/webp">
+              <img class="icon icon-landscape" src="assets/images/icon-web-extent.png">
+            </picture>
             <div class="description description__bold">
               Craft Website & API(Ruby on Rails)
             </div>
           </div>
           <div class="service_card animate">
-            <img class="icon icon-landscape" src="assets/images/icon-web-extent.png">
+            <picture>
+              <source srcset="assets/images/icon-web-extent.png.webp" type="image/webp">
+              <img class="icon icon-landscape" src="assets/images/icon-web-extent.png">
+            </picture>
             <div class="description description__bold">
               Extend your Developer Team
             </div>
           </div>
           <div class="service_card animate">
-            <img class="icon icon-landscape" src="assets/images/icon-web-refactor.png">
+            <picture>
+              <source srcset="assets/images/icon-web-refactor.png.webp" type="image/webp">
+              <img class="icon icon-landscape" src="assets/images/icon-web-refactor.png">
+            </picture>
             <div class="description description__bold">
               Refactor Existing Ruby Code
             </div>
@@ -73,7 +91,10 @@
     </div>
     <div class="advantages">
       <div class="advantage">
-        <img src="/assets/images/image.png">
+        <picture>
+          <source srcset="/assets/images/image.png.webp" type="image/webp">
+          <img src="/assets/images/image.png">
+        </picture>
         <div class="text animate">
           <div class="title">
             Testing with High Coverage
@@ -85,7 +106,10 @@
         </div>
       </div>
       <div class="advantage">
-        <img src="/assets/images/image_2.png">
+        <picture>
+          <source srcset="/assets/images/image_2.png.webp" type="image/webp">
+          <img src="/assets/images/image_2.png">
+        </picture>
         <div class="text animate">
           <div class="title">
             Experienced Designer
@@ -112,13 +136,34 @@
       </div>
       <div class="contents">
         <div class="clients-image">
-          <img src="assets/clients/logo/bespaced.png" alt="bespaced">
-          <img src="assets/clients/logo/bit_alchemists.png" alt="bit_alchemists">
-          <img src="assets/clients/logo/biznessapps.png" alt="biznessapps">
-          <img src="assets/clients/logo/lasso.png" alt="lasso">
-          <img src="assets/clients/logo/mobydish.png" alt="mobydish">
-          <img src="assets/clients/logo/petroninja.png" alt="petroninja">
-          <img src="assets/clients/logo/pigeon.png" alt="pigeon">
+          <picture>
+            <source srcset="assets/clients/logo/bespaced.png.webp" type="image/webp">
+            <img src="assets/clients/logo/bespaced.png" alt="bespaced">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/bit_alchemists.png.webp" type="image/webp">
+            <img src="assets/clients/logo/bit_alchemists.png" alt="bit_alchemists">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/biznessapps.png.webp" type="image/webp">
+            <img src="assets/clients/logo/biznessapps.png" alt="biznessapps">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/lasso.png.webp" type="image/webp">
+            <img src="assets/clients/logo/lasso.png" alt="lasso">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/mobydish.png.webp" type="image/webp">
+            <img src="assets/clients/logo/mobydish.png" alt="mobydish">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/petroninja.png.webp" type="image/webp">
+            <img src="assets/clients/logo/petroninja.png" alt="petroninja">
+          </picture>
+          <picture>
+            <source srcset="assets/clients/logo/pigeon.png.webp" type="image/webp">
+            <img src="assets/clients/logo/pigeon.png" alt="pigeon">
+          </picture>
         </div>
       </div>
     </div>
@@ -134,7 +179,10 @@
         {% for client in site.data.client_testimonials %}
         <div class="card" id="testimony_{{ forloop.index }}">
           <div class="client-image">
-            <img src="{{ client.image_url }}">
+            <picture>
+              <source srcset="{{ client.image_url }}.webp" type="image/webp">
+              <img src="{{ client.image_url }}">
+            </picture>
           </div>
           <div class="text">
             <div class="company_name">
@@ -154,7 +202,7 @@
     <div class="dots_slider">
       <ul>
         {% for client in site.data.client_testimonials %}
-        <li class="dot" id="dot-{{ forloop.index }}" onclick="showTestimony('{{ forloop.index | minus: 1 }}')">&nbsp;
+        <li class="dot" id="dot-{{ forloop.index }}" onclick="pauseInterval('{{ forloop.index | minus: 1 }}')">&nbsp;
         </li>
         {% endfor %}
       </ul>
