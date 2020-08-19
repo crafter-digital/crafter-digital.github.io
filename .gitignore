@@ -1,3 +1,4 @@
 _site
 .sass-cache
 .jekyll-metadata
+/demos/plai-html/node_modules
