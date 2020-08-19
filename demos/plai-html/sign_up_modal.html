@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plai - Mobile</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Datepicker -->
+  <link href="vendor/bootstrap_datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/plai.css" rel="stylesheet">
+</head>
+
+<body class="page page__sign-up bg-grey">
+  <header class="header">
+    <nav class="nav bg-white">
+      <div class="row w-100">
+        <div class="col-2 text-left p-0">
+          <a href="index.html" class="back">
+            <img src="img/icons/icon-back.png" />
+          </a>
+        </div>
+        <div class="col-8">
+          <h1 class="title">Create Account</h1>
+        </div>
+      </div>
+
+      <div class="row w-100">
+        <div class="col-12 progress-custom p-0">
+          <div class="point-wrapper point-wrapper__left">
+            <div class="point point__filled"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <div class="point-wrapper point-wrapper__center">
+            <div class="point"></div>
+          </div>
+          <div class="point-wrapper point-wrapper__right">
+            <div class="point"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="background"></div>
+  </header>
+
+  <div class="container-fluid p-0 ">
+    <div class="form-wrapper">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <div class="select-modal">
+              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#userModalOpen">
+              Select One
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row merge-input">
+          <div class="form-group col-sm-2 p-0">
+            <div class="select-with-image">
+              <select class="form-control">
+                <option value="uk" class="test" data-thumbnail="img/icons/uk.png"></option>
+              </select>
+
+              <button class="btn-select select-custom" value="" type="button"></button>
+              <div class="item-list">
+                <ul class="item"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-sm-10 p-0">
+            <div class="input-wrapper">
+              <div class="separator"></div>
+              <input type="text" class="form-control" placeholder="+44 698-970-1317">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 margin-top-50">
+            <a href="/sign_up_two.html" class="btn btn-lg btn-primary">Continue</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="row p-4 links">
+      <div class="col-sm-12 text-center">
+        <a href="#">Already have an account?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="userModalOpen" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      I’m a Coach
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      I’m a Player
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      I’m a Parent
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      I’m a Fan
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <hr>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="vendor/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+  <script src="js/plai.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#userModalOpen').modal('show');
+    });
+  </script>
+</body>
+</html>

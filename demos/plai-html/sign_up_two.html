@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plai - Mobile</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Datepicker -->
+  <link href="vendor/bootstrap_datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/plai.css" rel="stylesheet">
+</head>
+
+<body class="page page__sign-up-two bg-grey">
+  <header class="header">
+    <nav class="nav bg-white">
+      <div class="row w-100">
+        <div class="col-2 text-left p-0">
+          <a href="sign_up.html" class="back">
+            <img src="img/icons/icon-back.png" />
+          </a>
+        </div>
+        <div class="col-8">
+          <h1 class="title">Create Account</h1>
+        </div>
+      </div>
+
+      <div class="row w-100">
+        <div class="col-12 progress-custom p-0">
+          <div class="point-wrapper point-wrapper__left">
+            <div class="point point__filled"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="point-wrapper point-wrapper__center">
+            <div class="point"></div>
+          </div>
+          <div class="point-wrapper point-wrapper__right">
+            <div class="point"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row w-100">
+        <div class="col-12 text-center">
+          <h2 class="sub-title">Personal Details</h2>
+        </div>
+      </div>
+    </nav>
+    <div class="background"></div>
+  </header>
+
+  <div class="container-fluid p-0 ">
+    <div class="form-wrapper">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6 px-4">
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="form-group col-sm-6 px-4">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <input type="text" class="datepicker form-control" placeholder="Date of Birth">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <select class="form-control select-custom" required>
+              <option selected disabled value="">Country</option>
+              <option>Liechtenstein</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <select class="form-control select-custom" required>
+              <option selected disabled value="">State</option>
+              <option>Delaware</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row term-and-conditions">
+          <div class="col-sm-12 px-4">
+            <div class="form-check">
+              <div class="radio-custom">
+                <label>
+                  <input type="radio" name="radio-input1">
+                  <span class="checkmark form-check-input"></span>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Terms & Conditions
+                  </label>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 px-4">
+            <div class="form-check">
+              <div class="radio-custom">
+                <label>
+                  <input type="radio" name="radio-input2">
+                  <span class="checkmark form-check-input"></span>
+                  <label class="form-check-label" for="exampleRadios1">
+                    By sign in to this user agree to all term & conditions
+                  </label>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/confirm_email.html" class="btn btn-lg btn-primary">Continue</a>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+  <script src="js/plai.min.js"></script>
+</body>
+</html>
