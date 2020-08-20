@@ -57,10 +57,9 @@
 
         <div class="form-row">
           <div class="form-group col-sm-12 px-4">
-            <div class="select-modal">
-              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#userModal">
-              Select One
-              </button>
+            <div class="select-wrapper">
+              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#roleModal" id="selectRole">My Role is</button>
+              <img src="/img/icons/triangle.png">
             </div>
           </div>
         </div>
@@ -81,7 +80,7 @@
           <div class="form-group col-sm-10 p-0">
             <div class="input-wrapper">
               <div class="separator"></div>
-              <input type="number" class="form-control" placeholder="+44 698-970-1317">
+              <input type="text" class="form-control" placeholder="+44 698-970-1317">
             </div>
           </div>
         </div>
@@ -104,14 +103,14 @@
 
   <!-- Modal -->
 
-  <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+  <div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
           <div class="row">
             <div class="col-sm-12 list">
               <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
+                <input type="radio" name="role" value="Coach or Administrator">
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
@@ -123,7 +122,7 @@
               </div>
 
               <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
+                <input type="radio" name="role" value="Player">
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
@@ -135,7 +134,7 @@
               </div>
 
               <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
+                <input type="radio" name="role" value="Parent">
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
@@ -147,7 +146,7 @@
               </div>
 
               <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
+                <input type="radio" name="role" value="Fan">
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
@@ -168,7 +167,7 @@
 
           <div class="row">
             <div class="col-sm-12">
-              <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">
+              <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" id="submitRole">
                 Done
               </button>
             </div>

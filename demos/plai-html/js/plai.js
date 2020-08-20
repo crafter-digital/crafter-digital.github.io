@@ -37,4 +37,21 @@
   $(".btn-select").click(function () {
     $(".item-list").toggle();
   });
+
+  // select role
+  $('#submitRole').click(function(){
+    var checkedRadio = $('input[type=radio][name=role]:checked');
+    if (checkedRadio) {
+      var checkedValue = $(checkedRadio).val();
+      $('#selectRole').text(checkedValue);
+      $('#selectRole').addClass('select-custom__bold');
+    }
+  });
+
+  $('select.select-custom').each(function() {
+    $(this).change(function() {
+      $(this).addClass('select-custom__bold');
+    })
+  })
+
 })(jQuery);
