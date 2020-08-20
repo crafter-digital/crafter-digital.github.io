@@ -1,6 +1,7 @@
 _site
-.sass-cache
+.DS_Store
 .jekyll-metadata
+.sass-cache
 /demos/plai-html/node_modules
 /demos/plai-html/.DS_Store
 /demos/plai-html/scss/.DS_Store
