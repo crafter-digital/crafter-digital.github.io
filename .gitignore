@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 /demos/plai-html/node_modules
 /demos/plai-html/.DS_Store
+/demos/plai-html/scss/.DS_Store
