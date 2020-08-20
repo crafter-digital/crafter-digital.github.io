@@ -1,0 +1,106 @@
+.radio-custom {
+  position: relative;
+
+  input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+  }
+
+  input:checked~.checkmark {
+    border: 3px solid $cloudy-blue;
+
+    &:after {
+      display: block;
+    }
+  }
+
+  label {
+    margin: 0;
+  }
+
+  .form-check-label {
+    color: $primary;
+    font-family: 'GothamPro';
+    font-size: 24px;
+    letter-spacing: 0.69px;
+    line-height: 1.42;
+    margin-left: 30px;
+    margin-top: 5px;
+    opacity: 0.8;
+
+    img {
+      margin-right: 18px;
+    }
+  }
+
+  .checkmark {
+    border-radius: 50%;
+    border: 3px solid $cloudy-blue;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 30px;
+
+    &:after {
+      background: $primary;
+      border-radius: 50%;
+      content: "";
+      display: none;
+      height: 18px;
+      left: 3px;
+      position: absolute;
+      top: 3px;
+      width: 18px;
+    }
+  }
+}
+
+.radio-custom {
+  &__modal {
+    input[type="radio"] {
+      height: 90px;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    input:checked~.radio-wrapper {
+      border: none;
+      background-color: $light-blue-grey;
+
+      .form-check-label {
+        opacity: 1;
+      }
+
+      .checkmark {
+        border: 3px solid $cloudy-blue;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    .radio-wrapper {
+      border-radius: 18px;
+      border: solid 1px $bluegrey;
+      padding: 28px 30px;
+    }
+
+    .form-check-label {
+      font-family: 'GothamPro-Medium';
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .checkmark {
+      left: auto;
+      right: 30px;
+      top: 24px;
+    }
+  }
+}

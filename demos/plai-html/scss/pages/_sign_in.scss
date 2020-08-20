@@ -1,0 +1,60 @@
+.page {
+  &__sign-in {
+    .container-fluid {
+      background-image: url(../img/bg2.jpg);
+      background-size: cover;
+
+      .logo-wrapper {
+        margin-top: 22vw;
+        margin-bottom: 18vw;
+      }
+
+      .background {
+        background: $white;
+        height: 36px;
+        opacity: 0.8;
+        margin: 0 30px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .form-wrapper {
+        height: 65%;
+        margin-top: 40%;
+      }
+
+      .card {
+        border-radius: unset;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 100%;
+
+        &__form {
+          font-family: 'GothamPro';
+          margin-top: -18px;
+          padding: 68px 60px;
+        }
+      }
+    }
+
+    .links {
+      margin-top: 120px !important;
+
+      .link {
+        &__forgot-password {
+          margin: 75px 0;
+
+          .line {
+            border-radius: 1px;
+            border-top: 1px solid $bluey-grey;
+            margin-top: 15px;
+          }
+
+          a {
+            font-family: 'GothamPro';
+          }
+        }
+      }
+    }
+  }
+}

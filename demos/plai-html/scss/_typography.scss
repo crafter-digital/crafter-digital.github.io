@@ -1,0 +1,67 @@
+.title {
+  color: $primary;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+
+  &__lighter {
+    font-weight: 500;
+  }
+
+  &__lighter-2 {
+    font-weight: normal;
+  }
+
+  &__bigger {
+    font-size: 52px;
+    letter-spacing: 3.5px;
+  }
+}
+
+.sub-title {
+  color: $primary;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 500;
+  opacity: 0.9;
+
+  &__bigger {
+    font-size: 31px;
+  }
+
+  &__lighter {
+    opacity: 0.7;
+    font-weight: normal;
+  }
+
+  &__lighter-two {
+    font-weight: normal;
+  }
+  
+
+  &__profile-name {
+    font-size: 35px;
+    opacity: 1;
+  }
+
+  &__bio {
+    letter-spacing: 0.7px;
+  }
+}
+
+.text-gotham {
+  font-family: GothamPro;
+}
+
+@media (max-width: 575.98px) {
+
+  .title,
+  .title-2 {
+    font-size: 22px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+}

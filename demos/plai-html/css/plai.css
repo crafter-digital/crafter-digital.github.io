@@ -14273,11 +14273,14 @@ a.btn {
 .content__grid .content-profile-slide {
   -webkit-overflow-scrolling: touch;
   display: flex;
-  height: 40%;
+  height: 60%;
   overflow-x: auto;
 }
 
 .content__grid .content-profile-slide .card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 320px !important;
 }
 

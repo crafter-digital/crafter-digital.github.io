@@ -1,0 +1,107 @@
+.page {
+  &__team-player {
+    .content-team {
+      color: $primary;
+      font-family: 'GothamPro-Medium';
+      padding: 0 65px;
+
+      p {
+        margin: 0;
+      }
+
+      .player {
+        margin-bottom: 35px;
+
+        .player-image {
+          border-radius: 50%;
+          margin: auto;
+          object-fit: cover;
+        }
+
+        .player-place {
+          font-size: 20px;
+          letter-spacing: -0.37px;
+          line-height: 1.4;
+          opacity: 0.7;
+        }
+
+        .player-age {
+          color: $blue-grey-three;
+          font-family: GothamPro;
+          font-size: 27px;
+          letter-spacing: -0.5px;
+          line-height: 1.04;
+        }
+      }
+    }
+
+    &__list {
+      .content-team {
+        .player {
+          .card {
+            padding: 20px 50px;
+          }
+
+          .player-image {
+            height: 70px;
+            width: 70px;
+          }
+
+          .player-details {
+            margin-top: 8px;
+
+            .player-name {
+              font-size: 24px;
+              letter-spacing: -0.45px;
+              line-height: 1.17;
+            }
+
+            .player-place {
+              margin-top: 5px;
+              opacity: 0.7;
+            }
+
+            .player-age {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    &__grid {
+      .content-team {
+        .player {
+          .card {
+            padding: 25px;
+          }
+
+          .player-image {
+            height: 150px;
+            margin-bottom: 20px;
+            width: 150px;
+          }
+
+          .player-name {
+            font-size: 27px;
+            letter-spacing: -0.5px;
+            line-height: 1.04;
+            margin-top: 10px;
+          }
+
+          .player-place {
+            margin-bottom: 15px;
+            margin-top: 6px;
+            opacity: 0.8;
+          }
+
+          .player-age {
+            border-top: 1px solid $light-blue-grey;
+            margin: 0 20px;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

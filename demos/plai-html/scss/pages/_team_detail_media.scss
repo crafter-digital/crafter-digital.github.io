@@ -1,0 +1,99 @@
+.page {
+  &__team-media {
+    .content-team {
+      &__media {
+        color: $primary;
+        font-family: 'GothamPro-Medium';
+        padding: 0 65px;
+
+        .media-item {
+          margin-bottom: 35px;
+
+          .card {
+            padding: 10px;
+            padding-right: 30px;
+          }
+
+          .media-thumbnail {
+            .media-image {
+              border-radius: 20px;
+              height: 180px;
+              margin: auto;
+              object-fit: cover;
+              width: 180px;
+            }
+
+            a.btn-play {
+              left: 45px;
+              position: absolute;
+              top: 46px;
+            }
+          }
+
+          .media-details {
+            margin-top: 20px;
+            padding-left: 20px !important;
+
+            .media-title {
+              font-size: 27px;
+              letter-spacing: -0.5px;
+              line-height: 1.41;
+              margin-bottom: 36px;
+            }
+
+            ul {
+              margin-top: 32px;
+
+              li {
+                display: inline;
+                list-style: none;
+                padding-top: 6px;
+                padding-bottom: 2px;
+
+                img {
+                  margin-right: 12px;
+                  margin-top: -5px;
+                }
+
+                p {
+                  display: inline;
+                  font-family: GothamPro;
+                }
+              }
+
+              li:not(:last-child) {
+                border-right: 1px solid $primary;
+                padding-right: 18px;
+              }
+
+              li:not(:first-child) {
+                padding-left: 18px;
+              }
+
+              .views,
+              .likes,
+              .duration {
+                p {
+                  font-size: 24px;
+                  letter-spacing: -0.45px;
+                  line-height: 1.17;
+                }
+              }
+
+              .views,
+              .likes {
+                p {
+                  opacity: 0.8;
+                }
+              }
+
+              .duration p {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

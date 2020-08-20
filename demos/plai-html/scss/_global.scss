@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.container-fluid {
+  .logo {
+    width: 330px;
+  }
+
+  &__full-height {
+    display: inline-table;
+    height: 100%;
+  }
+}
+
+a {
+  color: $clear-blue;
+  font-family: Poppins;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a.back img {
+  margin-top: 15px;
+  width: 38px;
+}
+
+@media (max-width: 575.98px) {
+  a.back img {
+    margin-top: 0 !important;
+    width: 30px !important;
+  }
+}

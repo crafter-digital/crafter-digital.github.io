@@ -1,0 +1,62 @@
+@import "forms/radio";
+@import "forms/select";
+@import "forms/validation";
+
+.form-group {
+  margin-bottom: 65px;
+
+  .form-control {
+    background-color: transparent !important;
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid $white-three;
+    color: $primary;
+    font-family: 'GothamPro-Medium';
+    font-size: 26px;
+    font-stretch: normal;
+    font-style: normal;
+    height: 80px;
+    letter-spacing: 0.74px;
+    line-height: 1.15;
+    padding: 30px 0;
+
+    &:focus {
+      background-color: none !important;
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid $primary;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &__password {
+      background: url(../img/icons/fill@2x.png) no-repeat;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+    }
+  }
+
+  .form-control::placeholder {
+    color: $primary;
+    font-family: 'GothamPro';
+    font-size: 24px;
+    letter-spacing: 0.69px;
+    line-height: 1.25;
+    opacity: 0.8;
+  }
+
+  .datepicker {
+    background: url(../img/icons/calendar@2x.png) no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 100%;
+  }
+
+  small {
+    font-family: 'GothamPro';
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}

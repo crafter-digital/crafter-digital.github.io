@@ -1,0 +1,32 @@
+.modal-dialog {
+  margin: 40% auto;
+  max-width: 82%;
+
+  .modal-content {
+    background-color: $white;
+    border-radius: 27px;
+    border: none;
+    box-shadow: 0 40px 70px 0 rgba(0, 0, 0, 0.1);
+    padding: 64px 45px;
+
+    .modal-body {
+      padding: 0;
+
+      hr {
+        border-top: 1px solid $bluey-grey;
+        margin-bottom: 60px;
+        margin-top: 56px;
+      }
+
+      .btn {
+        font-weight: 500;
+      }
+
+      .list {
+        .radio-custom:not(:last-child) {
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.sub-menu {
+  margin: 45px 0;
+  padding: 0 65px;
+
+  .layout-choices {
+    a {
+      text-decoration: none;
+    }
+
+    a:first-child {
+      margin-right: 32px;
+    }
+  }
+}

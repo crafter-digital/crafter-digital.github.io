@@ -1,0 +1,32 @@
+.page {
+  &__sign-up {
+    .form-wrapper {
+      margin-bottom: 354px;
+      margin-top: 136px;
+      padding: 0 60px;
+
+      .merge-input {
+        padding: 0 1.5rem;
+
+        .input-wrapper {
+          .separator {
+            background-color: $white-three;
+            height: 38px;
+            left: 0;
+            position: absolute;
+            top: 20px;
+            width: 1px;
+          }
+        }
+
+        input[type=text] {
+          padding-left: 30px;
+        }
+      }
+    }
+
+    .links a {
+      letter-spacing: 1.28px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.page {
+  &__index {
+    .container-fluid {
+      background-image: url(../img/bg.jpg);
+      background-size: cover;
+      padding: 35% 15% 20% 15%;
+
+      .buttons {
+        margin-top: 78% !important;
+
+        .btn {
+          &__sign-up {
+            margin-bottom: 46px;
+          }
+        }
+      }
+
+      .separator {
+        padding: 0 22%;
+
+        .line {
+          border-radius: 1px;
+          border-top: 2px solid white;
+          margin-top: 25px;
+        }
+
+        span {
+          color: $white;
+          font-family: Poppins;
+          font-size: 31px;
+          font-stretch: normal;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 0.89px;
+          line-height: normal;
+          text-align: center;
+        }
+      }
+
+      .btn {
+        &__facebook {
+          .icon {
+            border-right: 1px solid $primary;
+
+            i {
+              font-size: 34px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

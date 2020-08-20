@@ -1,0 +1,154 @@
+.page {
+  &__event-detail {
+    .content {
+      margin-bottom: 150px;
+    }
+
+    .btn-more,
+    .event-title,
+    .fee,
+    .title {
+      font-family: 'GothamPro-Medium';
+    }
+
+    .event-header {
+      background-color: $pale-grey-four;
+      padding: 38px 0 64px 50px;
+
+      .event-title {
+        color: $black-two;
+        font-size: 47px;
+        line-height: 1.13;
+      }
+
+      .event-details {
+        margin-top: 38px;
+
+        table {
+
+          th,
+          td {
+            border: none;
+            vertical-align: middle;
+          }
+
+          th {
+            background-color: $duck-egg-blue-50;
+            box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0);
+            text-align: center;
+            width: 10%;
+
+            img {
+              text-align: center;
+            }
+          }
+
+          td {
+            background-color: $white;
+            padding: 0 38px;
+            padding-bottom: 25px;
+            padding-top: 20px;
+
+            p {
+              margin: 0;
+            }
+
+            .title {
+              color: $primary;
+              font-size: 26px;
+              letter-spacing: -0.48px;
+              line-height: 1.08;
+              text-align: left;
+            }
+
+            .description {
+              color: $cool-grey-five;
+              font-family: GothamPro;
+              font-size: 24px;
+              letter-spacing: 1px;
+              line-height: 1.17;
+              margin-top: 15px;
+            }
+          }
+
+          tr:first-child {
+            td {
+              padding-top: 40px;
+            }
+          }
+
+          tr:last-child {
+            td {
+              padding-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .event-body {
+      padding: 25px 0;
+
+      .section {
+        margin-bottom: 50px;
+
+        &__about {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+
+        &__location {
+          .title {
+            margin: 0 50px 35px 50px;
+          }
+
+          .map {
+            width: 100%;
+          }
+        }
+      }
+
+      .title {
+        border-bottom: 1px solid $light-blue-grey;
+        padding-bottom: 20px;
+      }
+
+      .description {
+        color: $greyish-brown;
+        font-family: GothamPro;
+        font-size: 29px;
+        line-height: 1.59;
+        margin-bottom: 26px;
+        margin-top: 52px;
+      }
+
+      .btn-more {
+        color: $primary;
+      }
+    }
+
+    .event-body,
+    footer {
+      .title {
+        color: $primary;
+        font-size: 37px;
+        line-height: 1.43;
+        text-align: left;
+      }
+    }
+
+    footer {
+      .fee {
+        color: $primary;
+        font-size: 26px;
+        letter-spacing: -0.48px;
+        line-height: 1.08;
+        opacity: 0.4;
+      }
+
+      .btn {
+        font-size: 31px;
+      }
+    }
+  }
+}

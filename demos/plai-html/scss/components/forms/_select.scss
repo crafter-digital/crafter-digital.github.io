@@ -1,0 +1,96 @@
+.select-custom {
+  -webkit-appearance: none;
+  background: url(../img/icons/triangle@2x.png) no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 26px 16px;
+  font-family: 'GothamPro' !important;
+  font-size: 24px;
+  letter-spacing: 0.69px;
+  line-height: 1.25;
+  opacity: 0.7;
+  padding: 0 !important;
+
+  &__sort-by {
+    background-size: 23px 16px;
+    border: none !important;
+    color: $primary;
+    font-size: 25px;
+    letter-spacing: 0.56px;
+    opacity: 0.9 !important;
+  }
+}
+
+.select-with-image {
+  select {
+    display: none;
+  }
+
+  .item {
+    margin: auto;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding: 10px;
+
+      &:hover {
+        background-color: $white-five;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .item img,
+  .btn-select img {
+    width: 40px;
+  }
+
+  .item-list {
+    border-radius: 2px;
+    border: 1px solid $white-three;
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .open {
+    display: show !important;
+  }
+}
+
+.btn-select,
+.btn-select-modal {
+  background-size: 20px 12px;
+  border: none;
+  border-bottom: 1px solid $white-three;
+  height: 80px;
+  padding: 30px 0;
+  width: 100%;
+
+  &:focus {
+    background-color: none !important;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid $white-three;
+    box-shadow: none;
+    outline: none;
+  }
+
+  li {
+    list-style: none;
+    padding-bottom: 0px;
+    text-align: left;
+  }
+}
+
+.btn-select {
+  background-position: 75%;
+  opacity: 1;
+}
+
+.btn-select-modal {
+  color: $primary;
+  opacity: 0.8;
+  text-align: left;
+}

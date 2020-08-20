@@ -1,0 +1,46 @@
+.nav-menu {
+  -webkit-overflow-scrolling: touch;
+  border-bottom: 2px solid $pale-grey-five;
+  display: flex;
+  overflow-x: auto;
+  padding: 0 50px;
+  width: 100%;
+
+  .nav-tabs {
+    width: max-content;
+    flex-shrink: 0;
+    height: 100%;
+
+    .nav-item {
+      padding-right: 46px;
+
+      .nav-link {
+        border: none;
+        font-family: GothamPro;
+        font-size: 30px;
+        letter-spacing: -0.56px;
+        color: $bluey-grey-two;
+        text-decoration: none;
+        padding-bottom: 40px;
+
+        &:hover {
+          border: none;
+        }
+      }
+      
+      .nav-link.active {
+        background-color: unset;
+        border: none;
+        border-bottom: 3px solid $primary;
+        color: $primary;
+        font-family: 'GothamPro-Medium';
+        font-size: 43px;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.8px;
+        line-height: normal;
+        padding-bottom: 44px;
+      }
+    }
+  }
+}

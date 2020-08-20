@@ -1,0 +1,21 @@
+.page {
+  &__sign-up-two {
+    .form-wrapper {
+      margin-top: 78px;
+      padding: 0 60px;
+
+      .term-and-conditions {
+        margin-bottom: 175px;
+        margin-top: 25px;
+
+        .form-check-label {
+          width: 90%;
+        }
+
+        .col-sm-12:not(:last-child){
+          margin-bottom: 46px;
+        }
+      }
+    }
+  }
+}

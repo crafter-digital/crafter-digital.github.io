@@ -1,0 +1,8 @@
+.card {
+  border: none;
+  border-radius: 35px;
+
+  &:first-child {
+    box-shadow: 20px 20px 140px 0 rgba(0, 0, 0, 0.05);
+  }
+}

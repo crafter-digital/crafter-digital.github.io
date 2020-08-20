@@ -1,0 +1,97 @@
+.page {
+  &__team-news {
+    .item-details {
+      .icon {
+        height: 25px;
+        margin-top: -8px;
+        object-fit: contain;
+        width: 25px;
+      }
+
+      span {
+        color: $primary;
+        font-family: GothamPro;
+        font-size: 20px;
+        letter-spacing: -0.37px;
+        line-height: 1.4;
+        margin-left: 10px;
+        opacity: 0.8;
+      }
+
+      .bottom {
+        margin-top: 20px !important;
+      }
+    }
+
+    .item-image {
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .item-title {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      color: $primary;
+      display: -webkit-box;
+      font-family: 'GothamPro-Medium';
+      overflow: hidden;
+    }
+
+    &__list {
+      .item-image {
+        height: 145px;
+        width: 145px;
+      }
+
+      .item-title {
+        font-size: 27px;
+        line-height: 1.33;
+        letter-spacing: -0.5px;
+      }
+
+      .item-details {
+        margin-top: 8px;
+        padding: 0 20px;
+
+        .btn-more {
+          float: right;
+        }
+      }
+    }
+
+    &__grid {
+      .content-team {
+        padding: 0 65px;
+      }
+
+      .card {
+        margin-bottom: 30px;
+        padding: 18px;
+        padding-bottom: 26px;
+      }
+
+      .item-image {
+        height: 215px;
+        width: 100%;
+      }
+
+      .item-title {
+        font-size: 24px;
+        height: 55px;
+        letter-spacing: -0.45px;
+        line-height: 1.17;
+        margin-top: 20px;
+        padding: 0 8px;
+      }
+
+      .item-details {
+        border-top: 1px solid $pale-grey-five;
+        padding-top: 14px !important;
+
+        .link-more img {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

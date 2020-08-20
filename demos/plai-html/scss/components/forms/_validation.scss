@@ -1,0 +1,27 @@
+.form-group {
+  .form-control.is-valid {
+    background: url(../img/icons/check@2x.png) no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+
+  .form-control.is-invalid {
+    background: url(../img/icons/error@2x.png) no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border-bottom: 1px solid $scarlet;
+
+    &:focus {
+      border-bottom: 2px solid $scarlet;
+    }
+  }
+
+  .invalid-feedback {
+    color: $scarlet;
+    font-family: 'GothamPro';
+    font-size: 19px;
+    margin-top: 10px;
+  }
+}

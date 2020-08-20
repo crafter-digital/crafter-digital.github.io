@@ -1,0 +1,26 @@
+.page {
+  &__signup-success {
+    .image-wrapper {
+      margin-bottom: 86px;
+      margin-top: 38px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      margin-bottom: 65px !important;
+      margin-top: 185px !important;
+
+      h1 {
+        margin-bottom: 35px;
+      }
+
+      h2 {
+        margin: auto;
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.page {
+  &__confirm-email {
+    .sub-title {
+      opacity: 0.7;
+    }
+
+    .image-wrapper {
+      margin-top: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      margin-bottom: 65px !important;
+      margin-top: 45px !important;
+
+      h1 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

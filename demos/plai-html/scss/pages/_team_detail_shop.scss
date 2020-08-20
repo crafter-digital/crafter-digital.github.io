@@ -1,0 +1,54 @@
+.page {
+  &__team-shop {
+
+    .item-price,
+    .item-title {
+      font-family: 'GothamPro-Medium';
+    }
+
+    .card {
+      margin-bottom: 30px;
+      padding: 18px;
+      padding-bottom: 26px;
+    }
+
+    .item-image {
+      border-radius: 20px;
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .item-title {
+      color: $primary;
+      font-size: 24px;
+      letter-spacing: -0.45px;
+      line-height: 1.17;
+      margin-top: 20px;
+      padding: 0 8px;
+      width: 80%;
+    }
+
+    .item-details {
+      border-top: 1px solid $pale-grey-five;
+      padding-top: 14px !important;
+
+      .icon {
+        height: 25px;
+        object-fit: contain;
+        width: 25px;
+      }
+
+      .item-price {
+        color: $black-two;
+        font-size: 26px;
+        letter-spacing: -0.48px;
+        line-height: 1.08;
+      }
+
+      .link-more img {
+        margin-top: 3px;
+      }
+    }
+  }
+}
