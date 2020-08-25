@@ -11,12 +11,14 @@
     background: url(../img/icons/triangle@2x.png) no-repeat !important;
     background-position: 75% 48% !important;
     background-repeat: no-repeat !important;
-    background-size: 23px 16px !important;
+    background-size: 23px 15px !important;
     border: none !important;
     color: $primary;
     font-size: 25px;
     letter-spacing: 0.56px;
     opacity: 0.9 !important;
+    text-align: left;
+    width: 100%;
   }
 
   &__bold {
@@ -78,18 +80,22 @@
   padding: 30px 0;
   width: 100%;
 
+  li {
+    list-style: none;
+    padding-bottom: 0px;
+    text-align: left;
+  }
+}
+
+.btn-select,
+.btn-select-modal,
+.select-custom__sort-by {
   &:focus {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid $white-three;
     box-shadow: none;
     outline: none;
-  }
-
-  li {
-    list-style: none;
-    padding-bottom: 0px;
-    text-align: left;
   }
 }
 
@@ -99,7 +105,10 @@
 }
 
 .btn-select-modal {
-  background: none;
+  background: url(../img/icons/triangle@2x.png) no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 26px 16px;
   color: $primary;
   opacity: 0.8;
   text-align: left;
@@ -108,7 +117,6 @@
 .select-wrapper {
   img {
     height: 16px;
-    opacity: 0.7;
     position: absolute;
     right: 25px;
     top: 30px;

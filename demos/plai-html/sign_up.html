@@ -58,8 +58,15 @@
         <div class="form-row">
           <div class="form-group col-sm-12 px-4">
             <div class="select-wrapper">
+              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#sportModal" id="selectSport">Sport</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12 px-4">
+            <div class="select-wrapper">
               <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#roleModal" id="selectRole">My Role is</button>
-              <img src="/img/icons/triangle.png">
             </div>
           </div>
         </div>
@@ -102,6 +109,56 @@
   </div>
 
   <!-- Modal -->
+
+  <div class="modal fade" id="sportModal" tabindex="-1" aria-labelledby="sportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="sport" value="Soccer">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      Soccer
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="sport" value="Baseball">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      Baseball
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <hr>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" id="submitSport">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

@@ -58,7 +58,7 @@
         <div class="form-row">
           <div class="form-group col-sm-12 px-4">
             <div class="select-wrapper">
-              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#roleModalOpen" id="selectRole">My Role is</button>
+              <button type="button" class="btn-select-modal select-custom" data-toggle="modal" data-target="#roleModal" id="selectRole">My Role is</button>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@
 
   <!-- Modal -->
 
-  <div class="modal fade" id="roleModalOpen" tabindex="-1" aria-labelledby="roleModalOpenLabel" aria-hidden="true">
+  <div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
@@ -183,11 +183,5 @@
   <script src="vendor/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
 
   <script src="js/plai.min.js"></script>
-
-  <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#roleModalOpen').modal('show');
-    });
-  </script>
 </body>
 </html>

@@ -48,6 +48,15 @@
     }
   });
 
+  $('#submitSport').click(function(){
+    var checkedRadio = $('input[type=radio][name=sport]:checked');
+    if (checkedRadio) {
+      var checkedValue = $(checkedRadio).val();
+      $('#selectSport').text(checkedValue);
+      $('#selectSport').addClass('select-custom__bold');
+    }
+  });
+
   $('select.select-custom').each(function() {
     $(this).change(function() {
       $(this).addClass('select-custom__bold');
