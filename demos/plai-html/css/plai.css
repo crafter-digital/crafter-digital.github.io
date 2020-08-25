@@ -13214,108 +13214,35 @@ a.btn {
   position: absolute;
 }
 
-.checkbox-custom {
-  position: relative;
-}
-
-.checkbox-custom input[type="checkbox"] {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-}
-
-.checkbox-custom label {
-  margin: 0;
-}
-
-.checkbox-custom .form-check-label {
-  color: #363f6c;
-  font-family: 'GothamPro';
-  font-size: 24px;
-  letter-spacing: 0.69px;
-  line-height: 1.42;
-  margin-left: 30px;
-  margin-top: 5px;
-  opacity: 0.6;
-}
-
-.checkbox-custom .form-check-label img {
-  margin-right: 18px;
-}
-
 .checkbox-custom .checkmark {
-  border-radius: 50%;
   border: 4px solid #b3bfd0;
   height: 37px;
-  left: 0;
-  position: absolute;
-  top: 2px;
   width: 37px;
 }
 
 .checkbox-custom .checkmark:after {
-  background: #363f6c;
-  border-radius: 50%;
-  content: "";
-  display: none;
+  background-image: url(../img/icons/icon-check-fill.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 35px;
   height: 35px;
-  position: absolute;
   width: 35px;
 }
 
-.checkbox-custom__modal input[type="checkbox"] {
-  height: 90px;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.checkbox-custom__modal input:checked ~ .checkbox-wrapper .form-check-label {
-  opacity: 1;
-}
-
-.checkbox-custom__modal input:checked ~ .checkbox-wrapper .checkmark {
+.checkbox-custom__modal input[type="checkbox"]:checked ~ .checkbox-wrapper .checkmark {
   border: none;
 }
 
-.checkbox-custom__modal input:checked ~ .checkbox-wrapper .checkmark:after {
-  display: block;
-}
-
-.checkbox-custom__modal .checkbox-wrapper {
-  border-radius: 18px;
-  border: solid 1px #8e9bbc;
-  padding: 28px 30px;
-  z-index: -1;
-}
-
 .checkbox-custom__modal .form-check-label {
-  font-family: 'GothamPro-Medium';
-  font-size: 30px;
-  line-height: 1;
-  margin: 0;
+  opacity: 0.6 !important;
 }
 
 .checkbox-custom__modal .checkmark {
-  left: auto;
-  right: 30px;
-  top: 22px;
+  top: 22px !important;
 }
 
 .checkbox-custom:not(:last-child) {
   margin-bottom: 25px;
-}
-
-.radio-custom {
-  position: relative;
-}
-
-.radio-custom input[type="radio"] {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
 }
 
 .radio-custom input:checked ~ .checkmark {
@@ -13326,91 +13253,35 @@ a.btn {
   display: block;
 }
 
-.radio-custom label {
-  margin: 0;
-}
-
-.radio-custom .form-check-label {
-  color: #363f6c;
-  font-family: 'GothamPro';
-  font-size: 24px;
-  letter-spacing: 0.69px;
-  line-height: 1.42;
-  margin-left: 30px;
-  margin-top: 5px;
-  opacity: 0.8;
-}
-
-.radio-custom .form-check-label img {
-  margin-right: 18px;
-}
-
 .radio-custom .checkmark {
-  border-radius: 50%;
   border: 3px solid #b3bfd0;
   height: 30px;
-  left: 0;
-  position: absolute;
-  top: 2px;
   width: 30px;
 }
 
 .radio-custom .checkmark:after {
   background: #363f6c;
-  border-radius: 50%;
-  content: "";
-  display: none;
   height: 18px;
   left: 3px;
-  position: absolute;
   top: 3px;
   width: 18px;
 }
 
-.radio-custom__modal input[type="radio"] {
-  height: 90px;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.radio-custom__modal input:checked ~ .radio-wrapper {
+.radio-custom__modal input[type="radio"]:checked ~ .radio-wrapper {
   background-color: #dae0f0;
   border: 1px solid #dae0f0;
 }
 
-.radio-custom__modal input:checked ~ .radio-wrapper .form-check-label {
-  opacity: 1;
-}
-
-.radio-custom__modal input:checked ~ .radio-wrapper .checkmark {
+.radio-custom__modal input[type="radio"]:checked ~ .radio-wrapper .checkmark {
   border: 3px solid #b3bfd0;
 }
 
-.radio-custom__modal input:checked ~ .radio-wrapper .checkmark:after {
-  display: block;
-}
-
-.radio-custom__modal .radio-wrapper {
-  border-radius: 18px;
-  border: solid 1px #8e9bbc;
-  padding: 28px 30px;
-  z-index: -1;
-}
-
 .radio-custom__modal .form-check-label {
-  font-family: 'GothamPro-Medium';
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: normal;
-  line-height: 1;
-  margin: 0;
+  opacity: 0.7 !important;
 }
 
 .radio-custom__modal .checkmark {
-  left: auto;
-  right: 30px;
-  top: 24px;
+  top: 24px !important;
 }
 
 .select-custom {
@@ -13640,6 +13511,108 @@ a.btn {
   font-family: 'GothamPro';
   font-size: 18px;
   margin-top: 10px;
+}
+
+.radio-custom,
+.checkbox-custom {
+  position: relative;
+}
+
+.radio-custom input[type="checkbox"],
+.radio-custom input[type="radio"],
+.checkbox-custom input[type="checkbox"],
+.checkbox-custom input[type="radio"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.radio-custom label,
+.checkbox-custom label {
+  margin: 0;
+}
+
+.radio-custom .form-check-label,
+.checkbox-custom .form-check-label {
+  color: #363f6c;
+  font-family: 'GothamPro';
+  font-size: 24px;
+  letter-spacing: 0.69px;
+  line-height: 1.42;
+  margin-left: 30px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.radio-custom .form-check-label img,
+.checkbox-custom .form-check-label img {
+  margin-right: 18px;
+}
+
+.radio-custom .checkmark,
+.checkbox-custom .checkmark {
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  top: 2px;
+}
+
+.radio-custom .checkmark:after,
+.checkbox-custom .checkmark:after {
+  border-radius: 50%;
+  content: "";
+  display: none;
+  position: absolute;
+}
+
+.radio-custom__modal input[type="checkbox"],
+.radio-custom__modal input[type="radio"],
+.checkbox-custom__modal input[type="checkbox"],
+.checkbox-custom__modal input[type="radio"] {
+  height: 90px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.radio-custom__modal input[type="checkbox"]:checked ~ .checkbox-wrapper .form-check-label,
+.radio-custom__modal input[type="radio"]:checked ~ .radio-wrapper .form-check-label,
+.checkbox-custom__modal input[type="checkbox"]:checked ~ .checkbox-wrapper .form-check-label,
+.checkbox-custom__modal input[type="radio"]:checked ~ .radio-wrapper .form-check-label {
+  opacity: 1 !important;
+}
+
+.radio-custom__modal input[type="checkbox"]:checked ~ .checkbox-wrapper .checkmark:after,
+.radio-custom__modal input[type="radio"]:checked ~ .radio-wrapper .checkmark:after,
+.checkbox-custom__modal input[type="checkbox"]:checked ~ .checkbox-wrapper .checkmark:after,
+.checkbox-custom__modal input[type="radio"]:checked ~ .radio-wrapper .checkmark:after {
+  display: block;
+}
+
+.radio-custom__modal .checkbox-wrapper,
+.radio-custom__modal .radio-wrapper,
+.checkbox-custom__modal .checkbox-wrapper,
+.checkbox-custom__modal .radio-wrapper {
+  border-radius: 18px;
+  border: solid 1px #8e9bbc;
+  padding: 28px 30px;
+  z-index: -1;
+}
+
+.radio-custom__modal .form-check-label,
+.checkbox-custom__modal .form-check-label {
+  font-family: 'GothamPro-Medium';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+.radio-custom__modal .checkmark,
+.checkbox-custom__modal .checkmark {
+  left: auto;
+  right: 30px;
 }
 
 .header nav {
