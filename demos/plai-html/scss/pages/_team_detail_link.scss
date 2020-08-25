@@ -5,8 +5,7 @@
         color: $primary;
         padding: 0 65px;
 
-        .link-title,
-        .btn-more {
+        .link-title {
           font-family: 'GothamPro-Medium';
         }
 
@@ -35,7 +34,6 @@
             }
 
             .btn-more {
-              color: $primary;
               font-size: 20px;
               text-align: center;
             }

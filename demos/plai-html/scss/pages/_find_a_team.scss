@@ -3,5 +3,116 @@
     nav {
       box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.5);
     }
+
+    .search-box {
+      background-color: $pale-grey-six;
+      border-bottom: 1px solid $pale-grey-seven;
+      padding: 60px 45px;
+
+      .form-search {
+        input {
+          background: url(../img/icons/icon-search@2x.png) no-repeat !important;
+          background-position: 42px !important;
+          background-repeat: no-repeat !important;
+          background-size: 33px 37px !important;
+          background-color: $white;
+          border-radius: 25px;
+          border: none;
+          box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.05);
+          color: $primary;
+          font-family: GothamPro;
+          font-size: 30px;
+          height: 110px;
+          padding: 42px;
+          padding-left: 116px;
+        }
+
+        input::placeholder {
+          color: $bluey-grey-two;
+          letter-spacing: -0.56px;
+        }
+      }
+
+      .select-custom {
+        &__filter {
+          background: url(../img/icons/icon-filter@2x.png) no-repeat !important;
+          background-position: 25px 40px !important;
+          background-repeat: no-repeat !important;
+          background-size: 30px !important;
+          border: none;
+          opacity: 1;
+        }
+      }
+    }
+
+    .content {
+      padding: 45px;
+
+      .card {
+        padding: 20px 24px;
+      }
+
+      .team-logo {
+        border-radius: 50%;
+        border: solid 4px $dandelion;
+        height: 115px;
+        margin-top: 16px;
+        object-fit: cover;
+        width: 115px;
+      }
+
+      .team-name {
+        color: $primary;
+        font-family: 'GothamPro-Medium';
+        font-size: 24px;
+        letter-spacing: -0.45px;
+        line-height: 1.17;
+        text-decoration: none;
+      }
+
+      hr {
+        margin-bottom: 22px;
+        margin-top: 16px;
+      }
+
+      .dropdown {
+        margin-top: 5px;
+      }
+
+      .details {
+        margin-left: 10px;
+        margin-top: 32px;
+
+        .team-place {
+          p {
+            color: $primary;
+            display: inline;
+            font-family: 'GothamPro-Medium';
+            font-size: 20px;
+            letter-spacing: -1px;
+            line-height: 1.4;
+            margin-left: 12px;
+          }
+
+          img {
+            margin-top: -5px;
+          }
+        }
+
+        .text {
+          color: $blue-grey;
+          font-family: GothamPro;
+          font-size: 20px;
+          letter-spacing: -1.05px;
+          line-height: 1.33;
+    
+          &__bold {
+            font-size: 20px;
+            letter-spacing: normal;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
   }
 }

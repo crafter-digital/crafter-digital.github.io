@@ -21,29 +21,31 @@
 .content-team {
   padding: 0 50px;
 
-  .card {
-    padding: 12px 10px;
-  }
-
-  ul.list {
-    height: 700px;
-    margin-right: 10px;
-    margin-top: 28px;
-    overflow: auto;
-    padding-left: 40px;
-    padding-right: 25px;
-
-    li {
-      list-style: none;
-      padding: 28px 10px;
+  &__scroll {
+    .card {
+      padding: 12px 10px;
     }
-
-    li:not(:last-child) {
-      border-bottom: 1px solid $pale-grey-five;
-    }
-
-    li:first-child {
-      padding-top: 0;
+  
+    ul.list {
+      height: 700px;
+      margin-right: 10px;
+      margin-top: 28px;
+      overflow: auto;
+      padding-left: 40px;
+      padding-right: 25px;
+  
+      li {
+        list-style: none;
+        padding: 28px 10px;
+      }
+  
+      li:not(:last-child) {
+        border-bottom: 1px solid $pale-grey-five;
+      }
+  
+      li:first-child {
+        padding-top: 0;
+      }
     }
   }
 }

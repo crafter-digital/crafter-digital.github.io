@@ -3,7 +3,6 @@
     .item-details {
       .icon {
         height: 25px;
-        margin-top: -8px;
         object-fit: contain;
         width: 25px;
       }
@@ -91,6 +90,33 @@
         .link-more img {
           margin-top: 3px;
         }
+      }
+    }
+  }
+}
+
+.content-team {
+  &__list {
+    padding: 0 20px 0 45px;
+
+    .item {
+      margin-bottom: 25px !important;
+    }
+
+    .card {
+      padding: 28px 30px;
+    }
+
+    .archive {
+      -ms-transform: translateY(-50%);
+      margin: 0;
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      
+      img {
+        width: 35px;
       }
     }
   }

@@ -83,7 +83,7 @@
   <div class="container-fluid p-0 ">
     <div class="sub-menu">
       <div class="row">
-        <div class="col-sm-3 text-left">
+        <div class="col-sm-4 text-left">
           <button type="button" class="btn-select-modal select-custom select-custom__sort-by" data-toggle="modal" data-target="#filterModal">
             Filter By
           </button>
@@ -271,45 +271,117 @@
 
   <!-- Select Modal -->
 
-  <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+  <div class="modal filter-modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
+        <div class="modal-header">
+          <div class="row w-100">
+            <div class="col-2 text-left p-0">
+              <a href="#" class="back" data-dismiss="modal">
+                <img src="img/icons/icon-back.png" />
+              </a>
+            </div>
+
+            <div class="col-8">
+              <h1 class="title">Matches</h1>
+            </div>
+          </div>
+        </div>
+
         <div class="modal-body">
           <div class="row">
-            <div class="col-sm-12 list">
-              <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
-                <div class="radio-wrapper">
-                  <label>
-                    <label class="form-check-label">
-                      Junior
-                    </label>
-                    <span class="checkmark form-check-input"></span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="radio-custom radio-custom__modal">
-                <input type="radio" name="radio-input2">
-                <div class="radio-wrapper">
-                  <label>
-                    <label class="form-check-label">
-                      Senior
-                    </label>
-                    <span class="checkmark form-check-input"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
             <div class="col-sm-12">
-              <hr>
+              <ul class="list m-0 p-0">
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 8 A
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 8 B
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 10 A
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 10 B
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 12s
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 14 A
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="checkbox-custom checkbox-custom__modal">
+                  <input type="checkbox" name="checkbox-input2">
+                  <div class="checkbox-wrapper">
+                    <label>
+                      <label class="form-check-label">
+                        Under 14 B
+                      </label>
+                      <span class="checkmark form-check-input"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
 
-          <div class="row">
+        <div class="modal-footer">
+          <div class="row w-100">
             <div class="col-sm-12">
               <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">
                 Done

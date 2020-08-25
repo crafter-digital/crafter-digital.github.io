@@ -1,16 +1,19 @@
 <html>
+
 <head>
   <title>Plai - Mobile</title>
 
   <!-- Custom fonts for this template-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <!-- Bootstrap Datepicker -->
   <link href="vendor/bootstrap_datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/plai.css" rel="stylesheet">
 </head>
 
-<body class="page page__team-player page__team-player__grid bg-grey">
+<body class="page page__team-events bg-grey">
   <header class="header header__team">
     <nav class="nav bg-white">
       <div class="top">
@@ -23,7 +26,7 @@
         </div>
       </div>
       <div class="avatar">
-        <img src="img/team2.png"/>
+        <img src="img/team2.png" />
       </div>
       <div class="bottom text-center margin-top-100">
         <h1 class="title">Portsmouth F.C</h1>
@@ -57,7 +60,7 @@
         <a class="nav-link text-uppercase" href="team_detail_news.html">News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="team_detail_events_filter_one.html">Events</a>
+        <a class="nav-link text-uppercase active" href="team_detail_events_filter_one.html">Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="team_detail_shop.html">Shop</a>
@@ -66,7 +69,7 @@
         <a class="nav-link text-uppercase" href="team_detail_forms.html">Forms</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-uppercase active" href="team_detail_player_grid.html">Players</a>
+        <a class="nav-link text-uppercase" href="team_detail_player_grid.html">Players</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-uppercase" href="team_detail_media.html">Media</a>
@@ -80,53 +83,152 @@
   <div class="container-fluid p-0 ">
     <div class="sub-menu">
       <div class="row">
-        <div class="col-sm-5 text-left">
+        <div class="col-sm-4 text-left">
           <button type="button" class="btn-select-modal select-custom select-custom__sort-by" data-toggle="modal" data-target="#filterModal">
-            By First Name
+            Filter By
           </button>
-        </div>
-        <div class="col-sm-5 offset-sm-2 text-right layout-choices">
-          <a href="team_detail_player_grid.html">
-            <img src="img/icons/grid_bold.png" />
-          </a>
-          <a href="team_detail_player.html">
-            <img src="img/icons/list.png" />
-          </a>
         </div>
       </div>
     </div>
 
-    <div class="content content-team">
-      <div class="row">
-        <div class="col-sm-6 player text-center">
+    <div class="content content-team content-team__event">
+      <div class="row event-row">
+        <div class="col-sm-2 event-date p-0">
+          <h1 class="day">Mon</h1>
+          <h1 class="date">06</h1>
+        </div>
+        <div class="col-sm-10 event-card p-0">
           <div class="card">
-            <img src="img/profile_large.png" class="player-image" />
-            <p class="player-name">James Dawson</p>
-            <p class="player-place">New Hampshire</p>
+            <div class="row">
+              <div class="col-sm-8 p-0">
+                <a href="event_detail.html" class="event-title">1st: Event sample 1</a>
+                <div class="event-time">
+                  <img src="img/icons/clock.png" >
+                  <span>04:00 am - 06:00 am</span>
+                </div>
+              </div>
+              <div class="col-sm-4 p-0">
+                <a href="event_detail.html" class="btn btn-outline-primary btn-more btn-sm float-right">Joint Event</a>
+              </div>
+            </div>
+            <div class="row event-details">
+              <div class="col-sm-7 p-0 member-list">
+                <ul class="p-0">
+                  <li class="member">
+                    <img src="img/member.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member2.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member3.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member4.png">
+                  </li>
+                  <li class="member">
+                    <p class="rest-members">+16</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 p-0 text-right joined">
+                <p>Joined <span class="text text__bold">(20)</span></p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-6 player text-center">
+      <div class="row event-row">
+        <div class="col-sm-2 event-date p-0">
+          <h1 class="day">Thu</h1>
+          <h1 class="date">12</h1>
+        </div>
+        <div class="col-sm-10 event-card p-0">
           <div class="card">
-            <img src="img/profile_large2.png" class="player-image" />
-            <p class="player-name">David Perry</p>
-            <p class="player-place">South Carolina</p>
+            <div class="row">
+              <div class="col-sm-8 p-0">
+                <a href="event_detail.html" class="event-title">2nd: Soccer school co…</a>
+                <div class="event-time">
+                  <img src="img/icons/clock.png" >
+                  <span>04:00 am - 06:00 am</span>
+                </div>
+              </div>
+              <div class="col-sm-4 p-0">
+                <a href="event_detail.html" class="btn btn-outline-primary btn-more btn-sm float-right">Joint Event</a>
+              </div>
+            </div>
+            <div class="row event-details">
+              <div class="col-sm-7 p-0 member-list">
+                <ul class="p-0">
+                  <li class="member">
+                    <img src="img/member5.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member6.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member7.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member8.png">
+                  </li>
+                  <li class="member">
+                    <p class="rest-members">+8</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 p-0 text-right joined">
+                <p>Joined <span class="text text__bold">(12)</span></p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-6 player text-center">
-          <div class="card">
-            <img src="img/profile_large3.png" class="player-image" />
-            <p class="player-name">Arthur Joseph</p>
-            <p class="player-place">South Dakota</p>
-          </div>
+      <div class="row event-row">
+        <div class="col-sm-2 event-date p-0">
+          <h1 class="day">Sat</h1>
+          <h1 class="date">12</h1>
         </div>
-
-        <div class="col-sm-6 player text-center">
+        <div class="col-sm-10 event-card p-0">
           <div class="card">
-            <img src="img/profile_large4.png" class="player-image" />
-            <p class="player-name">Jonathan Wright</p>
-            <p class="player-place">Rhode Island</p>
+            <div class="row">
+              <div class="col-sm-8 p-0">
+                <a href="event_detail.html" class="event-title">3rd: Event sample 1</a>
+                <div class="event-time">
+                  <img src="img/icons/clock.png" >
+                  <span>04:00 am - 06:00 am</span>
+                </div>
+              </div>
+              <div class="col-sm-4 p-0">
+                <a href="event_detail.html" class="btn btn-outline-primary btn-more btn-sm float-right">Joint Event</a>
+              </div>
+            </div>
+            <div class="row event-details">
+              <div class="col-sm-7 p-0 member-list">
+                <ul class="p-0">
+                  <li class="member">
+                    <img src="img/member5.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member6.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member7.png">
+                  </li>
+                  <li class="member">
+                    <img src="img/member8.png">
+                  </li>
+                  <li class="member">
+                    <p class="rest-members">+8</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 p-0 text-right joined">
+                <p>Joined <span class="text text__bold">(12)</span></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -180,7 +282,8 @@
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
-                      By First Name
+                      <img src="img/icons/icon-trophy.png">
+                      Matches
                     </label>
                     <span class="checkmark form-check-input"></span>
                   </label>
@@ -192,7 +295,8 @@
                 <div class="radio-wrapper">
                   <label>
                     <label class="form-check-label">
-                      By Last Name
+                      <img src="img/icons/calendar.png">
+                      Events
                     </label>
                     <span class="checkmark form-check-input"></span>
                   </label>
@@ -223,4 +327,5 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

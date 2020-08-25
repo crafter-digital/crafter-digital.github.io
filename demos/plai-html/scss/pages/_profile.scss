@@ -186,6 +186,7 @@ a.team-details-link {
   .team-logo {
     border: solid 4px $dandelion;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   .details {

@@ -115,3 +115,56 @@
     }
   }
 }
+
+.filter-modal {
+  .modal-content {
+    padding: 0;
+
+    .modal-header {
+      background-color: $pale-grey-eight;
+      border-top-left-radius: 27px;
+      border-top-right-radius: 27px;
+      border: none;
+      padding: 48px 50px;
+
+      .title {
+        font-size: 37px;
+        line-height: 1.43;
+        margin-bottom: 0;
+      }
+    }
+
+    .modal-body {
+      padding: 36px 45px;
+      padding-bottom: 0;
+    }
+
+    .modal-footer {
+      border-top: 1px solid $bluey-grey;
+      padding: 46px 45px;
+      padding-bottom: 52px;
+    }
+  }
+
+  ul.list {
+    height: 735px;
+    list-style: none;
+    overflow: scroll;
+    padding-right: 14px !important;
+  }
+
+  // scrollbar
+
+  ::-webkit-scrollbar-track {
+    height: 50px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $white-six;
+    border-radius: 10px;
+  }
+}

@@ -13045,7 +13045,7 @@ a.btn {
   border: solid 2px rgba(54, 63, 108, 0.6);
   box-shadow: none;
   color: #363f6c;
-  font-family: GothamPro;
+  font-family: 'GothamPro-Medium';
   padding: 0 18px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -13123,11 +13123,11 @@ a.btn {
   padding: 0 50px;
 }
 
-.content-team .card {
+.content-team__scroll .card {
   padding: 12px 10px;
 }
 
-.content-team ul.list {
+.content-team__scroll ul.list {
   height: 700px;
   margin-right: 10px;
   margin-top: 28px;
@@ -13136,16 +13136,16 @@ a.btn {
   padding-right: 25px;
 }
 
-.content-team ul.list li {
+.content-team__scroll ul.list li {
   list-style: none;
   padding: 28px 10px;
 }
 
-.content-team ul.list li:not(:last-child) {
+.content-team__scroll ul.list li:not(:last-child) {
   border-bottom: 1px solid #eceff7;
 }
 
-.content-team ul.list li:first-child {
+.content-team__scroll ul.list li:first-child {
   padding-top: 0;
 }
 
@@ -13214,13 +13214,108 @@ a.btn {
   position: absolute;
 }
 
+.checkbox-custom {
+  position: relative;
+}
+
+.checkbox-custom input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.checkbox-custom label {
+  margin: 0;
+}
+
+.checkbox-custom .form-check-label {
+  color: #363f6c;
+  font-family: 'GothamPro';
+  font-size: 24px;
+  letter-spacing: 0.69px;
+  line-height: 1.42;
+  margin-left: 30px;
+  margin-top: 5px;
+  opacity: 0.6;
+}
+
+.checkbox-custom .form-check-label img {
+  margin-right: 18px;
+}
+
+.checkbox-custom .checkmark {
+  border-radius: 50%;
+  border: 4px solid #b3bfd0;
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 37px;
+}
+
+.checkbox-custom .checkmark:after {
+  background: #363f6c;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 35px;
+  position: absolute;
+  width: 35px;
+}
+
+.checkbox-custom__modal input[type="checkbox"] {
+  height: 90px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.checkbox-custom__modal input:checked ~ .checkbox-wrapper .form-check-label {
+  opacity: 1;
+}
+
+.checkbox-custom__modal input:checked ~ .checkbox-wrapper .checkmark {
+  border: none;
+}
+
+.checkbox-custom__modal input:checked ~ .checkbox-wrapper .checkmark:after {
+  display: block;
+}
+
+.checkbox-custom__modal .checkbox-wrapper {
+  border-radius: 18px;
+  border: solid 1px #8e9bbc;
+  padding: 28px 30px;
+  z-index: -1;
+}
+
+.checkbox-custom__modal .form-check-label {
+  font-family: 'GothamPro-Medium';
+  font-size: 30px;
+  line-height: 1;
+  margin: 0;
+}
+
+.checkbox-custom__modal .checkmark {
+  left: auto;
+  right: 30px;
+  top: 22px;
+}
+
+.checkbox-custom:not(:last-child) {
+  margin-bottom: 25px;
+}
+
 .radio-custom {
   position: relative;
 }
 
 .radio-custom input[type="radio"] {
+  cursor: pointer;
   opacity: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .radio-custom input:checked ~ .checkmark {
@@ -13280,8 +13375,8 @@ a.btn {
 }
 
 .radio-custom__modal input:checked ~ .radio-wrapper {
-  border: none;
   background-color: #dae0f0;
+  border: 1px solid #dae0f0;
 }
 
 .radio-custom__modal input:checked ~ .radio-wrapper .form-check-label {
@@ -13300,6 +13395,7 @@ a.btn {
   border-radius: 18px;
   border: solid 1px #8e9bbc;
   padding: 28px 30px;
+  z-index: -1;
 }
 
 .radio-custom__modal .form-check-label {
@@ -13329,7 +13425,7 @@ a.btn {
 
 .select-custom__sort-by {
   background: url(../img/icons/triangle@2x.png) no-repeat !important;
-  background-position: 100% 45% !important;
+  background-position: 75% 48% !important;
   background-repeat: no-repeat !important;
   background-size: 23px 16px !important;
   border: none !important;
@@ -14070,7 +14166,8 @@ a.btn {
 }
 
 .page__event-detail .event-body .btn-more {
-  color: #363f6c;
+  border: solid 1px #8e9bbc;
+  background-color: rgba(54, 63, 108, 0.05);
 }
 
 .page__event-detail .event-body .title,
@@ -14095,6 +14192,127 @@ a.btn {
 
 .page__find-team nav {
   box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page__find-team .search-box {
+  background-color: #f4f4f6;
+  border-bottom: 1px solid #e9ecf6;
+  padding: 60px 45px;
+}
+
+.page__find-team .search-box .form-search input {
+  background: url(../img/icons/icon-search@2x.png) no-repeat !important;
+  background-position: 42px !important;
+  background-repeat: no-repeat !important;
+  background-size: 33px 37px !important;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.05);
+  color: #363f6c;
+  font-family: GothamPro;
+  font-size: 30px;
+  height: 110px;
+  padding: 42px;
+  padding-left: 116px;
+}
+
+.page__find-team .search-box .form-search input::-moz-placeholder {
+  color: #9898af;
+  letter-spacing: -0.56px;
+}
+
+.page__find-team .search-box .form-search input:-ms-input-placeholder {
+  color: #9898af;
+  letter-spacing: -0.56px;
+}
+
+.page__find-team .search-box .form-search input::-ms-input-placeholder {
+  color: #9898af;
+  letter-spacing: -0.56px;
+}
+
+.page__find-team .search-box .form-search input::placeholder {
+  color: #9898af;
+  letter-spacing: -0.56px;
+}
+
+.page__find-team .search-box .select-custom__filter {
+  background: url(../img/icons/icon-filter@2x.png) no-repeat !important;
+  background-position: 25px 40px !important;
+  background-repeat: no-repeat !important;
+  background-size: 30px !important;
+  border: none;
+  opacity: 1;
+}
+
+.page__find-team .content {
+  padding: 45px;
+}
+
+.page__find-team .content .card {
+  padding: 20px 24px;
+}
+
+.page__find-team .content .team-logo {
+  border-radius: 50%;
+  border: solid 4px #fbdb09;
+  height: 115px;
+  margin-top: 16px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 115px;
+}
+
+.page__find-team .content .team-name {
+  color: #363f6c;
+  font-family: 'GothamPro-Medium';
+  font-size: 24px;
+  letter-spacing: -0.45px;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+.page__find-team .content hr {
+  margin-bottom: 22px;
+  margin-top: 16px;
+}
+
+.page__find-team .content .dropdown {
+  margin-top: 5px;
+}
+
+.page__find-team .content .details {
+  margin-left: 10px;
+  margin-top: 32px;
+}
+
+.page__find-team .content .details .team-place p {
+  color: #363f6c;
+  display: inline;
+  font-family: 'GothamPro-Medium';
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  margin-left: 12px;
+}
+
+.page__find-team .content .details .team-place img {
+  margin-top: -5px;
+}
+
+.page__find-team .content .details .text {
+  color: #768dac;
+  font-family: GothamPro;
+  font-size: 20px;
+  letter-spacing: -1.05px;
+  line-height: 1.33;
+}
+
+.page__find-team .content .details .text__bold {
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 1.4;
 }
 
 .page__index .container-fluid, .page__index .container-sm, .page__index .container-md, .page__index .container-lg, .page__index .container-xl {
@@ -14402,6 +14620,8 @@ a.team-details-link p {
 .content-profile .team-logo {
   border: solid 4px #fbdb09;
   border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .content-profile .details .text {
@@ -14658,13 +14878,61 @@ a.team-details-link p {
   text-align: right;
 }
 
+.filter-modal .modal-content {
+  padding: 0;
+}
+
+.filter-modal .modal-content .modal-header {
+  background-color: #f3f3f5;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border: none;
+  padding: 48px 50px;
+}
+
+.filter-modal .modal-content .modal-header .title {
+  font-size: 37px;
+  line-height: 1.43;
+  margin-bottom: 0;
+}
+
+.filter-modal .modal-content .modal-body {
+  padding: 36px 45px;
+  padding-bottom: 0;
+}
+
+.filter-modal .modal-content .modal-footer {
+  border-top: 1px solid #8d94b5;
+  padding: 46px 45px;
+  padding-bottom: 52px;
+}
+
+.filter-modal ul.list {
+  height: 735px;
+  list-style: none;
+  overflow: scroll;
+  padding-right: 14px !important;
+}
+
+.filter-modal ::-webkit-scrollbar-track {
+  height: 50px;
+}
+
+.filter-modal ::-webkit-scrollbar {
+  width: 13px;
+}
+
+.filter-modal ::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
 .page__team-link .content-team__link {
   color: #363f6c;
   padding: 0 65px;
 }
 
-.page__team-link .content-team__link .link-title,
-.page__team-link .content-team__link .btn-more {
+.page__team-link .content-team__link .link-title {
   font-family: 'GothamPro-Medium';
 }
 
@@ -14691,7 +14959,6 @@ a.team-details-link p {
 }
 
 .page__team-link .content-team__link .link .link-details .btn-more {
-  color: #363f6c;
   font-size: 20px;
   text-align: center;
 }
@@ -14829,7 +15096,6 @@ a.team-details-link p {
 
 .page__team-news .item-details .icon {
   height: 25px;
-  margin-top: -8px;
   -o-object-fit: contain;
   object-fit: contain;
   width: 25px;
@@ -14915,6 +15181,31 @@ a.team-details-link p {
 
 .page__team-news__grid .item-details .link-more img {
   margin-top: 3px;
+}
+
+.content-team__list {
+  padding: 0 20px 0 45px;
+}
+
+.content-team__list .item {
+  margin-bottom: 25px !important;
+}
+
+.content-team__list .card {
+  padding: 28px 30px;
+}
+
+.content-team__list .archive {
+  -ms-transform: translateY(-50%);
+  margin: 0;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content-team__list .archive img {
+  width: 35px;
 }
 
 .page__team-player .content-team {
