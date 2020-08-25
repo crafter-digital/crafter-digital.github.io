@@ -1,0 +1,15 @@
+.btn-dropdown {
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
+.dropdown-item {
+  color: $primary;
+  font-size: 16px;
+  letter-spacing: inherit;
+  text-decoration: none;
+}

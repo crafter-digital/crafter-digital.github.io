@@ -10,11 +10,14 @@
       padding: 60px 45px;
 
       .form-search {
+        img {
+          position: absolute;
+          top: 38px;
+          left: 42px;
+          width: 33px;
+        }
+
         input {
-          background: url(../img/icons/icon-search@2x.png) no-repeat !important;
-          background-position: 42px !important;
-          background-repeat: no-repeat !important;
-          background-size: 33px 37px !important;
           background-color: $white;
           border-radius: 25px;
           border: none;
@@ -24,7 +27,7 @@
           font-size: 30px;
           height: 110px;
           padding: 42px;
-          padding-left: 116px;
+          padding-left: 114px;
         }
 
         input::placeholder {

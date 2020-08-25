@@ -9,7 +9,7 @@
 
   &__sort-by {
     background: url(../img/icons/triangle@2x.png) no-repeat !important;
-    background-position: 75% 35% !important;
+    background-position: 100% 45% !important;
     background-repeat: no-repeat !important;
     background-size: 23px 15px !important;
     border: none !important;
@@ -36,7 +36,7 @@
     background: url(../img/icons/triangle@2x.png) no-repeat !important;
     background-position: 75% !important;
     background-repeat: no-repeat !important;
-    background-size: 20px 12px !important;
+    background-size: 16px 12px !important;
   }
 
   .item {
@@ -108,7 +108,7 @@
   background: url(../img/icons/triangle@2x.png) no-repeat;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 26px 16px;
+  background-size: 24px 15px;
   color: $primary;
   opacity: 0.8;
   text-align: left;
@@ -116,11 +116,11 @@
 
 .select-wrapper {
   img {
-    height: 16px;
+    height: 15px;
     position: absolute;
     right: 25px;
     top: 30px;
-    width: 26px;
+    width: 24px;
     z-index: -1;
   }
 }
