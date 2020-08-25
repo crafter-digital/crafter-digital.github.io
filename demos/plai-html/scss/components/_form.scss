@@ -29,12 +29,15 @@
       box-shadow: none;
       outline: none;
     }
+  }
 
-    &__password {
-      background: url(../img/icons/fill@2x.png) no-repeat;
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: 30px 30px;
+  .show-password {
+    img {
+      height: 30px;
+      margin-top: -55px;
+      position: absolute;
+      right: 60px;
+      width: 30px;
     }
   }
 
