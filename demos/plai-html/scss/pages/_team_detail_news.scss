@@ -3,6 +3,7 @@
     .item-details {
       .icon {
         height: 25px;
+        margin-top: -2px;
         object-fit: contain;
         width: 25px;
       }
@@ -84,8 +85,14 @@
       }
 
       .item-details {
-        border-top: 1px solid $pale-grey-five;
-        padding-top: 14px !important;
+        .row {
+          border-top: 2px solid #eceff7;
+          padding-top: 14px !important;
+        }
+        
+        .row:not(:last-child) {
+          padding-bottom: 14px !important;
+        }
 
         .link-more img {
           margin-top: 3px;

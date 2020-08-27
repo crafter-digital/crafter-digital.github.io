@@ -24,7 +24,10 @@
           }
 
           .link-details {
-            .link_url {
+            margin-bottom: 12px !important;
+
+            a.link_url, p.link_url {
+              color: $primary;
               font-family: GothamPro;
               font-size: 19px;
               letter-spacing: -0.35px;
@@ -36,6 +39,11 @@
             .btn {
               font-size: unset;
             }
+          }
+
+          .links {
+            border-top: 1px solid $light-blue-grey;
+            padding-top: 18px !important;
           }
         }
 
@@ -55,7 +63,11 @@
 
             .link-details {
               margin-top: 10px !important;
-              padding-left: 45px;
+              padding-left: 8.5%;
+            }
+
+            .links {
+              padding: 0 8.5%;
             }
           }
         }
@@ -71,8 +83,8 @@
 
           .link {
             .card {
-              padding: 28px 26px 32px 26px;
-              height: 300px;
+              padding: 28px 26px;
+              height: fit-content;
             }
 
             .link-title {
@@ -87,6 +99,24 @@
 
             .btn-more {
               margin-bottom: 10px;
+            }
+
+            a.link_url, p.link_url {
+              font-size: 16px !important;
+            }
+          }
+
+          .links {
+            .copy img {
+              width: 46px;
+            }
+
+            .go-to-link img {
+              width: 39px;
+            }
+
+            .share img {
+              width: 43px;
             }
           }
         }

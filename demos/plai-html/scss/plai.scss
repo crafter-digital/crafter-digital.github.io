@@ -28,11 +28,14 @@ $fa-font-path: '../vendor/fonts/';
 
 // Import Pages
 @import "pages/confirm_email";
+@import "pages/create_a_team";
 @import "pages/event_detail";
 @import "pages/find_a_team";
 @import "pages/index";
 @import "pages/news_detail";
 @import "pages/profile";
+@import "pages/profile_grid";
+@import "pages/profile_list";
 @import "pages/sign_in";
 @import "pages/sign_up_success";
 @import "pages/sign_up_two";
@@ -43,3 +46,4 @@ $fa-font-path: '../vendor/fonts/';
 @import "pages/team_detail_news";
 @import "pages/team_detail_player";
 @import "pages/team_detail_shop";
+@import "pages/touch_id";

@@ -35,10 +35,14 @@
             padding-left: 20px !important;
 
             .media-title {
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              display: -webkit-box;
               font-size: 27px;
               letter-spacing: -0.5px;
               line-height: 1.41;
               margin-bottom: 36px;
+              overflow: hidden;
             }
 
             ul {

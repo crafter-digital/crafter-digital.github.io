@@ -1,0 +1,40 @@
+.page {
+  &__profile {
+    .content-profile {
+      &__list {
+        .card {
+          margin-bottom: 30px;
+          padding: 20px 25px;
+        }
+
+        .team-logo {
+          width: 100%;
+        }
+
+        .team-name {
+          font-size: 24px;
+          letter-spacing: -0.45px;
+          line-height: 1.17;
+          text-decoration: none;
+        }
+
+        hr {
+          margin-bottom: 22px;
+        }
+
+        .details {
+          margin-top: 10px;
+
+          .text {
+            font-size: 20px;
+          }
+
+          .rest-members {
+            font-size: 17px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.page {
+  &__create-team {
+    nav {
+      padding: 100px 50px 100px 50px;
+    }
+
+    .form-wrapper {
+      margin-bottom: 126px;
+      margin-top: 75px;
+      padding: 0 60px;
+    }
+
+    .links a {
+      letter-spacing: 1.28px;
+    }
+
+    .form-file {
+      margin-bottom: 168px;
+    
+      label {
+        font-family: 'GothamPro-Medium';
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.45px;
+        color: $primary;
+      }
+    
+      .input-wrapper {
+        margin-top: 30px;
+    
+        .background {
+          background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23363F6C80' stroke-width='6' stroke-dasharray='4%2c15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+          border-radius: 15px;
+          height: 230px;
+    
+          img {
+            position: absolute;
+            top: 45%;
+            left: 44%;
+            width: 90px;
+            z-index: -1;
+          }
+        }
+      }
+    
+      .form-control-file {
+        cursor: pointer;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+    
+      &__filled {
+        margin-bottom: 99px;
+    
+        .logo {
+          background-color: #F2F1F1;
+          border-radius: 11px;
+          display: table-cell;
+          height: 290px;
+          vertical-align: middle;
+          width: 290px;
+        }
+    
+        img {
+          width: 75%;
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 70px;
+
+      button {
+        margin-bottom: 25px;
+        width: 85%;
+
+        .form-control-file {
+          height: 65px !important;
+          left: 40px;
+          position: absolute;
+          top: 70px;
+          width: 79%;
+        }
+      }
+    }
+  }
+}

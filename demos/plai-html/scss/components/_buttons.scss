@@ -21,14 +21,25 @@ a.btn {
   width: 100%;
 }
 
+label.btn-lg {
+  padding: 28px 52px !important;
+}
+
 .btn-sm {
   border-radius: 11px;
   font-family: 'GothamPro-Medium';
   font-size: 20px;
   height: 40px;
   padding: 0 18px;
-  width: fit-content;
   text-transform: none;
+  width: fit-content;
+
+  &__bigger {
+    border-radius: 16px;
+    box-shadow: 0 24px 35px 0 rgba(54, 63, 108, 0.2) !important;
+    font-size: 23px;
+    height: 65px;
+  }
 }
 
 .btn-white {
@@ -43,6 +54,10 @@ a.btn {
   &__two {
     background-image: linear-gradient(24deg, #283055 15%, #485288 57%);
   }
+}
+
+.btn-danger {
+  color: $white !important;
 }
 
 .btn-blue {
@@ -130,4 +145,27 @@ a.btn {
   position: fixed;
   right: 42px;
   width: 120px;
+}
+
+.btn-group-toggle {
+  background-color: $pale-grey-nine;
+  border-radius: 27px;
+  font-family: Poppins;
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: 0.83px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+
+  .btn-secondary {
+    border-radius: 26px !important;
+    box-shadow: none;
+  }
+
+  .active {
+    background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
+    box-shadow: 0 24px 35px 0 rgba(16, 151, 68, 0.18), 0 25px 80px 0 rgba(108, 38, 156, 0.2);
+    color: $white !important;
+  }
 }

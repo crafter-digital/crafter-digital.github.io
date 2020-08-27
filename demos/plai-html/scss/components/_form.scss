@@ -41,6 +41,12 @@
     }
   }
 
+  textarea.form-control {
+    height: 130px;
+    padding-top: 0;
+    resize: none;
+  }
+
   .form-control::placeholder {
     color: $primary;
     font-family: 'GothamPro';

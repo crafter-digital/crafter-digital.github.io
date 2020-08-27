@@ -1,0 +1,16 @@
+.page {
+  &__touch-id {
+    .image-wrapper {
+      margin-top: 350px;
+      margin-bottom: 480px;
+    }
+
+    .switch-button {
+      padding: 0 100px;
+
+      .active {
+        background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
+      }
+    }
+  }
+}

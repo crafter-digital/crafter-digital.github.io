@@ -8,46 +8,63 @@
         margin-top: 26px;
         margin-bottom: 28px;
       }
-    }
-  }
-}
 
-.content {
-  .rest-members,
-  .text__bold {
-    color: $primary !important;
-    font-family: 'GothamPro-Medium' !important;
-  }
+      .sub-title {
+        &__profile-name {
+          font-size: 35px;
+          opacity: 1;
+        }
 
-  .rest-members {
-    font-size: 17px;
-    margin-top: 12px;
-  }
-
-  &__list {
-    .content-profile {
-      .team-logo {
-        height: 115px;
-        margin-top: 10px;
-        width: 115px;
+        &__bio {
+          letter-spacing: 0.7px;
+        }
       }
+    }
+
+    .content {
+
+      .rest-members,
+      .text__bold {
+        color: $primary !important;
+        font-family: 'GothamPro-Medium' !important;
+      }
+    }
+
+    // Team details link
+    a.team-details-link {
+      text-decoration: none;
+
+      p {
+        text-align: left
+      }
+    }
+
+    .content-profile {
+      padding: 0 50px;
 
       .team-name {
-        font-size: 24px;
-        letter-spacing: -0.45px;
-        line-height: 1.17;
-        text-decoration: none;
+        color: $primary;
+        font-family: 'GothamPro-Medium';
       }
 
-      hr {
-        margin-bottom: 22px;
+      .team-logo {
+        border: solid 4px $dandelion;
+        border-radius: 50%;
+        object-fit: cover;
       }
 
       .details {
-        margin-top: 10px;
-
         .text {
-          font-size: 20px;
+          color: $blue-grey;
+          font-family: GothamPro;
+          letter-spacing: -1.05px;
+          line-height: 1.33;
+
+          &__bold {
+            font-size: 20px;
+            letter-spacing: normal;
+            line-height: 1.4;
+          }
         }
 
         .member-list {
@@ -65,153 +82,6 @@
           .member:not(:last-child) {
             margin-right: 12px;
           }
-        }
-      }
-    }
-  }
-
-  &__grid {
-    .content-profile-slide {
-      -webkit-overflow-scrolling: touch;
-      display: flex;
-      height: 60%;
-      overflow-x: auto;
-
-      .card {
-        height: fit-content;
-        width: 320px !important;
-      }
-    }
-
-    .content-profile {
-      padding: 0 65px;
-      padding-bottom: 80px;
-      width: 100%;
-
-      .card {
-        margin-bottom: 28px;
-        padding: 25px 30px 30px 30px;
-        width: 100%;
-      }
-
-      .team-logo {
-        height: 150px;
-        margin-bottom: 28px;
-        margin-top: 12px;
-        width: 150px;
-      }
-
-      .team-name {
-        display: flex;
-        font-size: 20px;
-        line-height: 1.4;
-        letter-spacing: -0.37px;
-        margin: 0;
-        margin-bottom: 12px;
-      }
-
-      hr {
-        margin: 0;
-        margin-bottom: 10px;
-      }
-
-      .details {
-        .team-details-link {
-          margin: auto;
-        }
-
-        .text {
-          font-size: 21px;
-          margin: 0;
-        }
-
-        .member-list {
-          margin-top: 20px !important;
-
-          ul {
-            margin: 0;
-
-            li {
-              p {
-                display: inline;
-              }
-
-              img {
-                margin-top: -8px;
-              }
-            }
-
-            .member:not(:last-child) {
-              margin-right: 12px;
-            }
-          }
-
-          .rest-members {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Team cards
-.card {
-  &__item-team {
-    max-height: 430px;
-  }
-}
-
-// Team details link
-a.team-details-link {
-  text-decoration: none;
-
-  p {
-    text-align: left
-  }
-}
-
-.content-profile {
-  padding: 0 50px;
-
-  hr {
-    margin-top: 16px;
-  }
-
-  .team-name {
-    color: $primary;
-    font-family: 'GothamPro-Medium';
-  }
-
-  .team-logo {
-    border: solid 4px $dandelion;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .details {
-    .text {
-      color: $blue-grey;
-      font-family: GothamPro;
-      letter-spacing: -1.05px;
-      line-height: 1.33;
-
-      &__bold {
-        font-size: 20px;
-        letter-spacing: normal;
-        line-height: 1.4;
-      }
-    }
-
-    .member-list {
-      .member {
-        display: inline;
-        list-style: none;
-
-        img {
-          border-radius: 50%;
-          height: 40px;
-          width: 40px;
         }
       }
     }

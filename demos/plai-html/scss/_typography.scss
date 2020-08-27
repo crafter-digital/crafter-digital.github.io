@@ -8,15 +8,6 @@
   &__lighter {
     font-weight: 500;
   }
-
-  &__lighter-2 {
-    font-weight: normal;
-  }
-
-  &__bigger {
-    font-size: 52px;
-    letter-spacing: 3.5px;
-  }
 }
 
 .sub-title {
@@ -38,26 +29,19 @@
   &__lighter-two {
     font-weight: normal;
   }
-  
-
-  &__profile-name {
-    font-size: 35px;
-    opacity: 1;
-  }
-
-  &__bio {
-    letter-spacing: 0.7px;
-  }
 }
 
 .text-gotham {
   font-family: GothamPro;
 }
 
+.text-poppins {
+  font-family: Poppins !important;
+}
+
 @media (max-width: 575.98px) {
 
-  .title,
-  .title-2 {
+  .title {
     font-size: 22px;
   }
 

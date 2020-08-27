@@ -1,21 +1,5 @@
 .content {
   margin-bottom: 300px;
-
-  &__grid {
-    .card__item {
-      flex-shrink: 0;
-      margin-right: 30px;
-      padding: 25px 30px 30px 30px;
-      width: 330px;
-    }
-  }
-
-  &__list {
-    .card__item {
-      margin-bottom: 50px;
-      padding: 23px 28px;
-    }
-  }
 }
 
 .content-team {
