@@ -14303,7 +14303,7 @@ label.btn-lg, .btn-group-lg > label.btn {
   border-top-right-radius: 50px;
   box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   height: 36px;
-  margin: 0 30px;
+  margin: 0 50px;
   opacity: 0.8;
 }
 
@@ -14311,24 +14311,24 @@ label.btn-lg, .btn-group-lg > label.btn {
   border-radius: unset;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   margin-top: -18px;
+  padding-bottom: 182px;
   padding-top: 123px;
 }
 
 .page__face-id .face-id-wrapper {
+  display: inline-block !important;
   margin-bottom: 220px !important;
 }
 
-.page__face-id .face-id-wrapper .background, .page__face-id .face-id-wrapper .background-two, .page__face-id .face-id-wrapper .background-three {
+.page__face-id .face-id-wrapper .background,
+.page__face-id .face-id-wrapper .background-two,
+.page__face-id .face-id-wrapper .background-three {
   border-radius: 50% !important;
-}
-
-.page__face-id .face-id-wrapper .background-two, .page__face-id .face-id-wrapper .background-three {
-  position: absolute;
 }
 
 .page__face-id .face-id-wrapper .background {
@@ -14342,16 +14342,16 @@ label.btn-lg, .btn-group-lg > label.btn {
 .page__face-id .face-id-wrapper .background-two {
   border: solid 4px #C2C5D2;
   height: 540px;
-  left: 45px;
-  top: 30px;
+  margin-left: 30px;
+  margin-top: -570px;
   width: 540px;
 }
 
 .page__face-id .face-id-wrapper .background-three {
   background-color: #F2F4FA;
   height: 500px;
-  left: 65px;
-  top: 50px;
+  margin-left: 50px;
+  margin-top: -520px;
   width: 500px;
 }
 
@@ -15631,7 +15631,7 @@ label.btn-lg, .btn-group-lg > label.btn {
   border-top-right-radius: 50px;
   box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   height: 36px;
-  margin: 0 30px;
+  margin: 0 50px;
   opacity: 0.8;
 }
 
@@ -15645,22 +15645,23 @@ label.btn-lg, .btn-group-lg > label.btn {
   box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   margin-top: -18px;
   padding-top: 123px;
+  padding-bottom: 182px;
 }
 
 .page__touch-id .touch-id-wrapper {
+  display: inline-block !important;
   margin-bottom: 220px !important;
 }
 
-.page__touch-id .touch-id-wrapper .background, .page__touch-id .touch-id-wrapper .background-two, .page__touch-id .touch-id-wrapper .background-three {
+.page__touch-id .touch-id-wrapper .background,
+.page__touch-id .touch-id-wrapper .background-two,
+.page__touch-id .touch-id-wrapper .background-three {
   border-radius: 50% !important;
 }
 
-.page__touch-id .touch-id-wrapper .background, .page__touch-id .touch-id-wrapper .background-two {
+.page__touch-id .touch-id-wrapper .background,
+.page__touch-id .touch-id-wrapper .background-two {
   border: solid 2px #403cfa;
-}
-
-.page__touch-id .touch-id-wrapper .background-two, .page__touch-id .touch-id-wrapper .background-three {
-  position: absolute;
 }
 
 .page__touch-id .touch-id-wrapper .background {
@@ -15672,18 +15673,18 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__touch-id .touch-id-wrapper .background-two {
   height: 530px;
-  left: 50px;
+  margin-left: 35px;
+  margin-top: -565px;
   opacity: 0.3;
-  top: 35px;
   width: 530px;
 }
 
 .page__touch-id .touch-id-wrapper .background-three {
   background-image: linear-gradient(193deg, #4f4bf6 90%, #3632fd 9%);
   box-shadow: 10px 52px 60px 0 rgba(54, 50, 253, 0.26);
+  margin-left: 70px;
+  margin-top: -495px;
   height: 460px;
-  left: 85px;
-  top: 70px;
   width: 460px;
 }
 

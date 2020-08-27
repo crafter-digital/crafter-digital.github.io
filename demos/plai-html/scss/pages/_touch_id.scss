@@ -27,22 +27,23 @@
         box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
         margin-top: -18px;
         padding-top: 123px;
+        padding-bottom: 182px;
       }
     }
 
     .touch-id-wrapper {
+      display: inline-block !important;
       margin-bottom: 220px !important;
 
-      .background, .background-two, .background-three {
+      .background,
+      .background-two,
+      .background-three {
         border-radius: 50% !important;
       }
 
-      .background, .background-two {
+      .background,
+      .background-two {
         border: solid 2px $light-royal-blue;
-      }
-
-      .background-two, .background-three {
-        position: absolute;
       }
 
       .background {
@@ -54,18 +55,18 @@
 
       .background-two {
         height: 530px;
-        left: 50px;
+        margin-left: 35px;
+        margin-top: -565px;
         opacity: 0.3;
-        top: 35px;
         width: 530px;
       }
 
       .background-three {
         background-image: linear-gradient(193deg, #4f4bf6 90%, #3632fd 9%);
         box-shadow: 10px 52px 60px 0 rgba(54, 50, 253, 0.26);
+        margin-left: 70px;
+        margin-top: -495px;
         height: 460px;
-        left: 85px;
-        top: 70px;
         width: 460px;
 
         img {
