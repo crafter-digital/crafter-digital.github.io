@@ -1,5 +1,5 @@
 .page {
-  &__touch-id {
+  &__face-id {
     .header {
       padding: 117px 0 80px 0;
     }
@@ -30,22 +30,19 @@
       }
     }
 
-    .touch-id-wrapper {
+    .face-id-wrapper {
       margin-bottom: 220px !important;
 
       .background, .background-two, .background-three {
         border-radius: 50% !important;
       }
 
-      .background, .background-two {
-        border: solid 2px $light-royal-blue;
-      }
-
       .background-two, .background-three {
         position: absolute;
       }
-
+      
       .background {
+        border: solid 2px $light-royal-blue;
         height: 600px !important;
         margin: 0 !important;
         opacity: 0.1 !important;
@@ -53,23 +50,22 @@
       }
 
       .background-two {
-        height: 530px;
-        left: 50px;
-        opacity: 0.3;
-        top: 35px;
-        width: 530px;
+        border: solid 4px $greyish-two;
+        height: 540px;
+        left: 45px;
+        top: 30px;
+        width: 540px;
       }
 
       .background-three {
-        background-image: linear-gradient(193deg, #4f4bf6 90%, #3632fd 9%);
-        box-shadow: 10px 52px 60px 0 rgba(54, 50, 253, 0.26);
-        height: 460px;
-        left: 85px;
-        top: 70px;
-        width: 460px;
+        background-color: $greyish-three;
+        height: 500px;
+        left: 65px;
+        top: 50px;
+        width: 500px;
 
         img {
-          margin-top: 8%;
+          margin-top: 22%;
         }
       }
     }
