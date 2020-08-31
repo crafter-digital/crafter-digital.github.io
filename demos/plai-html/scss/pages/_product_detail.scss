@@ -152,15 +152,13 @@
 
 #imageModal {
   .modal-dialog {
-    max-width: 68%;
+    margin: 35% auto;
+    max-width: 100%;
   }
 
   .modal-content {
-    background-color: $white;
-    border-radius: 21px;
-    border: solid 1px $pale-grey-five;
+    background-color: unset;
     box-shadow: none;
-    padding: 52px 28px 38px 28px;
   }
 
   .modal-body {

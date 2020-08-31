@@ -1,0 +1,96 @@
+input.set {
+  display: none;
+}
+
+#slide1:checked~.mask .overflow {
+  margin-left: 0;
+}
+
+#slide2:checked~.mask .overflow {
+  margin-left: -100%;
+}
+
+#slide3:checked~.mask .overflow {
+  margin-left: -200%;
+}
+
+#slide4:checked~.mask .overflow {
+  margin-left: -300%;
+}
+
+.slides {
+  height: fit-content;
+  margin: auto;
+  position: relative;
+  width: 100%;
+
+  .mask {
+    background-color: white;
+    border-radius: 21px;
+    box-shadow: none;
+    margin: auto;
+    overflow: hidden;
+    width: 68%;
+  }
+
+  .overflow {
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    width: 400%;
+  }
+
+  .slide {
+    float: left;
+    height: 100%;
+    line-height: 200px;
+    width: 25%;
+
+    .wrapper {
+      padding: 52px 28px 38px 28px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.controls {
+  width: 100%;
+
+  label {
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    filter: brightness(0.7);
+    height: 140px;
+    padding: 10px;
+    position: absolute;
+    top: 35%;
+    width: 120px;
+
+    img {
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
+}
+
+#slide1:checked~.controls label:nth-child(2),
+#slide2:checked~.controls label:nth-child(3),
+#slide3:checked~.controls label:nth-child(4),
+#slide4:checked~.controls label:nth-child(5) {
+  right: 0;
+  display: block;
+}
+
+#slide2:checked~.controls label:nth-child(1),
+#slide3:checked~.controls label:nth-child(2),
+#slide4:checked~.controls label:nth-child(3),
+#slide5:checked~.controls label:nth-child(4) {
+  left: 0;
+  display: block;
+}

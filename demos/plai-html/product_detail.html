@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Plai - Mobile</title>
 
@@ -74,7 +75,8 @@
     <div class="product-body">
       <div class="row">
         <div class="col-sm-12 p-0">
-          <button type="button" class="select-custom select-custom__sort-by" data-toggle="modal" data-target="#sizeModal">
+          <button type="button" class="select-custom select-custom__sort-by" data-toggle="modal"
+            data-target="#sizeModal">
             <b>Size: </b>Please Select
           </button>
         </div>
@@ -149,17 +151,79 @@
   </footer>
 
   <!-- Image Modal -->
-  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src="img/jersey.jpg" alt="product">
+      <div class="modal-content p-0">
+        <div class="slides">
+          <input checked type="radio" name="slider" id="slide1" class="set" />
+          <input type="radio" name="slider" id="slide2" class="set" />
+          <input type="radio" name="slider" id="slide3" class="set" />
+          <input type="radio" name="slider" id="slide4" class="set" />
+
+          <div class="mask text-center">
+            <div class="overflow">
+              <div class="slide">
+                <div class="wrapper">
+                  <div class="modal-body">
+                    <img src="img/jersey.jpg" alt="">
+                  </div>
+                  <div class="modal-footer text-left">
+                    <p class="product-title">Rugby Chief Home 2020</p>
+                    <p class="product-description">Football Championship - Teamwear T-shirts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrapper">
+                  <div class="modal-body">
+                    <img src="img/jersey2.jpg" alt="">
+                  </div>
+                  <div class="modal-footer text-left">
+                    <p class="product-title">Rugby Chief Home 2020</p>
+                    <p class="product-description">Football Championship - Teamwear T-shirts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrapper">
+                  <div class="modal-body">
+                    <img src="img/jersey3.jpg" alt="">
+                  </div>
+                  <div class="modal-footer text-left">
+                    <p class="product-title">Rugby Chief Home 2020</p>
+                    <p class="product-description">Football Championship - Teamwear T-shirts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="wrapper">
+                  <div class="modal-body">
+                    <img src="img/jersey4.jpg" alt="">
+                  </div>
+                  <div class="modal-footer text-left">
+                    <p class="product-title">Rugby Chief Home 2020</p>
+                    <p class="product-description">Football Championship - Teamwear T-shirts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <p class="product-title">Rugby Chief Home 2020</p>
-          <p class="product-description">Football Championship - Teamwear T-shirts</p>
+
+          <div class="controls" onclick="">
+            <label for="slide1">
+              <img src="img/jersey.jpg" alt="">
+            </label>
+            <label for="slide2">
+              <img src="img/jersey2.jpg" alt="">
+            </label>
+            <label for="slide3">
+              <img src="img/jersey3.jpg" alt="">
+            </label>
+            <label for="slide4">
+              <img src="img/jersey4.jpg" alt="">
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -260,4 +324,5 @@
 
   <script src="js/plai.min.js"></script>
 </body>
+
 </html>
