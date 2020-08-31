@@ -1,0 +1,200 @@
+.page {
+  &__product-detail {
+    .header {
+      box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .container-fluid {
+      position: absolute;
+      top: 165px;
+    }
+
+    .product-media {
+      border-bottom: 5px solid $primary;
+      margin: 0;
+
+      .product {
+        background-color: $white;
+        border: solid 1px $pale-grey-five;
+        height: 300px;
+        padding: 20px !important;
+        width: 100%;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .product-header {
+      border-bottom: 1px solid $white-three;
+      font-family: 'GothamPro-Medium';
+      margin: 40px;
+      margin-bottom: 0;
+      padding-bottom: 15px;
+
+      .product-title {
+        color: $primary;
+        font-size: 37px;
+        line-height: 1.43;
+      }
+
+      .product-description {
+        color: $cool-grey-five;
+        font-size: 26px;
+        line-height: 1.08;
+      }
+    }
+
+    .product-body {
+      margin: 0 42px;
+
+      .select-custom {
+        border-bottom: 1px solid $white-three !important;
+        padding: 32px 0 !important;
+
+        b {
+          font-family: 'GothamPro-Medium';
+          margin-right: 18px;
+        }
+      }
+
+      .product-details {
+        margin-top: 70px;
+
+        ul {
+          list-style: none;
+          margin: 0;
+
+          li {
+            padding: 38px 0;
+
+            .icon {
+              width: 40px;
+            }
+
+            p {
+              color: $primary;
+              font-family: 'GothamPro-Medium';
+              font-size: 25px;
+              letter-spacing: -0.47px;
+              margin: 0;
+              margin-top: 5px;
+            }
+
+            .more {
+              margin-top: 10px;
+            }
+          }
+
+          li:not(:last-child) {
+            border-bottom: 1px solid $greyish-four;
+          }
+        }
+      }
+    }
+
+    .footer {
+      &__product {
+        font-family: 'GothamPro-Medium';
+
+        .row {
+          height: 100%;
+        }
+
+        .left {
+          padding-left: 38px !important;
+          padding-top: 40px !important;
+
+          .text {
+            font-size: 29px;
+            font-weight: 500;
+            color: $primary;
+          }
+
+          .price {
+            font-size: 36px;
+            line-height: 0.78;
+            letter-spacing: -0.67px;
+            color: $grass-green;
+          }
+        }
+
+        .right {
+          .btn {
+            border-radius: 0;
+            height: 100%;
+            width: 100%;
+
+            img {
+              left: 18%;
+              position: absolute;
+            }
+
+            span {
+              margin-left: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#imageModal {
+  .modal-dialog {
+    max-width: 68%;
+  }
+
+  .modal-content {
+    background-color: $white;
+    border-radius: 21px;
+    border: solid 1px $pale-grey-five;
+    box-shadow: none;
+    padding: 52px 28px 38px 28px;
+  }
+
+  .modal-body {
+    border-bottom: 1px solid $white-three;
+    padding-bottom: 55px;
+
+    .image-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+    display: block;
+    font-family: 'GothamPro-Medium';
+    margin-top: 14px;
+    padding: 0;
+
+    p {
+      margin: 0;
+    }
+
+    .product-title {
+      color: $primary;
+      font-size: 27px;
+      line-height: 1.96;
+    }
+
+    .product-description {
+      color: $cool-grey-five;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+  }
+}

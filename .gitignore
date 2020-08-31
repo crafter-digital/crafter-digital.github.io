@@ -5,3 +5,5 @@ _site
 /demos/plai-html/node_modules
 /demos/plai-html/.DS_Store
 /demos/plai-html/scss/.DS_Store
+/demos/plai-html/img/.DS_Store
+/demos/plai-html/img/icons/.DS_Store

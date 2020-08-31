@@ -12994,7 +12994,7 @@ label.btn-lg, .btn-group-lg > label.btn {
 }
 
 .btn-primary__two {
-  background-image: linear-gradient(24deg, #283055 15%, #485288 57%);
+  background: linear-gradient(24deg, #283055 15%, #485288 57%);
 }
 
 .btn-danger {
@@ -13785,11 +13785,11 @@ label.btn-lg, .btn-group-lg > label.btn {
   border: solid 10px rgba(54, 63, 108, 0.6);
 }
 
-.header__news-detail nav, .header__event-detail nav, .header__find-team nav {
+.header__news-detail nav, .header__event-detail nav, .header__find-team nav, .header__product-detail nav {
   background-color: #363f6c;
 }
 
-.header__event-detail nav, .header__find-team nav {
+.header__event-detail nav, .header__find-team nav, .header__product-detail nav {
   border-radius: unset;
 }
 
@@ -13901,8 +13901,8 @@ label.btn-lg, .btn-group-lg > label.btn {
   font-weight: 500;
 }
 
-.modal-dialog .modal-content .modal-body .list .radio-custom:not(:last-child) {
-  margin-bottom: 35px;
+.modal-dialog .modal-content .modal-body .list {
+  margin-bottom: 35px !important;
 }
 
 .nav-menu {
@@ -14161,7 +14161,11 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__event-detail .event-header {
   background-color: #f9f9fb;
-  padding: 38px 0 64px 50px;
+  padding: 38px 0 77px 0;
+}
+
+.page__event-detail .event-header .event-title, .page__event-detail .event-header .event-details {
+  padding-left: 50px;
 }
 
 .page__event-detail .event-header .event-title {
@@ -14193,6 +14197,7 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__event-detail .event-header .event-details table td {
   background-color: #ffffff;
+  border-left: 1px solid #eceff7;
   padding: 0 38px;
   padding-bottom: 25px;
   padding-top: 20px;
@@ -14225,6 +14230,17 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__event-detail .event-header .event-details table tr:last-child td {
   padding-bottom: 40px;
+}
+
+.page__event-detail .event-header .reserve-ticket {
+  margin-top: 70px;
+  padding: 0 60px;
+}
+
+.page__event-detail .event-header .reserve-ticket img {
+  position: absolute;
+  left: 20%;
+  width: 48px;
 }
 
 .page__event-detail .event-body {
@@ -14287,50 +14303,6 @@ label.btn-lg, .btn-group-lg > label.btn {
   font-size: 31px;
 }
 
-.page__face-id .header {
-  padding: 117px 0 80px 0;
-}
-
-.page__face-id .container-fluid .wrapper, .page__face-id .container-sm .wrapper, .page__face-id .container-md .wrapper, .page__face-id .container-lg .wrapper, .page__face-id .container-xl .wrapper {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.page__face-id .container-fluid .wrapper .background, .page__face-id .container-sm .wrapper .background, .page__face-id .container-md .wrapper .background, .page__face-id .container-lg .wrapper .background, .page__face-id .container-xl .wrapper .background {
-  background: #ffffff;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
-  height: 36px;
-  margin: 0 50px;
-  opacity: 0.8;
-}
-
-.page__face-id .container-fluid .card, .page__face-id .container-sm .card, .page__face-id .container-md .card, .page__face-id .container-lg .card, .page__face-id .container-xl .card {
-  border-radius: unset;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-top: -18px;
-  padding-bottom: 182px;
-  padding-top: 123px;
-}
-
-.page__face-id .face-id-wrapper {
-  display: inline-block !important;
-  margin-bottom: 220px !important;
-}
-
-.page__face-id .face-id-wrapper .background,
-.page__face-id .face-id-wrapper .background-two,
-.page__face-id .face-id-wrapper .background-three {
-  border-radius: 50% !important;
-}
-
 .page__face-id .face-id-wrapper .background {
   border: solid 2px #403cfa;
   height: 600px !important;
@@ -14357,19 +14329,6 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__face-id .face-id-wrapper .background-three img {
   margin-top: 22%;
-}
-
-.page__face-id .image-wrapper {
-  margin-top: 350px;
-  margin-bottom: 480px;
-}
-
-.page__face-id .switch-button {
-  padding: 0 100px;
-}
-
-.page__face-id .switch-button .active {
-  background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
 }
 
 .page__find-team nav {
@@ -14664,81 +14623,194 @@ label.btn-lg, .btn-group-lg > label.btn {
   list-style: none;
 }
 
-.page__profile nav {
-  padding-bottom: 40px;
+.page__product-detail .header {
+  box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
-.page__profile nav hr {
-  border-top: 1px solid #dae0f0;
-  margin-top: 26px;
-  margin-bottom: 28px;
+.page__product-detail .container-fluid, .page__product-detail .container-sm, .page__product-detail .container-md, .page__product-detail .container-lg, .page__product-detail .container-xl {
+  position: absolute;
+  top: 165px;
 }
 
-.page__profile nav .sub-title__profile-name {
-  font-size: 35px;
-  opacity: 1;
+.page__product-detail .product-media {
+  border-bottom: 5px solid #363f6c;
+  margin: 0;
 }
 
-.page__profile nav .sub-title__bio {
-  letter-spacing: 0.7px;
+.page__product-detail .product-media .product {
+  background-color: #ffffff;
+  border: solid 1px #eceff7;
+  height: 300px;
+  padding: 20px !important;
+  width: 100%;
 }
 
-.page__profile .content .rest-members,
-.page__profile .content .text__bold {
-  color: #363f6c !important;
-  font-family: 'GothamPro-Medium' !important;
-}
-
-.page__profile a.team-details-link {
-  text-decoration: none;
-}
-
-.page__profile a.team-details-link p {
-  text-align: left;
-}
-
-.page__profile .content-profile {
-  padding: 0 50px;
-}
-
-.page__profile .content-profile .team-name {
-  color: #363f6c;
-  font-family: 'GothamPro-Medium';
-}
-
-.page__profile .content-profile .team-logo {
-  border: solid 4px #fbdb09;
-  border-radius: 50%;
+.page__product-detail .product-media .product img {
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
 }
 
-.page__profile .content-profile .details .text {
-  color: #768dac;
-  font-family: GothamPro;
-  letter-spacing: -1.05px;
-  line-height: 1.33;
+.page__product-detail .product-media .product:focus {
+  outline: none;
 }
 
-.page__profile .content-profile .details .text__bold {
-  font-size: 20px;
-  letter-spacing: normal;
-  line-height: 1.4;
+.page__product-detail .product-header {
+  border-bottom: 1px solid #e4e4e4;
+  font-family: 'GothamPro-Medium';
+  margin: 40px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
 }
 
-.page__profile .content-profile .details .member-list .member {
-  display: inline;
+.page__product-detail .product-header .product-title {
+  color: #363f6c;
+  font-size: 37px;
+  line-height: 1.43;
+}
+
+.page__product-detail .product-header .product-description {
+  color: #9da0a2;
+  font-size: 26px;
+  line-height: 1.08;
+}
+
+.page__product-detail .product-body {
+  margin: 0 42px;
+}
+
+.page__product-detail .product-body .select-custom {
+  border-bottom: 1px solid #e4e4e4 !important;
+  padding: 32px 0 !important;
+}
+
+.page__product-detail .product-body .select-custom b {
+  font-family: 'GothamPro-Medium';
+  margin-right: 18px;
+}
+
+.page__product-detail .product-body .product-details {
+  margin-top: 70px;
+}
+
+.page__product-detail .product-body .product-details ul {
   list-style: none;
+  margin: 0;
 }
 
-.page__profile .content-profile .details .member-list .member img {
-  border-radius: 50%;
-  height: 40px;
+.page__product-detail .product-body .product-details ul li {
+  padding: 38px 0;
+}
+
+.page__product-detail .product-body .product-details ul li .icon {
   width: 40px;
 }
 
-.page__profile .content-profile .details .member-list .member:not(:last-child) {
-  margin-right: 12px;
+.page__product-detail .product-body .product-details ul li p {
+  color: #363f6c;
+  font-family: 'GothamPro-Medium';
+  font-size: 25px;
+  letter-spacing: -0.47px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.page__product-detail .product-body .product-details ul li .more {
+  margin-top: 10px;
+}
+
+.page__product-detail .product-body .product-details ul li:not(:last-child) {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.page__product-detail .footer__product {
+  font-family: 'GothamPro-Medium';
+}
+
+.page__product-detail .footer__product .row {
+  height: 100%;
+}
+
+.page__product-detail .footer__product .left {
+  padding-left: 38px !important;
+  padding-top: 40px !important;
+}
+
+.page__product-detail .footer__product .left .text {
+  font-size: 29px;
+  font-weight: 500;
+  color: #363f6c;
+}
+
+.page__product-detail .footer__product .left .price {
+  font-size: 36px;
+  line-height: 0.78;
+  letter-spacing: -0.67px;
+  color: #237e0d;
+}
+
+.page__product-detail .footer__product .right .btn {
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.page__product-detail .footer__product .right .btn img {
+  left: 18%;
+  position: absolute;
+}
+
+.page__product-detail .footer__product .right .btn span {
+  margin-left: 20%;
+}
+
+#imageModal .modal-dialog {
+  max-width: 68%;
+}
+
+#imageModal .modal-content {
+  background-color: #ffffff;
+  border-radius: 21px;
+  border: solid 1px #eceff7;
+  box-shadow: none;
+  padding: 52px 28px 38px 28px;
+}
+
+#imageModal .modal-body {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 55px;
+}
+
+#imageModal .modal-body .image-wrapper img {
+  width: 100%;
+}
+
+#imageModal .modal-footer {
+  border: none;
+  display: block;
+  font-family: 'GothamPro-Medium';
+  margin-top: 14px;
+  padding: 0;
+}
+
+#imageModal .modal-footer p {
+  margin: 0;
+}
+
+#imageModal .modal-footer .product-title {
+  color: #363f6c;
+  font-size: 27px;
+  line-height: 1.96;
+}
+
+#imageModal .modal-footer .product-description {
+  color: #9da0a2;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 .page__profile .content-profile__slide {
@@ -14860,6 +14932,83 @@ label.btn-lg, .btn-group-lg > label.btn {
 .page__profile .content-profile__list .details .rest-members {
   font-size: 17px;
   margin-top: 12px;
+}
+
+.page__profile nav {
+  padding-bottom: 40px;
+}
+
+.page__profile nav hr {
+  border-top: 1px solid #dae0f0;
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
+.page__profile nav .sub-title__profile-name {
+  font-size: 35px;
+  opacity: 1;
+}
+
+.page__profile nav .sub-title__bio {
+  letter-spacing: 0.7px;
+}
+
+.page__profile .content .rest-members,
+.page__profile .content .text__bold {
+  color: #363f6c !important;
+  font-family: 'GothamPro-Medium' !important;
+}
+
+.page__profile a.team-details-link {
+  text-decoration: none;
+}
+
+.page__profile a.team-details-link p {
+  text-align: left;
+}
+
+.page__profile .content-profile {
+  padding: 0 50px;
+}
+
+.page__profile .content-profile .team-name {
+  color: #363f6c;
+  font-family: 'GothamPro-Medium';
+}
+
+.page__profile .content-profile .team-logo {
+  border: solid 4px #fbdb09;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.page__profile .content-profile .details .text {
+  color: #768dac;
+  font-family: GothamPro;
+  letter-spacing: -1.05px;
+  line-height: 1.33;
+}
+
+.page__profile .content-profile .details .text__bold {
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+.page__profile .content-profile .details .member-list .member {
+  display: inline;
+  list-style: none;
+}
+
+.page__profile .content-profile .details .member-list .member img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.page__profile .content-profile .details .member-list .member:not(:last-child) {
+  margin-right: 12px;
 }
 
 .page__sign-in .container-fluid, .page__sign-in .container-sm, .page__sign-in .container-md, .page__sign-in .container-lg, .page__sign-in .container-xl {
@@ -15615,17 +15764,17 @@ label.btn-lg, .btn-group-lg > label.btn {
   margin-top: 3px;
 }
 
-.page__touch-id .header {
+.page__touch-id .header, .page__face-id .header {
   padding: 117px 0 80px 0;
 }
 
-.page__touch-id .container-fluid .wrapper, .page__touch-id .container-sm .wrapper, .page__touch-id .container-md .wrapper, .page__touch-id .container-lg .wrapper, .page__touch-id .container-xl .wrapper {
+.page__touch-id .container-fluid .wrapper, .page__touch-id .container-sm .wrapper, .page__touch-id .container-md .wrapper, .page__touch-id .container-lg .wrapper, .page__touch-id .container-xl .wrapper, .page__face-id .container-fluid .wrapper, .page__face-id .container-sm .wrapper, .page__face-id .container-md .wrapper, .page__face-id .container-lg .wrapper, .page__face-id .container-xl .wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.page__touch-id .container-fluid .wrapper .background, .page__touch-id .container-sm .wrapper .background, .page__touch-id .container-md .wrapper .background, .page__touch-id .container-lg .wrapper .background, .page__touch-id .container-xl .wrapper .background {
+.page__touch-id .container-fluid .wrapper .background, .page__touch-id .container-sm .wrapper .background, .page__touch-id .container-md .wrapper .background, .page__touch-id .container-lg .wrapper .background, .page__touch-id .container-xl .wrapper .background, .page__face-id .container-fluid .wrapper .background, .page__face-id .container-sm .wrapper .background, .page__face-id .container-md .wrapper .background, .page__face-id .container-lg .wrapper .background, .page__face-id .container-xl .wrapper .background {
   background: #ffffff;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -15635,28 +15784,47 @@ label.btn-lg, .btn-group-lg > label.btn {
   opacity: 0.8;
 }
 
-.page__touch-id .container-fluid .card, .page__touch-id .container-sm .card, .page__touch-id .container-md .card, .page__touch-id .container-lg .card, .page__touch-id .container-xl .card {
+.page__touch-id .container-fluid .card, .page__touch-id .container-sm .card, .page__touch-id .container-md .card, .page__touch-id .container-lg .card, .page__touch-id .container-xl .card, .page__face-id .container-fluid .card, .page__face-id .container-sm .card, .page__face-id .container-md .card, .page__face-id .container-lg .card, .page__face-id .container-xl .card {
   border-radius: unset;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
   margin-top: -18px;
-  padding-top: 123px;
   padding-bottom: 182px;
+  padding-top: 123px;
 }
 
-.page__touch-id .touch-id-wrapper {
+.page__touch-id .face-id-wrapper, .page__touch-id .touch-id-wrapper, .page__face-id .face-id-wrapper, .page__face-id .touch-id-wrapper {
   display: inline-block !important;
   margin-bottom: 220px !important;
 }
 
-.page__touch-id .touch-id-wrapper .background,
+.page__touch-id .face-id-wrapper .background,
+.page__touch-id .face-id-wrapper .background-two,
+.page__touch-id .face-id-wrapper .background-three, .page__touch-id .touch-id-wrapper .background,
 .page__touch-id .touch-id-wrapper .background-two,
-.page__touch-id .touch-id-wrapper .background-three {
+.page__touch-id .touch-id-wrapper .background-three, .page__face-id .face-id-wrapper .background,
+.page__face-id .face-id-wrapper .background-two,
+.page__face-id .face-id-wrapper .background-three, .page__face-id .touch-id-wrapper .background,
+.page__face-id .touch-id-wrapper .background-two,
+.page__face-id .touch-id-wrapper .background-three {
   border-radius: 50% !important;
+}
+
+.page__touch-id .image-wrapper, .page__face-id .image-wrapper {
+  margin-top: 350px;
+  margin-bottom: 480px;
+}
+
+.page__touch-id .switch-button, .page__face-id .switch-button {
+  padding: 0 100px;
+}
+
+.page__touch-id .switch-button .active, .page__face-id .switch-button .active {
+  background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
 }
 
 .page__touch-id .touch-id-wrapper .background,
@@ -15690,17 +15858,4 @@ label.btn-lg, .btn-group-lg > label.btn {
 
 .page__touch-id .touch-id-wrapper .background-three img {
   margin-top: 8%;
-}
-
-.page__touch-id .image-wrapper {
-  margin-top: 350px;
-  margin-bottom: 480px;
-}
-
-.page__touch-id .switch-button {
-  padding: 0 100px;
-}
-
-.page__touch-id .switch-button .active {
-  background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
 }

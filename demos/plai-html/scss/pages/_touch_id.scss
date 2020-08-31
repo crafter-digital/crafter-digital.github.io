@@ -1,46 +1,6 @@
 .page {
   &__touch-id {
-    .header {
-      padding: 117px 0 80px 0;
-    }
-
-    .container-fluid {
-      .wrapper {
-        height: fit-content;
-
-        .background {
-          background: $white;
-          border-top-left-radius: 50px;
-          border-top-right-radius: 50px;
-          box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
-          height: 36px;
-          margin: 0 50px;
-          opacity: 0.8;
-        }
-      }
-
-      .card {
-        border-radius: unset;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        height: fit-content;
-        box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
-        margin-top: -18px;
-        padding-top: 123px;
-        padding-bottom: 182px;
-      }
-    }
-
     .touch-id-wrapper {
-      display: inline-block !important;
-      margin-bottom: 220px !important;
-
-      .background,
-      .background-two,
-      .background-three {
-        border-radius: 50% !important;
-      }
-
       .background,
       .background-two {
         border: solid 2px $light-royal-blue;
@@ -72,19 +32,6 @@
         img {
           margin-top: 8%;
         }
-      }
-    }
-
-    .image-wrapper {
-      margin-top: 350px;
-      margin-bottom: 480px;
-    }
-
-    .switch-button {
-      padding: 0 100px;
-
-      .active {
-        background-image: linear-gradient(11deg, #283055 -11%, #363f6c 80%);
       }
     }
   }

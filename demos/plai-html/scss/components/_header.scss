@@ -136,13 +136,13 @@
     }
   }
 
-  &__news-detail, &__event-detail, &__find-team {
+  &__news-detail, &__event-detail, &__find-team, &__product-detail {
     nav {
       background-color: $primary;
     }
   }
 
-  &__event-detail, &__find-team {
+  &__event-detail, &__find-team, &__product-detail {
     nav {
       border-radius: unset;
     }

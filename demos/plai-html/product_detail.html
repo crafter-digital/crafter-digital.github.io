@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plai - Mobile</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Datepicker -->
+  <link href="vendor/bootstrap_datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/plai.css" rel="stylesheet">
+</head>
+
+<body class="page page__product-detail bg-grey">
+  <header class="header header__product-detail">
+    <nav class="nav">
+      <div class="row w-100">
+        <div class="col-2 text-left p-0">
+          <a href="team_detail_shop.html" class="back">
+            <img src="img/icons/icon-back-white.png" />
+          </a>
+        </div>
+
+        <div class="col-2 offset-sm-8 text-right p-0">
+          <a href="#" class="share">
+            <img src="img/icons/icon-share.png" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid p-0 ">
+    <div class="product-media p-0">
+      <div class="row">
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey.jpg" alt="">
+          </button>
+        </div>
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey2.jpg" alt="">
+          </button>
+        </div>
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey3.jpg" alt="">
+          </button>
+        </div>
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey4.jpg" alt="">
+          </button>
+        </div>
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey5.jpg" alt="">
+          </button>
+        </div>
+        <div class="col-sm-4 p-0 text-center">
+          <button type="button" class="product" data-toggle="modal" data-target="#imageModal">
+            <img src="img/jersey6.jpg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-header">
+      <h1 class="product-title">Rugby Chief Home 2020</h1>
+      <p class="product-description">Football Championship - Teamwear T-shirts</p>
+    </div>
+
+    <div class="product-body">
+      <div class="row">
+        <div class="col-sm-12 p-0">
+          <button type="button" class="select-custom select-custom__sort-by" data-toggle="modal" data-target="#sizeModal">
+            <b>Size: </b>Please Select
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 p-0">
+          <div class="card product-details">
+            <ul class="p-0">
+              <li>
+                <div class="row">
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/info.png" alt="info" class="icon">
+                  </div>
+                  <div class="col-sm-8 p-0">
+                    <p>Product Info</p>
+                  </div>
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/icon-right.png" class="more" alt="more">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/truck.png" alt="info" class="icon">
+                  </div>
+                  <div class="col-sm-8 p-0">
+                    <p>Delivery Info</p>
+                  </div>
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/icon-right.png" class="more" alt="more">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/truck.png" alt="info" class="icon">
+                  </div>
+                  <div class="col-sm-8 p-0">
+                    <p>Returns</p>
+                  </div>
+                  <div class="col-sm-2 text-center">
+                    <img src="img/icons/icon-right.png" class="more" alt="more">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer__product p-0">
+    <div class="row p-0">
+      <div class="col-sm-6 left p-0">
+        <p class="text">From</p>
+        <p class="price">$130.50</p>
+      </div>
+
+      <div class="col-sm-6 right p-0">
+        <button class="btn btn-lg btn-primary">
+          <img src="img/icons/icon-cart.png" alt="">
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="image-wrapper">
+            <img src="img/jersey.jpg" alt="product">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p class="product-title">Rugby Chief Home 2020</p>
+          <p class="product-description">Football Championship - Teamwear T-shirts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Modal -->
+  <div class="modal fade" id="sizeModal" tabindex="-1" aria-labelledby="sizeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      S
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      M
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      L
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 list">
+              <div class="radio-custom radio-custom__modal">
+                <input type="radio" name="radio-input2">
+                <div class="radio-wrapper">
+                  <label>
+                    <label class="form-check-label">
+                      XL
+                    </label>
+                    <span class="checkmark form-check-input"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <hr>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="vendor/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+  <script src="js/plai.min.js"></script>
+</body>
+</html>
