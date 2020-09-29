@@ -1,0 +1,137 @@
+.page {
+  &__email-confirmation {
+    header {
+      padding: 30px 0;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    .container-fluid {
+      margin-top: 70px;
+      padding: 0 25px;
+
+      .card {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border: solid 1px $pale-grey-ten;
+        box-shadow: 25px 35px 40px 0 rgba(0, 0, 0, 0.06);
+
+        .image-wrapper {
+          left: -115px;
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+
+          img {
+            width: 95%;
+          }
+        }
+
+        .card-header {
+          background-color: $white;
+          border-radius: 21px !important;
+          border: none;
+          color: $primary;
+          padding: 83px 46px 30px;
+
+          .title {
+            font-family: 'GothamPro-Medium';
+            font-size: 45px;
+            letter-spacing: 2.29px;
+            margin-bottom: 17px;
+            text-align: center;
+          }
+
+          .text {
+            display: inline-block;
+            font-family: 'GothamPro';
+            font-size: 21px;;
+            line-height: 1.62;
+            margin-bottom: 30px;
+            opacity: 0.7;
+
+            span {
+              color: $olive-brown;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .card-body {
+          padding: 0;
+          .bottom {
+            margin-bottom: 45px !important;
+            margin-top: 435px !important;
+
+            .btn {
+              font-size: 24px;
+              height: 80px;
+            }
+
+            a.confirm-btn {
+              color: $white;
+              font-family: 'GothamPro-Medium';
+              left: 22%;
+              position: absolute;
+              text-decoration: none;
+              text-transform: uppercase;
+              top: 22px;
+              z-index: 1;
+            }
+  
+            .description-link {
+              color: $primary;
+              font-family: 'GothamPro-Medium';
+              font-size: 21px;
+              font-weight: 500;
+              letter-spacing: 0.4px;
+              margin-bottom: 15px;
+              margin-top: 80px;
+            }
+  
+            .link {
+              color: $electric-blue;
+              font-family: 'Avenir';
+              font-size: 20px;
+              letter-spacing: 0.4px;
+              text-decoration: none;
+              border-bottom: 1px solid;
+            }
+          }
+        }
+
+        .border-bottom {
+          background-image: linear-gradient(91deg, #304f69 15%, #363f6c 83%);
+          border-bottom-left-radius: 21px;
+          border-bottom-right-radius: 21px;
+          height: 8px;
+          margin-top: -8px;
+        }
+      }
+
+      ul.social-media-links {
+        list-style: none;
+
+        li {
+          display: inline;
+          margin-right: 40px;
+
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .copyright {
+        color: $primary;
+        font-family: 'Avenir';
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
