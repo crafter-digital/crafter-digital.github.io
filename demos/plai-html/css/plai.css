@@ -1,17 +1,4 @@
 @charset "UTF-8";
-@-ms-viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-@-o-viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-@viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -14304,7 +14291,7 @@ input.set {
 
 .page__email-confirmation .container-fluid .card .image-wrapper, .page__email-confirmation .container-sm .card .image-wrapper, .page__email-confirmation .container-md .card .image-wrapper, .page__email-confirmation .container-lg .card .image-wrapper, .page__email-confirmation .container-xl .card .image-wrapper {
   left: -115px;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
 }
@@ -14349,7 +14336,7 @@ input.set {
 
 .page__email-confirmation .container-fluid .card .card-body .bottom, .page__email-confirmation .container-sm .card .card-body .bottom, .page__email-confirmation .container-md .card .card-body .bottom, .page__email-confirmation .container-lg .card .card-body .bottom, .page__email-confirmation .container-xl .card .card-body .bottom {
   margin-bottom: 45px !important;
-  margin-top: 435px !important;
+  margin-top: -14% !important;
 }
 
 .page__email-confirmation .container-fluid .card .card-body .bottom .btn, .page__email-confirmation .container-sm .card .card-body .bottom .btn, .page__email-confirmation .container-md .card .card-body .bottom .btn, .page__email-confirmation .container-lg .card .card-body .bottom .btn, .page__email-confirmation .container-xl .card .card-body .bottom .btn {
