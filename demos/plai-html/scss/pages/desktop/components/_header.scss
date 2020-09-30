@@ -1,0 +1,43 @@
+header {
+  background-color: $white;
+  padding: 21px 45px;
+
+  .title {
+    color: $black;
+    font-family: 'GothamPro-Medium';
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .breadcrumb {
+    background-color: $white;
+
+    .breadcrumb-item, .breadcrumb-item.active {
+      font-family: GothamPro;
+      font-size: 18px;
+      margin-right: 15px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .breadcrumb-item {
+      a {
+        color: $black;
+        font-size: 18px;
+      }
+    }
+
+    .breadcrumb-item.active {
+      color: $greyish-five;
+      margin-top: 3px;
+
+      &:before {
+        content: ">";
+        margin-right: 15px;
+      }
+    }
+  }
+}

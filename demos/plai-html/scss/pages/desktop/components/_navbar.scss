@@ -1,0 +1,79 @@
+.nav-wrapper {
+  padding: 20px 35px;
+
+  nav {
+    background-image: linear-gradient(95deg, $dark-grey-blue-three 15%, $primary 83%);
+    border-radius: 10px;
+    height: 70px;
+    padding: 15px 16px;
+
+    .form-search {
+      input {
+        background-color: $white;
+        background-image: url(../../img/icons/icon-search.png);
+        background-position: 14px;
+        background-repeat: no-repeat;
+        background-size: 19px;
+        border-radius: 10px;
+        box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.05);
+        height: 40px;
+        padding-left: 45px;
+        width: 360px;
+      }
+
+      ::placeholder {
+        color: $bluey-grey;
+        font-family: 'GothamPro';
+        font-size: 15px;
+        letter-spacing: -0.28px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        a {
+          color: $white;
+          font-family: 'GothamPro-Medium';
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.54px;
+          line-height: 1.71;
+          text-decoration: none;
+
+          img {
+            margin-top: 8px;
+            width: 24px;
+          }
+
+          .avatar {
+            border-radius: 50%;
+            height: 38px;
+            margin: 0;
+            margin-right: 10px;
+            object-fit: cover;
+            width: 38px;
+          }
+        }
+      }
+
+      .nav-item:not(:last-child) {
+        margin-right: 36px;
+      }
+
+      .nav-item.profile {
+        a.toggle:after {
+          content: '\f107';
+          font-family: 'FontAwesome';
+          font-size: 16px;
+          margin-left: 10px;
+        }
+      }
+
+      .dropdown-menu.show {
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+.sidebar-wrapper,
+.sidebar-dropdown > a:after,
+.sidebar-submenu li a:before,
+.sidebar-wrapper ul li a i,
+.page-wrapper .page-content,
+.sidebar-menu ul li a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar-background, .sidebar-wrapper {
+  background-color: $white;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -20px 40px 0 rgba(60, 66, 91, 0.06);
+  height: 100%;
+  position: fixed;
+}
+
+.sidebar-background {
+  margin-top: 10px;
+  opacity: 0.8;
+  width: 19%;
+}
+
+.sidebar-wrapper {
+  margin-top: 20px;
+  max-height: 100%;
+  top: 0;
+  width: 20%;
+  z-index: 999;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.sidebar-header {
+  overflow: hidden;
+  padding-top: 30px;
+
+  .title {
+    color: $primary;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .avatar {
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top right, #fdef15, #fb9909);
+    background-origin: border-box;
+    border-radius: 50%;
+    border: double 5px transparent;
+    height: 90px;
+    margin: 10px auto 15px auto;
+    width: 90px;
+
+    img {
+      border-radius: 50%;
+      height: 80px;
+      object-fit: cover;
+      width: 80px;
+    }
+  }
+
+  .notification {
+    margin-top: -18px;
+    width: 22px;
+  }
+
+  .name, .bio {
+    border-bottom: 1px solid $light-blue-grey;
+  }
+
+  .name {
+    font-size: 17px;
+    margin: 0 15px;
+    padding-bottom: 35px;
+  }
+
+  .bio {
+    color: $primary;
+    font-family: 'GothamPro';
+    font-size: 18px;
+    letter-spacing: 0.41px;
+    opacity: 0.9;
+    padding: 15px 0 12px 0;
+  }
+}
+
+.sidebar-content {
+  height: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
+  position: relative;
+}
+
+.sidebar-menu {
+  margin-top: 36px;
+
+  .sidebar-dropdown {
+    margin-top: 20px;
+
+    a.parent-menu {
+      padding: 8px 56px 8px 21px;
+
+      i {
+        color: $black;
+        font-size: 20px;
+        margin-right: 12px;
+        opacity: 0.7;
+      }
+
+      span {
+        color: $black;
+        font-family: 'GothamPro-Medium';
+        font-size: 18px;
+        opacity: 0.7;
+      }
+
+      span.badge {
+        background-color: $tomato;
+        border-radius: 50%;
+        color: white;
+        font-size: 15px;
+        height: 24px;
+        opacity: 0.7;
+        padding-right: 5px;
+        padding-top: 4px;
+        position: absolute;
+        right: 26px;
+        text-align: center;
+        top: 16px;
+        width: 24px;
+      }
+
+      &:after {
+        color: $battleship-grey;
+        content: '\f106';
+        font-family: 'FontAwesome';
+        font-size: 24px;
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 12px;
+      }
+    }
+
+    .sidebar-submenu {
+      display: none;
+
+      ul {
+        margin-top: 10px;
+
+        li {
+          padding: 6px 0 6px 62px;
+        }
+
+        a {
+          color: $black;
+          font-family: 'GothamPro-Medium';
+          font-size: 15px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  .sidebar-dropdown.active {
+    a.parent-menu {
+      background-image: linear-gradient(to right, #0357fd -98%, rgba(74, 144, 226, 0));
+
+      i, span {
+        color: $electric-blue-two;
+      }
+
+      span.badge {
+        color: white;
+      }
+
+      &:after {
+        transform: rotate(180deg);
+        top: 13px;
+      }
+    }
+  }
+
+  ul {
+    .header-menu {
+      font-family: 'GothamPro-Medium';
+      font-size: 12px;
+      opacity: 0.31;
+      padding: 0 56px 0 21px;
+      text-transform: uppercase;
+    }
+
+    li {
+      padding-right: 56px;
+
+      a {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Sidebar's scrollbar
+
+.sidebar-wrapper {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $silver-three;
+    border: 0px none $white;
+    border-radius: 0px;
+
+    &:hover {
+      background: $greyish;
+    }
+
+    &:active {
+      background: $greyish;
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none $white;
+    border-radius: 50px;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

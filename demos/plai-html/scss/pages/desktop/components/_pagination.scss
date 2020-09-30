@@ -1,0 +1,37 @@
+.custom-pagination {
+  justify-content: center;
+
+  .page-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .page-item.disabled {
+    opacity: 0.3;
+  }
+
+  .page-item.active {
+    .page-link {
+      color: $white;
+    }
+  }
+
+  .page-item.rest-pages a {
+    border: none;
+    color: $black;
+    font-family: 'Avenir';
+    font-size: 14px;
+    line-height: 1.71;
+    padding: 8px 2px 5px 2px;
+  }
+
+  .page-link {
+    border-radius: 6px;
+    color: $primary;
+    font-family: 'GothamPro-Medium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    padding: 8px 13px 5px 13px;
+    text-decoration: none;
+  }
+}
