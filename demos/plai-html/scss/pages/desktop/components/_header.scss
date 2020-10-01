@@ -30,14 +30,15 @@ header {
       }
     }
 
-    .breadcrumb-item.active {
-      color: $greyish-five;
-      margin-top: 3px;
-
+    .breadcrumb-item:not(:first-child) {
       &:before {
         content: ">";
         margin-right: 15px;
       }
+    }
+
+    .breadcrumb-item.active {
+      color: $greyish-five;
     }
   }
 }

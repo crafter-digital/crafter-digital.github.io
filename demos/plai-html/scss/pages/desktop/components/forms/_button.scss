@@ -1,0 +1,39 @@
+.form-elements {
+  .btn {
+    border-radius: 10px;
+    box-shadow: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    height: 45px;
+    letter-spacing: 1px;
+    padding: 11px 25px;
+    text-align: center;
+  }
+
+  .btn:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .btn-success, .btn-primary, .btn-warning {
+    color: $white !important;
+  }
+
+  .btn-secondary {
+    background-color: $silver-six;
+    color: $primary;
+  }
+
+  .btn-warning {
+    background-color: $orange-yellow;
+  }
+
+  .btn-primary {
+    border-radius: 10px;
+    background-image: linear-gradient(10deg, $dark-grey-blue-two -13%, $primary 83%);
+  }
+
+  .btn-shadowed {
+    box-shadow: 0 24px 35px 0 rgba(16, 151, 68, 0.05), 0 25px 80px 0 rgba(108, 38, 156, 0.2);
+  }
+}

@@ -1,0 +1,187 @@
+@import "forms/button";
+@import "forms/checkbox";
+@import "forms/radio";
+
+.form-custom-two {
+  a, label, small, .form-control::placeholder, .text-size {
+    font-family: GothamPro;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  label {
+    color: $black-four;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: $lightish-blue-three;
+    display: flex;
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  small {
+    color: $warm-grey;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .form-control {
+    background-color: $white;
+    border-radius: 8px;
+    border: 1px solid $bluegrey-light-two;
+    padding: 20px 15px
+  }
+
+  .form-control::placeholder {
+    color: $primary;
+    font-size: 15px;
+    letter-spacing: 0.43px;
+    opacity: 0.7;
+  }
+
+  .form-control:disabled {
+    opacity: 0.6;
+    border-radius: 8px;
+    background-color: rgba(142, 155, 188, 0.43);
+  }
+
+  .form-control:disabled::placeholder {
+    opacity: 0.9;
+    font-family: 'GothamPro-Medium';
+    font-size: 15px;
+    color: $black-two;
+  }
+
+  .text-bold::placeholder {
+    opacity: 0.5;
+    font-family: 'GothamPro-Medium';
+    font-size: 15px;
+    color: $black-four;
+  }
+
+  .text-size {
+    color: $primary;
+    float: right;
+    font-size: 13px;
+    letter-spacing: 0.37px;
+    position: relative;
+    top: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 34px;
+  }
+
+  .buttons {
+    margin-top: 22px;
+  }
+
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: $black-four;
+    font-family: 'GothamPro-Medium';
+    font-size: 15px;
+    height: 45px;
+    padding: 0px 15px !important;
+  }
+
+  .input-success {
+    border: 1.5px solid $dark-sage;
+  }
+
+  .input-warning {
+    border: 1.5px solid $tangerine;
+  }
+
+  .input-error {
+    border: 1.5px solid $red;
+  }
+
+  .input-group {
+    background-color: $white;
+    border-radius: 8px;
+    border: 1px solid $bluegrey-light-two;
+    padding: none;
+
+    .input-group-text {
+      background-color: $silver-six;
+      border-radius: 8px;
+      border: none;
+      color: $primary;
+      font-family: 'GothamPro-Medium' !important;
+      font-size: 15px;
+      line-height: 2;
+      margin: 0;
+      padding: 0 15px;
+
+      img {
+        height: 14px;
+        width: 14px;
+      }
+    }
+
+    .form-control {
+      border: none;
+      margin-top: 3px;
+      padding: 0;
+      padding-left: 16px;
+
+      &:focus, &:active {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .input-groups {
+    .input-group-prepend {
+      margin: 2px;
+    }
+  }
+
+  .button-addons {
+    .input-group-prepend {
+      margin: 0;
+    }
+
+    .btn {
+      border-radius: 8px;
+      font-family: GothamPro;
+      font-size: 18px;
+      color: $black-four;
+    }
+
+    &__segmented {
+      .input-group-prepend {
+        margin: 2px;
+
+        .btn {
+          font-family: 'GothamPro-Medium';
+          font-size: 15px;
+          line-height: 2;
+          padding: 8px 22px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .custom-file-label:after {
+    background-image: linear-gradient(10deg, #283055 -13%, #363f6c 83%);
+    border-radius: 8px;
+    box-shadow: 0 24px 35px 0 rgba(16, 151, 68, 0.05);
+    color: $white;
+    content: "Select";
+    font-family: 'GothamPro-Medium';
+    font-size: 15px;
+    height: 40px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}

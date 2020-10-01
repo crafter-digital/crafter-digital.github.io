@@ -1,0 +1,64 @@
+.form-elements {
+  .form-wrapper {
+    background-color: $white;
+    border-radius: 5px;
+    border: solid 1px $silver-four;
+    padding: 27px 25px;
+
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-wrapper-two {
+    margin-top: 64px;
+  }
+
+  .inline-checkboxes {
+    margin-top: 8px;
+  }
+
+  .control-sizing {
+    .form-control:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  .input-groups, .button-addons {
+    .input-group {
+      margin-bottom: 23px;
+    }
+  }
+
+  .column-sizing {
+    margin-bottom: 30px !important;
+  }
+
+  .file-input {
+    &__two {
+      margin-top: 32px;
+
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-inline-login {
+    margin-top: 22px;
+
+    .custom-checkbox-two {
+      margin-top: 10px;
+    }
+  }
+
+  .form-horizontal {
+    .form-control {
+      margin-bottom: 30px !important;
+    }
+
+    .btn {
+      margin-top: 25px;
+    }
+  }
+}
