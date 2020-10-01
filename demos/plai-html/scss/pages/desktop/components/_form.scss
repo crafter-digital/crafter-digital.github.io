@@ -34,7 +34,8 @@
     background-color: $white;
     border-radius: 8px;
     border: 1px solid $bluegrey-light-two;
-    padding: 20px 15px
+    padding: 0 15px;
+    height: 45px;
   }
 
   .form-control::placeholder {
@@ -89,6 +90,7 @@
     font-family: 'GothamPro-Medium';
     font-size: 15px;
     height: 45px;
+    opacity: 0.6;
     padding: 0px 15px !important;
   }
 
@@ -152,9 +154,10 @@
 
     .btn {
       border-radius: 8px;
+      color: $black-four;
       font-family: GothamPro;
       font-size: 18px;
-      color: $black-four;
+      height: 48px;
     }
 
     &__segmented {
@@ -180,8 +183,8 @@
     content: "Select";
     font-family: 'GothamPro-Medium';
     font-size: 15px;
-    height: 40px;
-    padding: 10px 20px;
+    height: 43px;
+    padding: 12px 20px;
     text-transform: uppercase;
   }
 }

@@ -16174,7 +16174,8 @@ input.set {
   background-color: #ffffff;
   border-radius: 8px;
   border: 1px solid #bdc4d8;
-  padding: 20px 15px;
+  padding: 0 15px;
+  height: 45px;
 }
 
 .dashboard .form-custom-two .form-control::-moz-placeholder {
@@ -16292,6 +16293,7 @@ input.set {
   font-family: 'GothamPro-Medium';
   font-size: 15px;
   height: 45px;
+  opacity: 0.6;
   padding: 0px 15px !important;
 }
 
@@ -16352,9 +16354,10 @@ input.set {
 
 .dashboard .form-custom-two .button-addons .btn {
   border-radius: 8px;
+  color: #2e2e2e;
   font-family: GothamPro;
   font-size: 18px;
-  color: #2e2e2e;
+  height: 48px;
 }
 
 .dashboard .form-custom-two .button-addons__segmented .input-group-prepend {
@@ -16377,8 +16380,8 @@ input.set {
   content: "Select";
   font-family: 'GothamPro-Medium';
   font-size: 15px;
-  height: 40px;
-  padding: 10px 20px;
+  height: 43px;
+  padding: 12px 20px;
   text-transform: uppercase;
 }
 
