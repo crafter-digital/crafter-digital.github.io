@@ -1,0 +1,276 @@
+nav {
+  padding: 0 115px !important;
+
+  .nav-item, .form-search input {
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-item-slanted {
+  &:hover {
+    -ms-transform: skewX(-18deg);
+    -webkit-transform: skewX(-18deg);
+    transform: skewX(-18deg);
+    border-radius: 0;
+
+    .nav-link {
+      -ms-transform: skewX(18deg);
+      -webkit-transform: skewX(18deg);
+      transform: skewX(18deg);  
+      display: inline-block;
+    }
+  }
+}
+
+.navbar-top {
+  height: 38px;
+
+  .navbar-nav {
+    height: 28px;
+    margin: 0 !important;
+  }
+
+  .menu-left {
+    .nav-link {
+      font-weight: bold;
+      letter-spacing: normal;
+      line-height: normal;
+
+      i {
+        color: $dark-cyan;
+      }
+    }
+  }
+
+  .menu-right {
+    .navbar-nav {
+      justify-content: flex-end;
+    }
+
+    .nav-link {
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: right;
+      text-transform: uppercase;
+    }
+  }
+
+  .nav-item {
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+    .nav-link {
+      color: white;
+      font-size: 13px;
+      letter-spacing: 1.3px;
+      line-height: normal;
+      padding: 0;
+    }
+  }
+
+  .nav-item:not(:last-child) {
+    border-right: 1px solid white;
+    padding-right: 12px;
+  }
+
+  .nav-item:not(:first-child) {
+    margin-left: 18px;
+  }
+
+  .social-media {
+    margin-top: -3px;
+    list-style: none;
+
+    li {
+      display: inline;
+      margin-right: 10px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.navbar-center {
+  padding-bottom: 8px !important;
+  padding-top: 20px !important;
+
+  &__desktop {
+    .contact {
+      p {
+        color: $dusk-blue;
+        font-size: 13px;
+        line-height: 1.69;
+        margin-bottom: 0;
+        text-align: right;
+        text-transform: uppercase;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+  
+      i {
+        color: $dark-cyan;
+        font-size: 35px;
+        font-weight: bold;
+        left: 5px;
+        letter-spacing: 6.6px;
+        line-height: 0.67;
+        position: relative;
+        top: 4px;
+      }
+  
+      span {
+        color: $marine;
+        font-size: 33px;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+.navbar-bottom {
+  padding-bottom: 15px !important;
+
+  .navbar-nav {
+    margin-left: -12px;
+  }
+
+  .nav-item {
+    .nav-link {
+      color: $marine;
+      font-size: 17px;
+      line-height: 1.94;
+      text-align: left;
+      padding: 0 12px;
+    }
+
+    &__search:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .nav-item.active, .nav-item:hover {
+    background-color: $dark-cyan;
+
+    .nav-link {
+      color: white;
+    }
+  }
+
+  .form-search {
+    input {
+      border: none;
+      border-radius: 0;
+      margin-top: -5px;
+      padding: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .btn-search {
+      border: none;
+      background-color: transparent;
+      padding: 2px;
+
+      i {
+        color: $marine;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .navbar-top {
+    height: 65px;
+  }
+
+  .menu-right {
+    .navbar-nav {
+      justify-content: left !important;
+    }
+  }
+
+  .navbar-bottom {
+    height: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  button.navbar-toggler {
+    border: none;
+    font-size: 24px;
+    margin-top: 10px;
+
+    i {
+      color: $marine;
+    }
+  }
+
+  .navbar-center {
+    &__desktop {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+      padding: 12px 10px 12px 35px !important;
+
+      .navbar-brand {
+        img {
+          width: 143px;
+        }
+      }
+
+      .contact {
+        margin-top: 6px;
+
+        a {
+          color: $dark-cyan;
+          font-size: 22px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .navbar-bottom {
+    margin-top: -12px !important;
+    padding: 12px 35px !important;
+
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .fixed-top-sm {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}

@@ -1,0 +1,169 @@
+main {
+  .jumbotron {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 150px 115px 159px;
+
+    h1, p {
+      color: white;
+      line-height: 1.57;
+    }
+
+    h1 {
+      font-size: 49px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 21px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+  }
+
+  section.intro {
+    padding: 0 118px;
+
+    #pipe            { border-bottom: 11px solid $azure; }
+    #plumbing        { border-bottom: 11px solid $raspberry; }
+    #rainwater       { border-bottom: 11px solid $deep-lavender; }
+    #soil_waste      { border-bottom: 11px solid $shamrock; }
+    #under_drain     { border-bottom: 11px solid $dusty-orange; }
+    #window_cladding { border-bottom: 11px solid $peacock-blue; }
+
+    .list {
+      background-color: white;
+      cursor: pointer;
+      height: 210px;
+      padding-top: 30px;
+      position: inherit;
+      z-index: 1;
+
+      .image-wrapper {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        margin-bottom: 17px;
+      }
+
+      .text {
+        color: $marine;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .view {
+        color: $white;
+        display: none;
+        font-size: 12.5px;
+        font-weight: bold;
+        letter-spacing: 1.25px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border-bottom: none !important;
+        box-shadow: 0px 6px 5.6px 0.4px rgba(7, 7, 7, 0.21);
+        height: 230px;
+        margin-top: -10px;
+
+        .text {
+          color: white;
+        }
+
+        .view {
+          display: block !important;
+        }
+      }
+    }
+
+    #pipe:hover            { background-color: $azure !important; }
+    #plumbing:hover        { background-color: $raspberry !important; }
+    #rainwater:hover       { background-color: $deep-lavender !important; }
+    #soil_waste:hover      { background-color: $shamrock !important; }
+    #under_drain:hover     { background-color: $dusty-orange !important; }
+    #window_cladding:hover { background-color: $peacock-blue !important; }
+
+    .lists .list:hover {
+      margin-bottom: -10px;;
+    }
+
+    .intro-text {
+      .title {
+        color: $marine;
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 0.5;
+        margin-top: 51px;
+        margin-bottom: 30px;
+      }
+
+      .description, .text {
+        color: black;
+      }
+
+      .description {
+        font-size: 22px;
+        line-height: 1.41;
+      }
+
+      .text {
+        font-size: 17px;
+        line-height: 1.47;
+        margin-bottom: 23px;
+      }
+
+      .pipe-wrapper {
+        background-image: url(../img/bg_pipe.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+
+      .bottom {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 85px 35px 47px !important;
+
+    h1 {
+      font-size: 28px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+
+  section.intro {
+    padding: 0 30px !important;
+
+    .list {
+      margin-bottom: 10px;
+    }
+  } 
+}
+
+@media (max-width: 992px) {
+  .jumbotron {
+    background-image: url(../img/background_mobilepng);
+  }
+
+  .intro-text {
+    .pipe-wrapper {
+      display: none;
+    }
+  }
+}
