@@ -49,10 +49,12 @@ $on-laptop:        800px !default;
 // Import partials.
 @import
   "components/shared/animation",
+  "components/shared/variables",
   "components/backend",
   "components/base",
   "components/button",
   "components/coming_soon",
+  "components/fatimah",
   "components/fonts",
   "components/footer",
   "components/form",
