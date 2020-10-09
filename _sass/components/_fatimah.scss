@@ -98,7 +98,7 @@
     }
 
     .right {
-      .image-wrapper {
+      .image_wrapper {
         background-image: url(../../assets/images/team/fatimah.jpg);
         background-position: 30% 70%;
         background-repeat: no-repeat;
@@ -109,13 +109,128 @@
         content: '';
         -ms-transform: skewX(-18deg);
         -webkit-transform: skewX(-18deg);
-        transform: skewX(-15deg);
         background-color: white;
+        height: 778px;
+        margin-left: -18%;
         position: absolute;
         top: 0;
-        width: 220px;
-        height: 778px;
-        margin-left: -115px;
+        transform: skewX(-14deg);
+        width: 25%;
+      }
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-bottom: 200px;
+
+    .left {
+      margin: auto;
+
+      .image_wrapper {
+        img {
+          width: 500px;
+          height: 500px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .right {
+      h1 {
+        color: $greyish-brown-two;
+        font-family: Poppins;
+        font-size: 49px;
+        letter-spacing: -0.61px;
+        margin-bottom: 43px;
+        margin-left: 40px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      
+      ul.last_project {
+        margin-left: 80px;
+        margin-bottom: 78px;
+
+        li {
+          font-family: Montserrat;
+          margin-bottom: 50px;
+
+          
+          .name {
+            a, p {
+              display: inline;
+            }
+
+            a {
+              margin-top: 5px;
+              position: absolute;
+              right: 17.5%;
+              text-decoration: none;
+            }
+
+            p {
+              color: $black-four;
+              font-size: 24px;
+              font-weight: bold;
+              letter-spacing: -0.3px;
+              margin-bottom: 10px;
+            }
+          }
+
+          .description {
+            color: $warm-grey;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.47;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      ul.project_list {
+        margin: auto;
+        width: 100%;
+
+        li:not(:last-child) {
+          border-right: 1px solid $warm-grey-two;
+        }
+
+        li:not(:first-child) {
+          padding: 0 65px;
+        }
+
+        li:first-child {
+          padding-right: 65px;
+        }
+        
+        li {
+          display: inline-block;
+
+          p {
+            font-family: 'Barlow', sans-serif;
+          }
+
+          .number {
+            color: $black-four;
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            margin-bottom: 0;
+            text-align: center;
+          }
+  
+          .description {
+            color: black;
+            font-size: 22px;
+            font-weight: 500;;
+            opacity: 0.5;
+            text-align: center;
+          }
+        }
       }
     }
   }
@@ -148,8 +263,7 @@
           padding: 0 50px;
 
           img.icon {
-            margin-top: 75px;
-            width: 116px;
+
           }
 
           .title {
@@ -170,6 +284,59 @@
             line-height: 1.38;
             text-align: center;
           }
+        }
+      }
+    }
+  }
+
+  .technologies {
+    background-color: $white-two;
+    margin-bottom: 130px;
+    padding: 36px 30px 76px;
+    
+    .wrapper {
+      margin: auto;
+      max-width: 960px;
+    }
+
+    h1 {
+      color: $greyish-brown-two;
+      font-family: Poppins;
+      font-size: 49px;
+      letter-spacing: -0.61px;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-gap: 85px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      margin-bottom: 35px;
+      text-align: center;
+
+      .card {
+        background-color: white;
+        border-radius: 4px;
+        height: 236px;
+        margin: auto;
+        padding: 30px 50px 40px;
+        width: 63%;
+
+        .image-wrapper {
+          height: 100px;
+          margin-bottom: 42px;
+          margin-top: 20%;
+        }
+
+        .name {
+          color: $black-four;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-weight: bold;
+          opacity: 0.7;
+          text-align: center;
+          text-transform: uppercase;
         }
       }
     }
