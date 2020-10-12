@@ -61,7 +61,7 @@
 
   section.intro {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     height: 778px;
     margin-bottom: 114px;
 
@@ -122,17 +122,54 @@
 
   .projects {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
     margin-bottom: 200px;
+
+    &:after {
+      background-image: url(../../assets/images/circle_right.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: auto;  
+      content: "";
+      height: 200%;
+      margin-top: 14%;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: -3;
+    }
 
     .left {
       margin: auto;
+      margin-bottom: 100px;
 
       .image_wrapper {
         img {
           width: 500px;
           height: 500px;
           object-fit: cover;
+        }
+
+        &::after {
+          border: 3px solid $grapefruit;
+          content: "";
+          height: 550px;
+          margin-left: -475px;
+          margin-top: -28px;
+          position: absolute;
+          width: 500px;
+          z-index: -2;
+        }
+
+        &::before {
+          background-color: white;
+          border-right: 3px solid $grapefruit;;
+          content: "";
+          height: 250px;
+          margin-top: 278px;
+          position: absolute;
+          width: 250px;
+          z-index: -1;
         }
       }
     }
@@ -192,7 +229,6 @@
       }
 
       ul.project_list {
-        margin: auto;
         width: 100%;
 
         li:not(:last-child) {
@@ -240,30 +276,47 @@
     max-width: 1440px;
     margin-bottom: 190px;
 
-    .header {
-      margin-top: 82px;
-      text-align: center;
-    }
-
     .content {
       margin-top: 100px;
+
+      &:before {
+        background-image: url(../../assets/images/dots_pink.png);
+        content: "";
+        height: 136px;
+        width: 136px;
+        z-index: -1;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -50px;
+      }
+  
+      &:after {
+        background-image: url(../../assets/images/dots_pink.png);
+        content: "";
+        display: block;
+        float: right;
+        height: 136px;
+        margin-right: -15px;
+        margin-top: -34%;
+        position: relative;
+        width: 136px;
+        z-index: -1;
+      }
 
       .cards {
         display: grid;
         grid-gap: 74px;
         grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
         text-align: center;
-
+        
         .service_card {
           background-color: white;
           border-radius: 4px;
           box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
-          height: 414px;
-          margin: auto;
-          padding: 0 50px;
+          padding: 75px 50px 44px;
 
-          img.icon {
-
+          .image-wrapper {
+            height: 123px;
           }
 
           .title {
@@ -272,7 +325,7 @@
             font-size: 22px;
             font-weight: 600;
             letter-spacing: 0.57px;
-            margin-top: 74px;
+            margin-top: 50px;
             text-align: center;
           }
 
@@ -281,6 +334,7 @@
             font-family: Montserrat;
             font-size: 16px;
             font-weight: 300;
+            height: 65px;
             line-height: 1.38;
             text-align: center;
           }
@@ -293,6 +347,30 @@
     background-color: $white-two;
     margin-bottom: 130px;
     padding: 36px 30px 76px;
+
+    &:before {
+      border: 3px solid $grapefruit;
+      content: "";
+      height: 50px;
+      margin-left: 3%;
+      margin-top: -55px;
+      opacity: 0.05;
+      position: absolute;
+      width: 74%;
+      z-index: -1;
+    }
+
+    &:after {
+      border: 3px solid $grapefruit;
+      content: "";
+      height: 50px;
+      margin-left: 23%;
+      margin-top: 40px;
+      opacity: 0.05;
+      position: absolute;
+      width: 70%;
+      z-index: -1;
+    }
     
     .wrapper {
       margin: auto;
@@ -344,6 +422,20 @@
 
   .footer {
     padding-top: 96px !important;
+
+    &:before {
+      border-radius: 50%;
+      border: 3px solid $grapefruit;
+      content: "";
+      height: 819px;
+      margin-left: 3%;
+      margin-top: -40%;
+      opacity: 0.05;
+      position: absolute;
+      right: 0;
+      width: 54%;
+      z-index: -1;
+    }
 
     .logo {
       color: white;
