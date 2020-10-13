@@ -1,7 +1,7 @@
 .profile-fatimah {
   font-family: Montserrat !important;
 
-  header {
+  .header_wrapper {
     background-color: transparent !important;
     grid-template-columns: 20% 60% 20%;
     max-width: unset;
@@ -55,88 +55,148 @@
     }
   }
 
+  .hamburger_menu {
+    height: 60px;
+    z-index: 9999;
+    position: relative;
+
+    .img_logo {
+      width: unset;
+      margin-top: 5px;
+    }
+
+    .menu {
+      #icon {
+        margin-top: 10px !important;
+      }
+    }
+
+    .sub_menu {
+      z-index: 9999;
+    }
+  }
+
   main {
     margin-top: -92px;
   }
 
   section.intro {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-columns: 50% 50%;
     height: 778px;
-    margin-bottom: 114px;
+    margin-bottom: 150px;
 
     .left {
-      margin-top: 250px;
-      padding-left: 10%;
-      z-index: 1;
+      height: 540px;
+      padding-top: 240px;
+      transform: skewX(-12deg);
+      z-index: 999;
 
-      p.job {
-        color: $black-two;
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 0;
-        width: 80%;
+      &:after {
+        background-color: white;
+        bottom: 20%;
+        box-shadow: 0 0 82px 0 rgba(148, 148, 148, 0.08);
+        content: "";
+        height: 140px;
+        left: 30%;
+        position: absolute;
+        transform: skewX(12deg);
+        width: 900px;
       }
 
-      h2.name {
-        color: black;
-        font-family: Poppins;
-        font-size: 60px;
-        font-weight: 500;
-        letter-spacing: -0.75px;
-        margin-bottom: 20px;
+      .wrapper {
+        background-color: white;
+        height: 50%;
+        margin-left: 102px;
+        position: absolute;
+        transform: skewX(12deg);
+        z-index: 1;
+
+        p.job {
+          color: $black-two;
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 0;
+          width: 80%;
+        }
+  
+        h2.name {
+          color: black;
+          font-family: Poppins;
+          font-size: 60px;
+          font-weight: 500;
+          letter-spacing: -0.75px;
+          margin-bottom: 20px;
+        }
+  
+        p.bio {
+          color: $greyish-brown;
+          font-size: 18px;
+          font-weight: 300;
+          letter-spacing: 0.11px;
+          line-height: 1.78;
+          margin-bottom: 0;
+        }
       }
 
-      p.bio {
-        color: $greyish-brown;
-        font-size: 18px;
-        font-weight: 300;
-        letter-spacing: 0.11px;
-        line-height: 1.78;
-        margin-bottom: 0bac
-      }
     }
 
     .right {
-      .image_wrapper {
-        background-image: url(../../assets/images/team/fatimah.jpg);
-        background-position: 30% 70%;
-        background-repeat: no-repeat;
-        height: 100%;
-      }
+      transform: skewX(-12deg);
+      z-index: 999;
 
-      &:after {
-        content: '';
-        -ms-transform: skewX(-18deg);
-        -webkit-transform: skewX(-18deg);
-        background-color: white;
-        height: 778px;
-        margin-left: -18%;
-        position: absolute;
-        top: 0;
-        transform: skewX(-14deg);
-        width: 25%;
+      .image_wrapper {
+        width: 130%;
+        overflow: hidden;
+
+        img {
+          height: 778px;
+          margin-left: -15%;
+          object-fit: cover;
+          transform: skewX(12deg);
+          width: 100%;
+        }
       }
+    }
+
+    &:after {
+      background-image: url(../../assets/images/dots_pink.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      bottom: 56px;
+      content: "";
+      height: 139px;
+      position: absolute;
+      right: -55px;
+      width: 136px;
+      z-index: -1;
     }
   }
 
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
-    margin-bottom: 200px;
+    margin-bottom: 0;
 
-    &:after {
+    &:before, &:after {
       background-image: url(../../assets/images/circle_right.png);
-      background-position: right;
       background-repeat: no-repeat;
-      background-size: auto;  
       content: "";
-      height: 200%;
-      margin-top: 14%;
       position: absolute;
+      z-index: -3;
+    }
+
+    &:before {
+      background-position: left;
+    }
+    
+    &:after {
+      background-position: right;
+      background-size: auto;
+      height: 200%;
+      margin-top: -14%;
       right: 0;
       width: 100%;
-      z-index: -3;
     }
 
     .left {
@@ -144,6 +204,11 @@
       margin-bottom: 100px;
 
       .image_wrapper {
+        background-image: url(../../assets/images/lines.png);
+        background-repeat: no-repeat;
+        background-position: 30px bottom;
+        padding-bottom: 50px;
+
         img {
           width: 500px;
           height: 500px;
@@ -457,6 +522,130 @@
 
     ul {
       margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profile-fatimah {
+    section.intro {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      height: fit-content;
+      margin-bottom: 100px;
+
+      .left {
+        p.bio {
+          width: 80%;
+        }
+      }
+
+      .left {
+        &:after {
+          content: none;
+        }
+      }
+
+      .right {
+        display: none;
+      }
+    }
+
+    section.projects {
+      ul.project_list {
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .profile-fatimah {
+    section.intro {
+      height: 600px;
+
+      &:after {
+        bottom: 20%;
+      }
+
+      .left {
+        transform: none;
+
+        .wrapper {
+          background-color: transparent;
+          margin-left: 50px;
+          transform: none;
+        }
+
+        p.bio {
+          font-size: 15px !important;
+        }
+
+        h2.name {
+          font-size: 48px !important;
+        }
+
+        p.job {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    section.projects {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+      .left {
+        .image_wrapper {
+          &:before {
+            height: 50px;
+            margin-top: 278px;
+            width: 250px;
+          }
+
+          &:after {
+            height: 350px;
+            margin-left: -275px;
+            margin-top: -30px;
+            width: 300px;
+          }
+
+          img {
+            width: 300px;
+            height: 300px;
+          }
+        }
+      }
+
+      .right {
+        ul.project_list {
+          li:not(:first-child) {
+            padding: 0 35px;
+          }
+  
+          li:first-child {
+            padding-right: 35px;
+          }
+        }
+      }
+    }
+
+    section.services_wrapper {
+      padding: 0 30px;
+
+      .services {
+        &:before {
+          &:after {
+            margin-right: -50px;
+            margin-top: -70px;
+          }
+        }
+      }
+    }
+
+    section.projects, section.technologies {
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 }
