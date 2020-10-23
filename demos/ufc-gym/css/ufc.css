@@ -13151,6 +13151,12 @@ section.latest-news h2 a {
   object-fit: cover;
 }
 
+.carousel-top .carousel-indicators {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .carousel-top__desktop .carousel-indicators {
   justify-content: left;
   margin: 0;

@@ -4,6 +4,10 @@
     object-fit: cover;
   }
 
+  .carousel-indicators {
+    width: fit-content;
+  }
+
   &__desktop {
     .carousel-indicators {
       justify-content: left;
