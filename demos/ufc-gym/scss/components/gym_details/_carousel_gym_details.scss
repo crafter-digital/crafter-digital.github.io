@@ -150,4 +150,11 @@
       width: 100% !important;
     }
   }
+
+  @media (max-width: 575px) {
+    .carousel-inner,
+    .carousel-item {
+      height: 730px;
+    }
+  }
 }

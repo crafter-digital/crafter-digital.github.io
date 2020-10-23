@@ -12903,6 +12903,24 @@ section.registration .text-wrapper a.btn {
   right: 0;
 }
 
+@media (max-width: 575px) {
+  section.registration .text-wrapper {
+    padding: 30px 20px !important;
+  }
+  section.registration a.btn {
+    bottom: 4px !important;
+    font-size: 14px !important;
+    padding: 4px 22px !important;
+  }
+  section.registration .text h1 {
+    font-size: 30px !important;
+  }
+  section.registration .text h2 {
+    font-size: 18px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 section.registration-two {
   height: 350px;
 }
@@ -13225,20 +13243,20 @@ section.latest-news h2 a {
 
 .carousel-top__mobile .carousel-item .carousel-caption h2 {
   font-family: 'D-DINCondensed';
-  font-size: 85px;
+  font-size: 55px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .carousel-top__mobile .carousel-item .carousel-caption p {
   font-family: 'ProximaNova-Regular';
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
 .carousel-top__mobile .carousel-item .carousel-caption a.btn {
   margin-top: 22px;
-  font-size: 22px;
+  font-size: 16px;
   padding: 16px 14px;
 }
 
@@ -13338,6 +13356,30 @@ section.latest-news h2 a {
   }
 }
 
+@media (max-width: 575px) {
+  .footer-index {
+    padding: 28px 20px !important;
+  }
+  .footer-index .top .menu li:first-child {
+    padding-left: 0 !important;
+  }
+  .footer-index .bottom {
+    margin-top: 20px;
+  }
+  .footer-index ul.download-links {
+    margin-right: 15px !important;
+  }
+  .footer-index ul.download-links img {
+    height: 32px !important;
+  }
+  .footer-index ul.social-media li:not(:last-child) {
+    margin-right: 10px !important;
+  }
+  .footer-index ul.social-media i {
+    font-size: 24px !important;
+  }
+}
+
 .footer-two {
   background-color: black;
   padding: 33px 18px 12px;
@@ -13375,22 +13417,30 @@ section.latest-news h2 a {
   font-size: 13px;
 }
 
+.footer-two .top .right .text {
+  justify-content: flex-end;
+}
+
+.footer-two .top .right .text p {
+  margin-right: 40px;
+}
+
 .footer-two .top .right ul li {
+  border-right: 1px solid white;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .footer-two .top .right ul li a {
   color: white;
 }
 
-.footer-two .top .right ul li:not(:last-child) {
-  border-right: 1px solid white;
-  padding-right: 12px;
+.footer-two .top .right ul li:first-child {
+  padding-left: 0;
 }
 
-.footer-two .top .right ul li:first-child {
+.footer-two .top .right ul li:last-child {
   border: none;
-  padding-left: 0;
 }
 
 .footer-two .bottom {
@@ -13411,11 +13461,27 @@ section.latest-news h2 a {
 }
 
 @media (max-width: 992px) {
+  .footer-two .top .text {
+    justify-content: left !important;
+  }
   .footer-two .right {
     text-align: left;
   }
   .footer-two .top .right {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-two .bottom .left .social-media li {
+    font-size: 20px !important;
+    padding-right: 15px !important;
+  }
+  .footer-two .bottom .right li a {
+    font-size: 15px !important;
+  }
+  .footer-two .bottom .right li:not(:last-child) {
+    padding-right: 20px !important;
   }
 }
 
@@ -13630,6 +13696,10 @@ section.latest-news h2 a {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.nav-wrapper__mobile .navbar-brand img {
+  width: 120px !important;
 }
 
 .nav-wrapper__mobile .navbar-top,
@@ -13922,6 +13992,12 @@ section.latest-news h2 a {
   }
 }
 
+@media (max-width: 575px) {
+  .navbar-brand-franchise img {
+    height: 25px !important;
+  }
+}
+
 .lazy-wrapper {
   background-color: #f4f5f8;
   -webkit-filter: blur(2vw);
@@ -13975,6 +14051,7 @@ section.latest-news h2 a {
 
 .carousel-franchise .carousel-inner .carousel-item .carousel-caption a.btn {
   letter-spacing: 0;
+  margin-bottom: 10px;
 }
 
 .carousel-franchise .carousel-inner .carousel-item .carousel-caption a.btn i {
@@ -13996,6 +14073,17 @@ section.latest-news h2 a {
   }
   .carousel-franchise .carousel-caption p {
     font-size: 19px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel-franchise .carousel-caption h1 {
+    font-size: 55px !important;
+    width: 100% !important;
+  }
+  .carousel-franchise .carousel-caption p {
+    font-size: 16px !important;
     width: 100% !important;
   }
 }
@@ -14326,6 +14414,13 @@ section.latest-news h2 a {
   }
 }
 
+@media (max-width: 575px) {
+  .carousel-map .carousel-inner,
+  .carousel-map .carousel-item {
+    height: 730px;
+  }
+}
+
 .gym-details section.classes,
 .gym-details section.intro {
   padding: 60px 0;
@@ -14460,16 +14555,25 @@ section.latest-news h2 a {
 }
 
 @media (max-width: 768px) {
-  section.gym-photos .images-wrapper,
-  section.gym-photos .per-two,
-  section.gym-photos .image-wrapper {
+  .gym-details section.gym-photos .images-wrapper,
+  .gym-details section.gym-photos .per-two,
+  .gym-details section.gym-photos .image-wrapper {
     padding: 0px !important;
   }
-  section.gym-photos .image-wrapper img {
+  .gym-details section.gym-photos .image-wrapper img {
     height: 200px !important;
     -o-object-fit: cover;
     object-fit: cover;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gym-details section.classes h2, .gym-details section.latest-news h2 {
+    font-size: 18px;
+  }
+  .gym-details section.classes h2 a, .gym-details section.latest-news h2 a {
+    margin-left: 15px !important;
   }
 }
 
@@ -14485,6 +14589,12 @@ section.latest-news h2 a {
 
 .gym-details-two .carousel-top .caption-wrapper .title {
   margin: 0;
+}
+
+@media (max-width: 575px) {
+  .gym-details-two .caption-wrapper {
+    padding: 30px !important;
+  }
 }
 
 .locations .left {
@@ -14803,5 +14913,11 @@ section.latest-news h2 a {
 @media (max-width: 575px) {
   .index section.ultimate-training .card {
     top: -15%;
+  }
+  .index section.youth-classes img, .index section.intro img {
+    margin-top: 15px;
+  }
+  .index .reload::after {
+    font-size: 45px !important;
   }
 }

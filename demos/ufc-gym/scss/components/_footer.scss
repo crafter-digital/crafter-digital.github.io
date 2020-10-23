@@ -109,3 +109,39 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .footer-index {
+    padding: 28px 20px !important;
+
+    .top {
+      .menu {
+        li:first-child {
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 20px;
+    }
+
+    ul.download-links {
+      margin-right: 15px !important;
+
+      img {
+        height: 32px !important;
+      }
+    }
+
+    ul.social-media {
+      li:not(:last-child) {
+        margin-right: 10px !important;
+      }
+
+      i {
+        font-size: 24px !important;
+      }
+    }
+  }
+}

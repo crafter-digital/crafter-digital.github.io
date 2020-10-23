@@ -149,6 +149,12 @@
   }
 
   &__mobile {
+    .navbar-brand {
+      img {
+        width: 120px !important;
+      }
+    }
+
     .navbar-top,
     .navbar-center {
       padding: 23px 30px;

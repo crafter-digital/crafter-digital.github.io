@@ -195,3 +195,11 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .navbar-brand-franchise {
+    img {
+      height: 25px !important;
+    }
+  }  
+}

@@ -138,21 +138,34 @@
       }
     }
   }
-}
 
-@media (max-width: 768px) {
-  section.gym-photos {
-    .images-wrapper,
-    .per-two,
-    .image-wrapper {
-      padding: 0px !important;
+  @media (max-width: 768px) {
+    section.gym-photos {
+      .images-wrapper,
+      .per-two,
+      .image-wrapper {
+        padding: 0px !important;
+      }
+  
+      .image-wrapper {
+        img {
+          height: 200px !important;
+          object-fit: cover;
+          margin-bottom: 20px;
+        }
+      }
     }
+  }
+  
+  
+  @media (max-width: 575px) {
+    section.classes, section.latest-news {
+      h2 {
+        font-size: 18px;
 
-    .image-wrapper {
-      img {
-        height: 200px !important;
-        object-fit: cover;
-        margin-bottom: 20px;
+        a {
+          margin-left: 15px !important;
+        }
       }
     }
   }

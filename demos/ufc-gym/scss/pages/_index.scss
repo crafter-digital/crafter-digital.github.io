@@ -151,5 +151,17 @@
         top: -15%;
       }
     }
+
+    section.youth-classes, section.intro {
+      img {
+        margin-top: 15px;
+      }
+    }
+
+    .reload {
+      &::after {
+        font-size: 45px !important;
+      }
+    }
   }
 }
