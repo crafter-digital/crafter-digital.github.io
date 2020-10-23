@@ -1,0 +1,113 @@
+.btn {
+  border-radius: 0;
+  font-family: 'D-DINCondensed';
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 10px 25px;
+}
+
+.btn-white,
+.btn-white-two,
+.btn-outline-white {
+  background-color: white;
+  letter-spacing: 3.3px;
+
+  i {
+    color: $red;
+  }
+}
+
+.btn-outline-red {
+  background-color: $red;
+  border: 1px solid white;
+  color: white;
+
+  &:hover,
+  &:focus {
+    border-color: $red;
+    box-shadow: inset 10em 0 0 0 white;
+    color: $red !important;
+  }
+}
+
+.btn-white {
+  &:hover,
+  &:focus {
+    border-color: $red;
+    box-shadow: inset 10em 0 0 0 $red;
+    color: white;
+
+    i {
+      color: white;
+    }
+  }
+}
+
+.btn-outline-white {
+  border: 2px solid black;
+  letter-spacing: normal;
+
+  &:hover,
+  &:focus {
+    border-color: black;
+    box-shadow: inset 12em 0 0 0 black;
+    color: white;
+  }
+}
+
+.btn-white-two {
+  background-image: -webkit-linear-gradient(-16deg, white 50%, $white-two 52%);
+  padding: 16px 25px;
+
+  &:hover,
+  &:focus {
+    border-color: white;
+    box-shadow: inset 12em 0 0 0 white;
+    color: black;
+  }
+}
+
+.btn-red {
+  background-color: $red;
+  color: white;
+  letter-spacing: 3.3px;
+
+  &:hover,
+  &:focus {
+    border-color: $red;
+    box-shadow: inset 10em 0 0 0 white;
+    color: $red;
+  }
+}
+
+.btn-red-two {
+  background-color: $red;
+  background: linear-gradient(135deg, $red 0%, $red 46%, $red 48%, $light-red 52%, $red 100%);
+  color: white;
+  letter-spacing: 3.3px;
+  padding: 16px 25px;
+
+  &:hover,
+  &:focus {
+    border-color: $red;
+    box-shadow: inset 10em 0 0 0 white;
+    color: $red;
+  }
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+
+  &:hover,
+  &:focus {
+    border-color: black;
+    box-shadow: inset 10em 0 0 0 white;
+    color: black;
+
+    i {
+      color: black;
+    }
+  }
+}

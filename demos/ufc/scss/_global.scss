@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+
+a {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.row {
+  margin: 0;
+  width: 100%;
+}

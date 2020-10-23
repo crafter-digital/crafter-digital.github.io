@@ -1,0 +1,194 @@
+@import "components/franchise/carousel_franchise";
+
+.franchise {
+  .carousel {
+    a.btn-red:hover {
+      border-color: white;
+    }
+  }
+
+  section.gym-types {
+    background-color: $pale-grey;
+    padding-bottom: 73px;
+    padding-top: 64px;
+
+    h1 {
+      font-family: 'D-DINCondensed';
+      font-size: 41px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .card {
+      margin-bottom: 30px;
+
+      img {
+        border-radius: 0;
+      }
+
+      .card-body {
+        padding: 38px 34px;
+        height: 630px;
+
+        .card-title {
+          font-family: 'D-DINCondensed';
+          font-size: 33px;
+          font-weight: bold;
+          margin-bottom: 15px;
+          text-transform: unset;
+        }
+
+        .card-text {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+
+        .list-title {
+          font-family: 'ProximaNova-Bold';
+          font-size: 16px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+
+        .types-list {
+          li {
+            display: block;
+            font-family: 'ProximaNova-Regular';
+            font-size: 14px;
+            margin-bottom: 5px;
+
+            i {
+              color: $red;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        a.btn {
+          padding: 10px 22px;
+        }
+      }
+    }
+  }
+
+  section.faq {
+    background-image: url(../img/faq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 63px 0 112px;
+
+    h1.title {
+      color: white;
+      font-family: 'D-DINCondensed';
+      font-size: 55px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    ul.list {
+      list-style: none;
+
+      li.list-dropdown {
+        background-color: white;
+        margin-bottom: 15px;
+        padding: 25px 5% 25px;
+
+        a.parent-menu {
+          color: black;
+
+          h1 {
+            font-family: 'D-DINCondensed';
+            font-size: 32px;
+            font-weight: bold;
+          }
+
+          &:hover {
+            color: $red;
+            text-decoration: none;
+          }
+        }
+      }
+
+      li.list-dropdown.active {
+        border-top: 9px solid $red;
+        padding-bottom: 65px;
+        padding-top: 60px;
+      }
+
+      .list-submenu {
+        display: none;
+        margin-top: 35px;
+
+        p {
+          font-family: 'ProximaNova-Regular';
+          font-size: 16px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  section.form {
+    padding: 75px 0 70px;
+
+    h1 {
+      font-family: 'D-DINCondensed';
+      text-transform: uppercase;
+      font-size: 55px;
+      font-weight: bold;
+      margin-bottom: 36px;
+    }
+
+    p {
+      font-family: 'ProximaNova-Regular';
+      font-size: 15px;
+
+      b {
+        font-family: 'ProximaNova-Bold';
+      }
+    }
+
+    form {
+      margin-top: 60px;
+
+      .top {
+        padding-bottom: 30px;
+      }
+
+      .bottom {
+        border-top: 5px solid $red;
+        padding-top: 40px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1430px) {
+    section.gym-types {
+      .card-body {
+        height: 720px !important;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    section.gym-types {
+      .card-body {
+        height: 900px !important;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    section.gym-types {
+      .card-body {
+        height: max-content !important;
+      }
+    }
+  }
+}

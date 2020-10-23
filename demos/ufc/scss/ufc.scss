@@ -1,0 +1,32 @@
+@import "variables";
+
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap";
+
+// Import Font Awesome
+$fa-font-path: '../vendor/fonts/';
+@import '../vendor/scss/font-awesome.scss';
+
+// Base
+@import "fonts";
+@import "global";
+@import "helpers";
+@import "shared";
+
+// Custom Components
+@import "components/buttons";
+@import "components/card";
+@import "components/carousels";
+@import "components/footer";
+@import "components/footer_two";
+@import "components/form";
+@import "components/navbar";
+@import "components/navbar_two";
+@import "components/lazy_load";
+
+// Import Pages
+@import "pages/franchise";
+@import "pages/gym_details";
+@import "pages/gym_details_two";
+@import "pages/locations";
+@import "pages/index";

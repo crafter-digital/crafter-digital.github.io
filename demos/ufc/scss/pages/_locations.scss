@@ -1,0 +1,155 @@
+.locations {
+  .left {
+    padding: 50px;
+
+    h1 {
+      font-family: 'D-DINCondensed';
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: 'ProximaNova-Regular';
+      font-size: 20px;
+    }
+
+    section.find-gym {
+      border-bottom: 9px solid $red;
+      padding-bottom: 28px;
+
+      .form-search {
+        margin-bottom: 32px;
+        margin-top: 25px;
+
+        .input-group-text {
+          background-color: $pale-grey;
+          border-radius: 0;
+          border: none;
+          color: $red;
+          font-size: 15px;
+          padding-left: 20px;
+        }
+
+        .form-control {
+          padding-left: 5px;
+        }
+
+        input::placeholder {
+          color: black;
+        }
+      }
+
+      .links .link {
+        margin-bottom: 18px;
+      }
+    }
+
+    section.gym-locations {
+      margin-top: 50px;
+
+      .cards {
+        margin-top: 30px;
+      }
+
+      .card-wrapper {
+        padding: 0;
+      }
+
+      .card-wrapper:nth-child(odd) {
+        padding-right: 10px;
+      }
+
+      .card-wrapper:nth-child(even) {
+        padding-left: 10px;
+      }
+
+      .location-card {
+        border: 2px solid black;
+        border-radius: 0;
+        margin-bottom: 20px;
+        padding: 25px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        .card-title,
+        .card-subtitle {
+          font-family: 'D-DINCondensed';
+          font-weight: bold;
+          margin-bottom: 16px;
+          text-transform: uppercase;
+        }
+
+        .card-title {
+          font-size: 33px;
+        }
+
+        .card-subtitle {
+          color: black !important;
+          font-size: 22px;
+        }
+
+        .card-text {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+
+        .link {
+          text-align: end;
+
+          a:hover {
+            border-color: white;
+          }
+        }
+      }
+
+      .location-card:hover,
+      .location-card:active,
+      .location-card:focus,
+      .location.active {
+        border-color: $red;
+        background-color: $red;
+
+        .card-title,
+        .card-subtitle,
+        .card-text {
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .right {
+    .map {
+      height: 100%;
+      width: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 922px) {
+  .locations {
+    .left {
+      section.gym-locations {
+        margin-top: 50px;
+
+        .card-wrapper:nth-child(odd) {
+          padding-right: 0px !important;
+        }
+
+        .card-wrapper:nth-child(even) {
+          padding-left: 0px !important;
+        }
+      }
+    }
+
+    .right {
+      padding: 50px !important;
+    }
+  }
+}

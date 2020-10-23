@@ -1,0 +1,17 @@
+.gym-details-two {
+  .carousel-top {
+    .carousel-inner, .carousel-item {
+      height: 348px;
+    }
+
+    .caption-wrapper {
+      -webkit-clip-path: polygon(40% 0%, 80% 0%, 100% 0%, 100% 100%, 80% 100%, 0% 100%, 0% 80%, 0% 100%);
+      clip-path: polygon(40% 0%, 80% 0%, 100% 0%, 100% 100%, 80% 100%, 0% 100%, 0% 80%, 0% 100%);
+      padding: 40px 45px 40px 40px;
+
+      .title {
+        margin: 0;
+      }
+    }
+  }
+}

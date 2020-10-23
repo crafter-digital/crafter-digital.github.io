@@ -1,0 +1,54 @@
+.form-custom {
+  .form-group.required label:after {
+    content: "*";
+    color: $red;
+  }
+
+  label {
+    font-family: 'D-DINCondensed';
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .form-control {
+    background-color: $pale-grey;
+    border-radius: 0;
+    border: none;
+    font-family: 'ProximaNova-Regular';
+    font-size: 16px;
+    padding-left: 22px;
+
+    ::placeholder {
+      color: rgba(13, 13, 13, 0.49);
+      font-family: 'ProximaNova-Regular';
+      font-size: 16px;
+      opacity: 0.25;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  input[type=text].form-control,
+  input[type=email].form-control {
+    height: 53px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    letter-spacing: normal;
+    font-size: 33px;
+
+    &:hover,
+    &:focus {
+      border-color: $red;
+      box-shadow: inset 48em 0 0 0 white;
+      color: $red;
+    }
+  }
+}

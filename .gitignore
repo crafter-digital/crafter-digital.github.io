@@ -7,3 +7,5 @@ _site
 /demos/plai-html/scss/.DS_Store
 /demos/plai-html/img/.DS_Store
 /demos/plai-html/img/icons/.DS_Store
+/demos/floplast/node_modules
+/demos/ufc/node_modules

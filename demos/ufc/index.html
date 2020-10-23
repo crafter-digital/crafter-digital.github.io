@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>UFC</title>
+
+  <link href="css/ufc.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav-wrapper nav-wrapper__desktop d-none d-lg-block d-xl-block">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item link-class">
+            <img src="img/class.svg" alt="">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-bottom">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav col-4 navbar-left">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              International Gyms
+              <i class="fa fa-globe"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Own a UFC Gym
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav col-4 center navbar-nav-covid">
+          <li class="nav-item">
+            Information regarding Covid-19
+            <a class="btn btn-outline-red">Read More</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav col-4 navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-map-marker"></i>
+              Find Your Gym
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="nav-wrapper nav-wrapper__mobile d-block d-lg-none d-xl-none">
+    <nav class="navbar navbar-expand-lg navbar-top">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav navbar-nav-covid">
+          <li class="nav-item">
+            Information regarding Covid-19
+            <a class="btn">Read More</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-center">
+      <ul class="col-6 navbar-nav left">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-map-marker"></i>
+            Find Your Gym
+          </a>
+        </li>
+      </ul>
+
+      <ul class="col-6 navbar-nav right">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Own a UFC Gym
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-bottom">
+      <div class="row">
+        <div class="col-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <div class="col-6 offset-3 p-0">
+          <div class="wrapper">
+            <button class="btn-join" type="button">
+              Join Now
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-collapse-show" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main class="index">
+    <div id="carouselExampleIndicators"
+      class="carousel slide carousel-top carousel-top__desktop d-none d-lg-block d-xl-block" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="w-100 lazy-wrapper" data-src="img/image.png">
+            <img alt="image.png">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-wrapper">
+              <div class="title">
+                <h2 class="bold">It's time...</h2>
+                <h2>To return to</h2>
+                <h2 class="bold">#UFCGYMNOTTS</h2>
+              </div>
+
+              <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+                8am.</p>
+              <a href="#" class="btn btn-white-two">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="w-100 lazy-wrapper" data-src="img/image2.png">
+            <img alt="image2.png">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-wrapper">
+              <div class="title">
+                <h2 class="bold">It's time...</h2>
+                <h2>To return to</h2>
+                <h2 class="bold">#UFCGYMNOTTS</h2>
+              </div>
+
+              <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+                8am.</p>
+              <a href="#" class="btn btn-white-two">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="w-100 lazy-wrapper" data-src="img/image3.png">
+            <img alt="image3.png">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-wrapper">
+              <div class="title">
+                <h2 class="bold">It's time...</h2>
+                <h2>To return to</h2>
+                <h2 class="bold">#UFCGYMNOTTS</h2>
+              </div>
+
+              <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+                8am.</p>
+              <a href="#" class="btn btn-white-two">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="w-100 lazy-wrapper" data-src="img/image4.png">
+            <img alt="image4.png">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-wrapper">
+              <div class="title">
+                <h2 class="bold">It's time...</h2>
+                <h2>To return to</h2>
+                <h2 class="bold">#UFCGYMNOTTS</h2>
+              </div>
+
+              <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+                8am.</p>
+              <a href="#" class="btn btn-white-two">Find out more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly"
+      class="carousel slide d-block d-lg-none d-xl-none carousel-top carousel-top__mobile" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="lazy-wrapper" data-src="img/image.png">
+            <img alt="image.png">
+          </div>
+          <div class="carousel-caption">
+            <h2>It's time...</h2>
+            <h2>To return to</h2>
+            <h2>#UFCGYMNOTTS!</h2>
+            <p>To our #UFCGYM community – we’ve missed you!</p>
+            <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+              8am.</p>
+            <a href="#" class="btn btn-white">Find out more</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="lazy-wrapper" data-src="img/image2.png">
+            <img alt="image2.png">
+          </div>
+          <div class="carousel-caption">
+            <h2>It's time...</h2>
+            <h2>To return to</h2>
+            <h2>#UFCGYMNOTTS!</h2>
+            <p>To our #UFCGYM community – we’ve missed you!</p>
+            <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+              8am.</p>
+            <a href="#" class="btn btn-white">Find out more</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="lazy-wrapper" data-src="img/image3.png">
+            <img alt="image3.png">
+          </div>
+          <div class="carousel-caption">
+            <h2>It's time...</h2>
+            <h2>To return to</h2>
+            <h2>#UFCGYMNOTTS!</h2>
+            <p>To our #UFCGYM community – we’ve missed you!</p>
+            <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+              8am.</p>
+            <a href="#" class="btn btn-white">Find out more</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="lazy-wrapper" data-src="img/image4.png">
+            <img alt="image4.png">
+          </div>
+          <div class="carousel-caption">
+            <h2>It's time...</h2>
+            <h2>To return to</h2>
+            <h2>#UFCGYMNOTTS!</h2>
+            <p>To our #UFCGYM community – we’ve missed you!</p>
+            <p>We’re working hard ahead of our re-opening which has been confirmed for SATURDAY 25TH JULY 2020, from
+              8am.</p>
+            <a href="#" class="btn btn-white">Find out more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="intro">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+          <div class="row">
+            <div class="col-lg-6 p-0">
+              <div class="video-thumbnail">
+                <h2>#train different</h2>
+                <img src="img/image3.png" alt="picture">
+                <a href="#">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </a>
+                <h3>Watch our video now</h3>
+              </div>
+            </div>
+            <div class="col-lg-6 p-0 caption">
+              <p class="title">Find your fit here</p>
+              <p class="description">Defy your doubts and shatter your goals with programs, training, and community
+                shaped to push you forward, no matter your age or athletic ability.</p>
+              <a href="#" class="link-more">Find out more <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 p-0 caption reload order-sm-1">
+              <p class="title">Find a gym</p>
+              <p class="description">Unlock your potential! Start your journey with the membership tier that fits your
+                needs. From unlimited Group Fitness access to Ultimate Classes, discover the fit that’s right for you.
+              </p>
+              <a href="#" class="link-more">Register Now <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-1 order-xl-1">
+              <div class="lazy-wrapper" data-src="img/image2.png">
+                <img alt="image2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ultimate-training">
+      <div class="row images">
+        <div class="col-3 p-0 image">
+          <div class="lazy-wrapper" data-src="img/image4.png">
+            <img alt="image4.png">
+          </div>
+        </div>
+        <div class="col-3 p-0 image">
+          <div class="lazy-wrapper" data-src="img/image5.png">
+            <img alt="image5.png">
+          </div>
+        </div>
+        <div class="col-3 p-0 image">
+          <div class="lazy-wrapper" data-src="img/image6.png">
+            <img alt="image6.png">
+          </div>
+        </div>
+        <div class="col-3 p-0 image">
+          <div class="lazy-wrapper" data-src="img/image7.png">
+            <img alt="image7.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-2 col-lg-6 offset-lg-5 col-xl-5 offset-xl-5">
+          <div class="card custom-card">
+            <div class="card-body">
+              <h5 class="card-title">DAILY ULTIMATE TRAINING</h5>
+              <p class="card-text">Expect the unexpected in our signature high-intensity interval training class. Cycle
+                through timed interval stations designed to consistently shock your system and deliver results.</p>
+              <a href="#" class="link-more">Find out more <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-two">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-6">
+              <div class="card custom-card">
+                <div class="card-body p-0">
+                  <h5 class="card-title">We are <span>UFC GYM UK</span></h5>
+                  <p class="card-text">We are the original. The biggest, best and fastest growing. We are UFC GYM. Train
+                    Different in 150+ locations around the world — and counting! Find us in 32 countries by 2021.</p>
+                  <a href="#" class="link-more">Find out more <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="youth-classes">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+          <div class="row">
+            <div class="col-lg-6 p-0 caption order-sm-1">
+              <p class="title">YOUTH CLASSES</p>
+              <p class="description">Geared towards creating a courageous and health-conscious younger generation, kids
+                classes and training at UFC GYM® are designed to develop strong athletic and motivational skills that
+                your kids will carry throughout their lifetime.</p>
+              <a href="#" class="link-more">Find out more <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-1 order-xl-1">
+              <div class="lazy-wrapper" data-src="img/image9.png">
+                <img alt="image9.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+          <div class="row">
+            <div class="col-12">
+              <h2>Latest News <a class="link-more" href="#">VIEW ALL <i class="fa fa-long-arrow-right"></i></a></h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 news">
+              <div class="card card-news">
+                <div class="lazy-wrapper" data-src="img/news.png">
+                  <img alt="news.png" class="cut">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">What is Class UFC Gym Woking?</h5>
+                  <a href="#" class="btn btn-red-two">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 news">
+              <div class="card card-news">
+                <div class="lazy-wrapper" data-src="img/news2.png">
+                  <img alt="news2.png" class="cut">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">D.U.T. at UFC GYM Nottingham</h5>
+                  <a href="#" class="btn btn-red-two">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 news">
+              <div class="card card-news">
+                <div class="lazy-wrapper" data-src="img/news3.png">
+                  <img alt="news3.png" class="cut">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UFC Gym Nottingham Coaches & Classes</h5>
+                  <a href="#" class="btn btn-red-two">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-4 col-xl-6 offset-xl-6 p-0">
+          <div class="text-wrapper">
+            <div class="row">
+              <div class="col-8">
+                <div class="text">
+                  <h2>Join ufc gym</h2>
+                  <h1>Sign up now</h1>
+                </div>
+              </div>
+              <div class="col-4">
+                <a href="#" class="btn btn-white-two">Register now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-index">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 left">
+        <a href="%">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 center">
+        <div class="row top">
+          <ul class="copyright">
+            <li>© UFC GYM®. All Rights Reserved.</li>
+          </ul>
+
+          <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Legals</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="row bottom">
+          <p>*All claims regarding results you may achieve are dependent on many factors and your results may vary</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 right">
+        <div class="wrapper">
+          <ul class="download-links">
+            <li>
+              <a href="#">
+                <img src="img/appstore.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/playstore.png" alt="">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/ufc.min.js"></script>
+</body>
+
+</html>

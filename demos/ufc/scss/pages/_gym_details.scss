@@ -1,0 +1,159 @@
+@import "components/gym_details/carousel_gym_details";
+
+.gym-details {
+  section.classes,
+  section.intro {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-family: 'D-DINCondensed';
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  section.amenities {
+    padding: 60px 0 30px;
+
+    ul {
+      list-style: none;
+      margin-bottom: 30px;
+      padding: 0;
+
+      li {
+        font-family: 'ProximaNova-Regular';
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        img {
+          height: 25px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  section.classes {
+    background-color: $pale-grey;
+
+    h2 {
+      font-family: 'ProximaNova-Bold';
+      font-size: 20px;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+
+      a {
+        margin-left: 45px;
+      }
+    }
+
+    .card {
+      margin-bottom: 20px;
+
+      .card-body {
+        padding: 32px;
+      }
+
+      a.btn {
+        padding: 10px 30px;
+      }
+
+      p.time,
+      p.description {
+        font-family: 'ProximaNova-Regular';
+        font-size: 15px;
+      }
+
+      h3.name {
+        font-family: 'D-DINCondensed';
+        font-size: 33px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  section.intro {
+    .text {
+      p {
+        font-family: 'ProximaNova-Regular';
+        font-size: 16px;
+      }
+    }
+
+    .map-wrapper {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  section.gym-photos {
+    padding-bottom: 60px;
+
+    h2 {
+      border-top: 5px solid $red;
+      padding-top: 60px;
+    }
+
+    .images-grid {
+      .row {
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .images-wrapper,
+      .image-wrapper {
+        padding: 0;
+      }
+
+      .per-two:not(:first-child) {
+        padding-left: 18px;
+      }
+
+      .images-wrapper:first-child,
+      .per-two:first-child {
+        padding-right: 18px;
+      }
+
+      .images-wrapper:last-child {
+        padding-left: 18px;
+      }
+
+      .image-wrapper:last-child {
+        padding-top: 36px;
+      }
+
+      .image-wrapper:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section.gym-photos {
+    .images-wrapper,
+    .per-two,
+    .image-wrapper {
+      padding: 0px !important;
+    }
+
+    .image-wrapper {
+      img {
+        height: 200px !important;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

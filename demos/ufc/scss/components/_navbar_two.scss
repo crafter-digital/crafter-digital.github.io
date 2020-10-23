@@ -1,0 +1,197 @@
+.nav-wrapper-two {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+  }
+
+  .navbar-light {
+    .nav-link {
+      color: black !important;
+
+      &:hover {
+        color: $grey !important;
+      }
+    }
+
+    .link-class {
+      background-color: white !important;
+    }
+
+    .link-login a {
+      color: white !important;
+    }
+  }
+
+  .social-media {
+    margin-top: 8px;
+    padding: 0;
+
+    li:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    i {
+      color: $red;
+    }
+  }
+
+  nav.navbar-top {
+    background-color: $pale-grey;
+    padding: 8px 25px;
+
+    .navbar-right {
+      justify-content: flex-end;
+    }
+
+    .nav-item:not(:last-child) {
+      margin-right: 43px;
+    }
+
+    .social-media li {
+      a {
+        color: black;
+      }
+    }
+
+    .nav-link {
+      color: black;
+      font-family: 'D-DINCondensed';
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+
+  nav.navbar-bottom {
+    height: 75px;
+    padding: 0;
+    padding-left: 30px;
+
+    .navbar-brand {
+      img {
+        height: 30px;
+      }
+    }
+
+    .link-class {
+      background-color: black;
+      margin: 0 !important;
+      padding: 18px 18px;
+      padding-left: 0;
+      position: relative;
+
+      img {
+        margin-top: 10px;
+        width: 80px;
+      }
+    }
+
+    .link-login {
+      background-color: $red;
+      border: 1px solid $red;
+      letter-spacing: 1.5px;
+      margin: 0 !important;
+      padding: 0 13px;
+      position: relative;
+      height: 75px;
+
+      a {
+        margin-top: 18px;
+      }
+
+      &:hover,
+      &:focus {
+        border: 1px solid $red;
+        box-shadow: inset 12em 0 0 0 white;
+
+        a,
+        i {
+          color: $red !important;
+        }
+      }
+
+      a {
+        color: white;
+        font-family: 'ProximaNova-Regular';
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      i {
+        color: white;
+      }
+    }
+
+    .nav-item {
+      margin-top: 13px;
+
+      .nav-link {
+        color: white;
+        font-family: 'ProximaNova-Bold';
+        font-size: 13px;
+        letter-spacing: 1.5px;
+
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+
+    .nav-item:not(:last-child) {
+      margin-right: 25px;
+      margin-top: 22px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-wrapper-two {
+    nav.navbar-bottom {
+      padding: 18px 30px;
+      height: unset;
+    }
+  }
+
+  button.navbar-toggler {
+    border-radius: 0;
+    border: none;
+
+    i {
+      color: white;
+      font-size: 33px;
+    }
+
+    &:active,
+    &:hover {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .link-login {
+    width: 120px;
+    text-align: center;
+  }
+
+  .navbar-collapse.show {
+    .link-class {
+      padding-left: 0 !important;
+    }
+  }
+
+  .navbar-light {
+    button.navbar-toggler {
+      i {
+        color: black;
+      }
+    }
+  }
+}

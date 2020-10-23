@@ -1,0 +1,68 @@
+.carousel-franchise {
+  .carousel-inner {
+    height: 536px;
+
+    .carousel-item {
+      height: 100%;
+
+      img {
+        filter: brightness(0.6);
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .carousel-caption {
+        left: 8%;
+        text-align: left;
+        top: 108px;
+
+        h1 {
+          font-family: 'D-DINCondensed';
+          font-size: 80px;
+          font-weight: bold;
+          text-transform: uppercase;
+          width: 50%;
+        }
+
+        p {
+          font-family: 'ProximaNova-Regular';
+          font-size: 19px;
+          margin-bottom: 22px;
+          width: 45%;
+        }
+
+        a.btn {
+          letter-spacing: 0;
+
+          i {
+            margin-left: 6px;
+          }
+        }
+
+        a.btn:not(:last-child) {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-franchise {
+    .carousel-caption {
+      left: 50px !important;
+      top: 50px !important;
+
+      h1 {
+        font-size: 75px !important;
+        width: 75% !important;
+      }
+
+      p {
+        font-size: 19px !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
