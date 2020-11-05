@@ -1,0 +1,78 @@
+footer {
+  background-color: $pale-grey;
+  padding: 50px 0 30px;
+
+  h1.brand {
+    font-family: 'Dancing Script';
+    font-size: 45px;
+  }
+
+  .forum-form {
+    h2 {
+      font-family: 'Merriweather';
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    form {
+      margin-bottom: 30px;
+      width: 90%;
+
+      button {
+        font-family: 'Catamaran';
+        font-size: 13px;
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  ul.footer-menu {
+    list-style: none;
+    margin-bottom: 30px;
+
+    li {
+      font-family: 'Merriweather';
+    }
+
+    li.menu-title {
+      display: block;
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 16px;
+      margin-bottom: 10px;
+
+      a {
+        color: black;
+
+        &:hover {
+          color: $grey-three;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .social-media {
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 20px;
+    border-top: 1px solid $light-grey-two;
+    padding-top: 30px;
+    font-family: 'Merriweather';
+    font-size: 14px;
+  }
+}

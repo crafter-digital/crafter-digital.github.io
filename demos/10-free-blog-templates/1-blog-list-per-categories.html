@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog</title>
+
+  <link href="css/blog_1.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav-wrapper-top d-none d-lg-block d-xl-block">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#registerModal" data-toggle="modal" data-target="#registerModal"><i
+                class="fa fa-smile-o"></i>Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#loginModal" data-toggle="modal" data-target="#loginModal"><i
+                class="fa fa-user-o"></i>Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="nav-wrapper d-none d-lg-block d-xl-block">
+    <nav class="navbar navbar-top navbar-expand-lg navbar-light bg-white">
+      <div class="row">
+        <div class="col-2">
+          <a class="navbar-brand" href="1-blog-list.html">Blog</a>
+        </div>
+
+        <div class="col-sm-8 col-md-8 col-lg-10 col-xl-6 offset-xl-4">
+          <div class="row">
+            <form class="form-inline col-7 form-search">
+              <input class="form-control col-10" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn col-2" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+
+            <ul class="navbar-nav col-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-heart-o"></i> Favourites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="fa fa-shopping-cart" href="#"></i> Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-bottom navbar-expand-lg navbar-light bg-white">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-list.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Recipes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Appetizer</a>
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Main Course</a>
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Dessert</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-forum.html">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="nav-wrapper d-block d-lg-none d-xl-none">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">Blog</a>
+      <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="1-blog-list.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Recipes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Appetizer</a>
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Main Course</a>
+              <a class="dropdown-item" href="1-blog-list-per-categories.html">Dessert</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-forum.html">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1-blog-contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+        <form class="form-inline col-8 p-0 form-search">
+          <input class="form-control col-10" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn col-2" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <main class="blog-list-per-categories-1 margin-top-50">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+        <div class="row">
+          <div class="col-12 px-4">
+            <h1>Appetizer</h1>
+          </div>
+        </div>
+
+        <section class="recipes-per-three margin-top-50">
+          <div class="row">
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food.jpg">
+                    <img alt="food-1">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>40 Mother’s Day Breakfast and Brunch Recipes</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food2.jpg">
+                    <img alt="food-2">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Slow cooker mixed fruits oatmeal pot</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food3.jpg">
+                    <img alt="food-3">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Fudge waffles with ice cream and chocolate sauce</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food4.jpg">
+                    <img alt="food-1">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>40 Mother’s Day Breakfast and Brunch Recipes</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food5.jpg">
+                    <img alt="food-2">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Slow cooker mixed fruits oatmeal pot</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food6.jpg">
+                    <img alt="food-3">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Fudge waffles with ice cream and chocolate sauce</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food7.jpg">
+                    <img alt="food-1">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>40 Mother’s Day Breakfast and Brunch Recipes</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food8.jpg">
+                    <img alt="food-2">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Slow cooker mixed fruits oatmeal pot</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 px-4">
+              <div class="card recipe">
+                <a href="1-blog-details.html" class="recipe__image-wrapper">
+                  <div class="lazy-wrapper" data-src="img/food9.jpg">
+                    <img alt="food-3">
+                  </div>
+                </a>
+
+                <div class="card-body p-0">
+                  <ul class="p-0 recipe__details">
+                    <li><i class="fa fa-clock-o"></i>30 minutes</li>
+                    <li><i class="fa fa-thumbs-o-up"></i>easy</li>
+                  </ul>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <h5>Fudge waffles with ice cream and chocolate sauce</h5>
+                    </a>
+                  </div>
+                  <p class="card-text recipe__description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim veniamquis.</p>
+
+                  <div class="row recipe__author">
+                    <div class="col-6 p-0">
+                      <img src="img/user.jpg" alt="" class="recipe__author__avatar">
+                      <div class="recipe__author__text">
+                        <a href="1-blog-profile.html" class="recipe__author__username">Zarqaa el Hussein</a>
+                        <p class="recipe__author__date">Oct 16, 2020</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-0">
+                      <div class="recipe__buttons">
+                        <div class="row">
+                          <div class="dropdown show button">
+                            <a class="btn btn-share" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-share-alt"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-share" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item dropdown-item__facebook" href="#"><i
+                                  class="fa fa-facebook"></i></a>
+                              <a class="dropdown-item dropdown-item__instagram" href="#"><i
+                                  class="fa fa-instagram"></i></a>
+                              <a class="dropdown-item dropdown-item__twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn btn-share button"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="#" class="btn btn-yellow btn-load-more">Load More</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="popular-recipes margin-bottom-100">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="title">The most popular recipes this week</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+              <div class="row recipes">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food2.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food3.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food4.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food5.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food6.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food7.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 recipe">
+                  <a href="1-blog-details.html" class="recipe__image-wrapper">
+                    <div class="lazy-wrapper" data-src="img/food9.jpg">
+                      <img alt="food">
+                    </div>
+                  </a>
+                  <div class="recipe__title-wrapper">
+                    <a href="1-blog-details.html" class="recipe__title">
+                      <p>Fudge waffles with ice cream and chocolate sauce</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 forum-form">
+            <h2>Forum</h2>
+            <form class="form-custom">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button type="submit" class="btn btn-yellow">Join Now</button>
+            </form>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <ul class="footer-menu p-0">
+              <li class="menu-title">Contact</li>
+              <li>1334 Holden Street</li>
+              <li>619-231-6926</li>
+              <li>blog@sample.com</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <ul class="footer-menu p-0">
+              <li class="menu-title">Company</li>
+              <li><a href="1-blog-about.html">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <ul class="footer-menu p-0 social-media">
+              <li class="menu-title">Follow Us</li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center copyright">
+        2020 ⓒ Crafter Digital. All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Register Modal -->
+  <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog"
+    aria-labelledby="registerModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Register</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form-custom">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="password" class="form-control" placeholder="Password Confirmation">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-black">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Login</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form-custom">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6 text-right">
+                <a href="#">Forgot Password</a>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-black">Login</button>
+
+            <p>Or login with</p>
+            <ul class="login-links p-0">
+              <li class="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

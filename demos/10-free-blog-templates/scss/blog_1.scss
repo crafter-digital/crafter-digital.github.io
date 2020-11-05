@@ -1,0 +1,35 @@
+@import "blog_1/variables";
+
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap";
+
+// Import Font Awesome
+$fa-font-path: '../vendor/fonts/';
+@import '../vendor/scss/font-awesome.scss';
+
+// Base
+@import "blog_1/fonts";
+@import "blog_1/global";
+@import "blog_1/helpers";
+@import "blog_1/shared";
+@import "blog_1/typography";
+
+// Custom Components
+@import "blog_1/components/breadcrumb";
+@import "blog_1/components/buttons";
+@import "blog_1/components/carousels";
+@import "blog_1/components/footer";
+@import "blog_1/components/form";
+@import "blog_1/components/lazy_load";
+@import "blog_1/components/modals";
+@import "blog_1/components/navbar";
+@import "blog_1/components/pagination";
+
+// Import Pages
+@import "blog_1/pages/about";
+@import "blog_1/pages/contact";
+@import "blog_1/pages/details";
+@import "blog_1/pages/forum";
+@import "blog_1/pages/list_per_categories";
+@import "blog_1/pages/list";
+@import "blog_1/pages/profile";

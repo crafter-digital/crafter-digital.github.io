@@ -1,0 +1,36 @@
+.custom-pagination {
+  border-radius: 0 !important;
+
+  .page-item {
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+
+  .page-link {
+    border-radius: 50%;
+    border: 0;
+    height: 35px;
+    text-align: center;
+    width: 35px;
+  }
+  
+  .page-item.active .page-link {
+    background-color: $yellow-two;
+    border-radius: 50%;
+    color: black;
+  }
+
+  .page-link {
+    border: none;
+    color: black;
+    transition: none;
+
+    &:hover, &:focus, &:active {
+      background-color: $yellow-two;
+      border-radius: 50%;
+      box-shadow: none;
+      color: black;
+      outline: none;
+    }
+  }
+}

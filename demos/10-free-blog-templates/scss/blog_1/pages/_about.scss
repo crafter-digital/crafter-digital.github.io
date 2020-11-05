@@ -1,0 +1,78 @@
+.blog-about-1 {
+  p, li {
+    color: $grey-two;
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+
+  section.content {
+    .media-wrapper {
+      margin-bottom: 30px;
+
+      img, video {
+        height: 500px;
+      }
+    }
+
+    .text {
+      margin-top: 30px;
+    }
+  }
+
+  .subscription-form {
+    margin-top: 0 !important;
+  }
+
+  .cookbooks {
+    p.title {
+      background-color: $yellow;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      padding: 15px 20px 10px;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .books-wrapper {
+      border: 1px solid $light-grey;
+      padding: 30px 0;
+
+      .book {
+        p {
+          font-size: 14px;
+        }
+
+        &__title {
+          font-family: 'Merriweather';
+          color: black;
+          margin-bottom: 5px;
+        }
+
+        a {
+          &:hover {
+            text-decoration: none;
+
+            .lazy-wrapper {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .lazy-wrapper {
+          height: fit-content;
+          margin-bottom: 20px;
+          transition: all .2s ease-out;
+          width: 80%;
+
+          img {
+            border: 3px solid $yellow;
+          }
+        }
+      }
+    }
+  }
+}

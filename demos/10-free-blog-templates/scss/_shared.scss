@@ -1,0 +1,12 @@
+.lazy-wrapper {
+  background-color: white;
+  filter: blur(2vw);
+  height: 100%;
+  margin: auto;
+
+  img {
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+}

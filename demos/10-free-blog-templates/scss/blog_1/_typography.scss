@@ -1,0 +1,35 @@
+.title, .sub-title {
+  font-family: 'Merriweather';
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.sub-title {
+  display: flex;
+  margin-bottom: 30px;
+  
+  span.text {
+    color: black;
+    font-size: 22px;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+  }
+
+  span.lines {
+    border-bottom: 1px solid $light-grey-two;
+    border-top: 1px solid $light-grey-two;
+    height: 7px;
+    margin-left: 18px;
+    margin-top: 11px;
+    width: 100%;
+  }
+}
+
+span.border-bottom-yellow {
+  border-bottom: 3px solid $yellow;
+}

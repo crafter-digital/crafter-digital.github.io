@@ -1,0 +1,24 @@
+.blog-list-per-categories-1 {
+  h1 {
+    font-family: 'Merriweather';
+  }
+
+  h2.title {
+    font-family: Merriweather, serif;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  section.recipes-per-three {
+    border-bottom: 1px solid $light-grey-two;
+    padding-bottom: 100px;
+
+    .recipe {
+      margin-bottom: 50px !important;
+  
+      &__description {
+        -webkit-line-clamp: 2 !important;
+      }
+    }
+  }
+}

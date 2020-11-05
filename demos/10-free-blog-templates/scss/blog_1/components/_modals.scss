@@ -1,0 +1,76 @@
+.login-modal {
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .modal-header {
+    border: none;
+  }
+
+  .modal-title {
+    font-family: 'Merriweather';
+    font-size: 30px;
+  }
+
+  button.close {
+    outline: none;
+    box-shadow: none;
+  }
+
+  form {
+    button {
+      padding: 10px;
+      width: 50%;
+    }
+  }
+
+  p {
+    color: $grey-two;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .login-links {
+    list-style: none;
+
+    li {
+      border-radius: 50%;
+      display: inline-table;
+      height: 30px;
+      margin: auto;
+      margin-right: 5px;
+      padding: 0;
+      text-align: center;
+      width: 30px;
+
+      a {
+        color: white;
+        font-size: 13px;
+        position: relative;
+        top: 3px;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+
+    .facebook {
+      background-color: $facebook;
+    }
+
+    .twitter {
+      background-color: $twitter;
+    }
+
+    .google {
+      background-color: $google;
+    }
+  }
+}

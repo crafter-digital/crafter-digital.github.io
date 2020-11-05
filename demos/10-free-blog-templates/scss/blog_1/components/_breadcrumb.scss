@@ -1,0 +1,28 @@
+.custom-breadcrumb {
+  background: none;
+  font-size: 15px;
+  margin-top: 6px;
+  padding: 0;
+  text-transform: uppercase;
+
+  .breadcrumb-item {
+    a {
+      color: black;
+
+      &:hover {
+        color: $grey-three;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .breadcrumb-item.active {
+    a {
+      color: $grey-two;
+    }
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+  }
+}

@@ -1,0 +1,39 @@
+.blog-profile-1 {
+  .left {
+    margin-top:50px;
+  }
+
+  .right {
+    margin-top: 0;
+  }
+
+  .recipes {
+    .card {
+      border: none;
+      margin-bottom: 50px;
+    }
+
+    .recipe {
+      &__details {
+        margin-top: 20px;
+      }
+
+      .lazy-wrapper, .lazy-wrapper img {
+        height: 400px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .left {
+      margin-top: 50px !important;
+    }
+
+    .recipe {
+      .lazy-wrapper, .lazy-wrapper img {
+        height: 300px !important;
+      }
+    }
+  }
+}
+

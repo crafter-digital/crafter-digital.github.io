@@ -1,0 +1,112 @@
+.carousel.carousel-index {
+  .carousel-inner {
+    height: 620px;
+  }
+
+  .carousel-item {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-caption {
+    background-color: white;
+    color: $black;
+    height: max-content;
+    left: 10%;
+    padding: 50px 40px;
+    position: absolute;
+    text-align: left;
+    top: 118px;
+    width: 40%;
+
+    .caption {
+      &__title {
+        color: $black;
+        font-family: Merriweather, serif;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 1.2em;
+
+        &:hover {
+          color: $grey-three;
+          text-decoration: none;
+        }
+      }
+
+      &__description {
+        color: $grey-two;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.625em;
+        margin-top: 35px;
+        margin-bottom: 28px;
+      }
+
+      &__avatar {
+        border-radius: 50%;
+        height: 45px;
+        object-fit: cover;
+        width: 45px;
+      }
+
+      &__text {
+        display: inline-block;
+        margin-left: 20px;
+        position: absolute;
+      }
+
+      &__username {
+        color: $black-two;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .1em;
+        line-height: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $grey-three;
+          text-decoration: none;
+        }
+      }
+
+      &__date {
+        color: $grey-three;
+        font-size: 13px;
+        line-height: 1em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel.carousel-index {
+    .carousel-caption {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel.carousel-index {
+    .carousel-caption {
+      .caption {
+        &__title {
+          font-size: 30px;
+          margin-bottom: 15px;
+        }
+  
+        &__description {
+          font-size: 16px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.blog-contact-1 {
+  margin-top: 50px;
+
+  section.intro {
+    .text {
+      margin-bottom: 30px;
+    }
+  }
+
+  section.faq {
+    margin-top: 50px;
+
+    .qa {
+      margin-bottom: 40px;
+
+      .question {
+        font-family: 'Merriweather';
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .text, .answer {
+    color: $grey;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
