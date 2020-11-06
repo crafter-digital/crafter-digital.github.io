@@ -46,21 +46,22 @@
       display: none;
     }
   }
-}
 
-@media screen and (max-width: 1200px) {
-  .services_wrapper {
-    &:after, &:before {
-      background-image: none !important;
+  @media screen and (max-width: 1200px) {
+    .services_wrapper {
+      &:after, &:before {
+        background-image: none !important;
+      }
+    }
+  }
+  
+  
+  @media screen and (max-width: 680px) {
+    .working-process {
+      .step_by_step, .illustration {
+        display: grid !important;
+      }
     }
   }
 }
 
-
-@media screen and (max-width: 680px) {
-  .working-process {
-    .step_by_step, .illustration {
-      display: grid !important;
-    }
-  }
-}

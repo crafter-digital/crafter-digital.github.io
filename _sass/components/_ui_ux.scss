@@ -11,6 +11,32 @@
     filter: blur(2vw);
   }
 
+  .working-process-wrapper {
+    &:before {
+      background-image: url(../../assets/images/circle_one.png);
+      background-repeat: no-repeat;
+      content: "";
+      height: 125%;
+      margin-top: 100px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:after {
+      background-image: url(../../assets/images/circle_two.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      content: "";
+      display: table;
+      height: 125%;
+      position: absolute;
+      top: 320%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
   .working-process {
     .step_by_step {
       display: grid;
@@ -43,6 +69,14 @@
           margin-right: 28%;
           margin-top: 35%;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .working-process-wrapper {
+      &:after, &:before {
+        background-image: none !important;
       }
     }
   }
