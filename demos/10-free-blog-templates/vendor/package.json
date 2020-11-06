@@ -2,7 +2,7 @@
   "_args": [
     [
       "font-awesome@4.7.0",
-      "/Users/fatimah/Desktop/Projects/crafter-digital/blog/codes/blog"
+      "/Users/fatimah/Desktop/Projects/crafter-digital/crafter-digital.github.io/demos/10-free-blog-templates"
     ]
   ],
   "_from": "font-awesome@4.7.0",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz",
   "_spec": "4.7.0",
-  "_where": "/Users/fatimah/Desktop/Projects/crafter-digital/blog/codes/blog",
+  "_where": "/Users/fatimah/Desktop/Projects/crafter-digital/crafter-digital.github.io/demos/10-free-blog-templates",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.io",

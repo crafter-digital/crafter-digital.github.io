@@ -3,15 +3,15 @@
 
   section.head {
     h1 {
-      font-size: 60px;
-      font-weight: 800;
       color: black;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
     }
 
     p {
       font-size: 22px;
       color: $light-grey;
-      width: 50%;
     }
   }
 
@@ -65,12 +65,6 @@
   }
 
   @media (max-width: 1200px) {
-    section.head {
-      p {
-        width: 70%;
-      }
-    }
-
     section.templates {
       .template:nth-child(odd) {
         padding-right: 30px !important;
@@ -78,14 +72,6 @@
   
       .template:nth-child(even) {
         padding-left: 30px !important;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    section.head {
-      p {
-        width: 80%;
       }
     }
   }
@@ -98,7 +84,6 @@
 
       p {
         font-size: 18px;
-        width: 90%;
       }
     }
   }
