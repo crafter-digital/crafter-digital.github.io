@@ -1,4 +1,5 @@
-.backend_wrapper, .ui_ux_wrapper {
+.backend_wrapper,
+.ui_ux_wrapper {
   .intro {
     display: block !important;
     max-width: 100% !important;
@@ -14,12 +15,12 @@
 
       .intro_text {
         margin: auto;
-  
+
         p {
           color: white;
         }
       }
-  
+
       img.illustration {
         width: 90%;
       }
@@ -27,14 +28,12 @@
   }
 
   .services_wrapper {
-    margin: auto;
-    max-width: 1440px;
-    padding: 220px 0;
+    margin: 220px 0;
 
     .services {
       max-width: 960px;
       margin: auto;
-      padding: 0 2%;
+      padding: 0 5%;
 
       .cards {
         display: grid;
@@ -73,7 +72,9 @@
     }
   }
 
-  .working-process, .development-tools, .clients {
+  .working-process,
+  .development-tools,
+  .clients {
     padding: 0 20px;
     max-width: 100%;
     display: grid;
@@ -106,7 +107,8 @@
     }
   }
 
-  .clients-image, .tools-image {
+  .clients-image,
+  .tools-image {
     display: grid;
     grid-gap: 30px;
     margin-top: 58px;
@@ -117,31 +119,42 @@
   }
 }
 
-#backend, #ui_ux {
+#backend,
+#ui_ux {
   .footer {
     padding-top: 76px;
     margin-top: -60px;
   }
-}
 
-@media screen and (max-width: 680px) {
-  .working-process {
-    .step_by_step {
-      display: grid !important;
+  @media screen and (max-width: 1200px) {
+    .services_wrapper {
+
+      &:after,
+      &:before {
+        background-image: none !important;
+      }
     }
+  }
 
-    .illustration {
-      display: none !important;
-    }
+  @media screen and (max-width: 680px) {
+    .working-process {
+      .step_by_step {
+        display: grid !important;
+      }
 
-    .step_by_step {
-      .step {
-        .card {
-          margin-bottom: 50px !important;
-          padding: 20px !important;
+      .illustration {
+        display: none !important;
+      }
 
-          .description {
-            font-size: 14px;
+      .step_by_step {
+        .step {
+          .card {
+            margin-bottom: 50px !important;
+            padding: 20px !important;
+
+            .description {
+              font-size: 14px;
+            }
           }
         }
       }

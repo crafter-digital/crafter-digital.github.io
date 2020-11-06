@@ -12,7 +12,28 @@
   }
 
   .services_wrapper {
-    background: url(/assets/images/bg.svg) center no-repeat;
+    &:before {
+      background-image: url(../../assets/images/circle_one.png);
+      background-repeat: no-repeat;
+      content: "";
+      height: 125%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:after {
+      background-image: url(../../assets/images/circle_two.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      content: "";
+      display: table;
+      height: 125%;
+      position: absolute;
+      top: 140%;
+      width: 100%;
+      z-index: -1;
+    }
   }
 
   .working-process {
@@ -26,6 +47,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .services_wrapper {
+    &:after, &:before {
+      background-image: none !important;
+    }
+  }
+}
+
 
 @media screen and (max-width: 680px) {
   .working-process {
