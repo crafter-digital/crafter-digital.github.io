@@ -6,7 +6,7 @@
     .content {
       display: grid;
       grid-auto-flow: dense;
-      grid-gap: 30px;
+      grid-gap: 80px;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       margin: auto;
       max-width: 1440px;
@@ -89,8 +89,12 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
-  .clients {
+  .clients-wrapper {
     background-color: #fcfcfe;
+    border-top-left-radius: 65px;
+  }
+
+  .clients {
     padding: 130px 20px 200px 20px;
   }
 
