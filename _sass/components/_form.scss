@@ -1,14 +1,14 @@
 .input {
-  border-radius: 2px;
-  border: solid 1px #e7ecf2;
   background-color: white;
+  border-radius: 2px;
+  border: solid 1px $light-grey;
   color: rgba(25, 36, 60, 0.68);
   font-family: 'Montserrat';
   font-size: 16px;
   letter-spacing: 0.1px;
   outline: none;
-  opacity: 0.48;
   padding: 0 24px;
+  transition: border-color .15s ease-in-out;
 
   &__text {
     height: 54px;
@@ -17,4 +17,12 @@
   &__textarea {
     padding: 24px;
   }
+
+  &:focus, &:active {
+    border-color: $light-grey-two;
+  }
+}
+
+.input::placeholder {
+  opacity: 0.48 !important;
 }

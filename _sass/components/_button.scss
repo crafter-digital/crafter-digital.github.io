@@ -1,29 +1,36 @@
 .button {
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
   background-color: $pale-red;
   border-radius: 2px;
   box-shadow: 0 5px 20px 0 rgba(229,75,73,0.54);
   color: white !important;
+  cursor: pointer;
   font-weight: bold;
   padding: 5px 15px;
   text-decoration: none;
-  cursor: pointer;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
+  transition: background-color .15s ease-in-out;
+
+  &:hover, &:active, &:focus {
+    background-color: $dark-red;
+  } 
 
   &__large {
+    border-radius: 4px;
     padding: 20px 30px;
   }
 
   &__small {
+    padding: 10px 18px;
     width: 92px;
   }
 
   &__submit {
-    width: 100px;
-    font-size: 18px;
     border-radius: 4px !important;
     border: none;
+    font-size: 18px;
+    width: 100px;
   }
 
   a {
