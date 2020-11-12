@@ -19,6 +19,11 @@
         color: $pale-red;
         cursor: pointer;
         text-decoration: underline;
+        transition: color 0.15s ease-in-out;
+
+        &:hover {
+          color: $dark-red;
+        }
       }
     }
   }
