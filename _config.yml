@@ -29,6 +29,7 @@ markdown: kramdown
 #heme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -75,3 +76,10 @@ webp:
   # append '.webp' to filename after original extension rather than replacing it.
   # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
   append_ext: false
+
+defaults:
+  -
+    scope:
+      path: "demos/*"
+    values:
+      sitemap: false
