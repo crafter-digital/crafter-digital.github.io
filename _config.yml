@@ -80,6 +80,6 @@ webp:
 defaults:
   -
     scope:
-      path: "demos/*"
+      path: "demos/clients/*"
     values:
       sitemap: false
